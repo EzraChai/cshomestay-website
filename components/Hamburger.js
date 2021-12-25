@@ -69,7 +69,6 @@ export const Hamburger = ({ state }) => {
     }
     const staggerText = (class1, class2, class3) => {
         gsap.to([class1, class2, class3], {
-            // y: -100,
             duration: 1,
             delay: .2,
             opacity: 1,

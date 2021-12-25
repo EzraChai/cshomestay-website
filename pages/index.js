@@ -3,7 +3,6 @@ import Image from "next/image"
 import Link from "next/link"
 import gsap from "gsap"
 import {useEffect} from "react"
-import { Gallery } from '../components/Gallery'
 import flag from "../public/Flag_of_Negeri_Sembilan.svg"
 
 
@@ -47,7 +46,7 @@ export default function Home() {
                 </div>
               </div>
             <div className="mt-[30rem]">
-              <Gallery/>
+              
             </div>
           </div>
         </div>
