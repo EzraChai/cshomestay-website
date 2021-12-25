@@ -11,7 +11,7 @@ export default function Solution() {
   return (
     <div>
         <Head>
-            <title>Solution</title>
+            <title>About</title>
         </Head>
         <div className="container">
           <div className="wrapper">

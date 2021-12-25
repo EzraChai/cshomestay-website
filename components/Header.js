@@ -1,11 +1,10 @@
 import Link from "next/link";
-import Image from "next/image";
 import {Hamburger} from "./Hamburger";
 import {useState,useEffect} from "react"
 import { useRouter } from 'next/router'
 
-import hamburger from "../public/hamburger-menu.svg"
-import close from "../public/close-menu.svg"
+import {AiOutlineMenu,AiOutlineClose} from "react-icons/ai"
+
 
 export const Header = () => {
 
@@ -19,6 +18,12 @@ export const Header = () => {
 
 
     useEffect(() => {
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+        } else {
+        document.documentElement.classList.remove('dark')
+        }
         const handleStop = () => {
             setState({
                 clicked: false,
@@ -65,9 +70,9 @@ export const Header = () => {
 
     const showMenu = () => {
         if(state.menuName === "Menu"){
-            return <Image src={hamburger} alt={state.menuName}/>
+            return <AiOutlineMenu className="mr-[24px] text-2xl md:text-3xl"/>
         }else if(state.menuName === "Close"){
-            return <Image src={close} alt={state.menuName}/>
+            return <AiOutlineClose className="mr-[24px] text-2xl md:text-3xl"/>
         }
     }
 

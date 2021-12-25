@@ -15,14 +15,22 @@ export const Hamburger = ({ state }) => {
                     amount: .07
                 }
             })
+
+            gsap.to([".line1", ".line2", ".line3"], {duration: .4,stagger: .04, css:{opacity: 0 }})
+            gsap.to(".info",{duration: .4, css:{opacity: 0}})
+
             gsap.to(".hamburger-menu", {
                 duration: 1,
                 css: { display: "none" }
             })
 
         } else if (state.clicked === true || state.clicked === true && state.initial === null) {
+            
             // open Menu
+            gsap.to([".line1", ".line2", ".line3"],{duration: 0, css:{opacity: 0}},0)
+            gsap.to(".info",{duration: 0, css:{opacity: 1}})
 
+            
             gsap.to(".hamburger-menu", {
                 duration: 0,
                 css: { display: "block" }
@@ -60,11 +68,11 @@ export const Hamburger = ({ state }) => {
         })
     }
     const staggerText = (class1, class2, class3) => {
-        gsap.from([class1, class2, class3], {
-            y: 100,
+        gsap.to([class1, class2, class3], {
+            // y: -100,
             duration: 1,
-            delay: .1,
-            opacity: 0,
+            delay: .2,
+            opacity: 1,
             ease: "power3.inOut",
             stagger: {
                 amount: .3
@@ -72,43 +80,23 @@ export const Hamburger = ({ state }) => {
         })
     }
 
-    const handleHover = e => {
-        console.log(e.target)
-        gsap.to(e.target, {
-            duration: .3,
-            y: 3,
-            skewX: 5,
-            ease: "power3.inOut"
-        })
-    }
-
-    const handleHoverExit = e => {
-        gsap.to(e.target, {
-            duration: .3,
-            y: -3,
-            skewX: 0,
-            ease: "power3.inOut"
-        })
-    }
-
-
     return (
         <div className="hamburger-menu hidden z-[9] top-0 bottom-0 left-0 right-0 h-screen w-full fixed">
             <div className="menu-secondary-background-color bg-gray-800 z-[-1] top-0 bottom-0 left-0 right-0 h-screen w-full fixed"></div>
-            <div className="menu-layer relative bg-blue-500 w-full h-screen">
+            <div className="menu-layer relative bg-cyan-500 h-screen">
                 <div className="container mx-auto p-4 md:px-7">
                     <div className="wrapper relative">
                         <div className="menu-links md:flex justify-between items-center relative top-36 md:top-[12rem]">
                             <nav className="block p-0 m-0">
                                 <ul className=" font-[700] text-4xl md:text-6xl lg:text-8xl">
-                                    <li className="line1 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-full overflow-hidden relative text-white hover:text-gray-700">
-                                        <Link className="absolute" href={'/opportunities'}>Opportunities</Link>
+                                    <li className="line1 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-[580px] overflow-hidden relative text-white hover:text-gray-700">
+                                        <Link href={'/about'}>About</Link>
                                     </li>
-                                    <li className="line2 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-full overflow-hidden relative text-white hover:text-gray-700">
-                                        <Link className="absolute" href={'/solutions'}>Solutions</Link>
+                                     <li className="line2 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-[580px] overflow-hidden relative text-white hover:text-gray-700">
+                                        <Link href={'/pictures'}>Pictures</Link>
                                     </li>
-                                    <li className="line3 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-full overflow-hidden relative text-white hover:text-gray-700">
-                                        <Link className="absolute" href={'/contact-us'}>Contact us</Link>
+                                    <li className="line3 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-[580px] overflow-hidden relative text-white hover:text-gray-700">
+                                        <Link href={'/contact-us'}>Contact us</Link>
                                     </li>
                                 </ul>
                             </nav>
