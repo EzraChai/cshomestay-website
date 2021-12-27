@@ -9,7 +9,7 @@ export const PhoneGallery = () => {
                     <div className="">
                         <Image src={picture.src} alt={picture.title}/>
                     </div>
-                    <div className="title">
+                    <div className="title mt-1 cursive font-semibold ml-1 text-xl">
                         {picture.title}
                     </div>
                 </div>
