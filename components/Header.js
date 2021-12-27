@@ -80,7 +80,7 @@ export const Header = () => {
         <header className="h-[50px]">
             <div className="container mx-auto">
                 <div className="wrapper px-4 py-2 md:py-6 md:px-8">
-                    <div className="inner-header relative z-[10] h-[50px] flex justify-between items-center">
+                    <div className="inner-header relative z-[60] h-[50px] flex justify-between items-center">
                         <div className="logo font-[700] md:text-2xl">
                             <Link href="/">Cozy & Sweet.</Link>
                         </div>

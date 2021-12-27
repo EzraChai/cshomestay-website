@@ -27,9 +27,9 @@ export default function Home() {
           <div className="home flex items-center h-[90vh] w-full flex-col">
             <div className="mt-[14rem] md:mt-[16rem]">
                 <div className="hero-content-line w-full h-100 overflow-hidden">
-                  <h1 className='main-text text-center font-bold text-[3rem] md:text-[6rem] lg:text-[13rem]'>Cozy & Sweet.</h1>
+                  <h1 className='main-text text-center font-bold text-[3rem] md:text-[6rem] lg:text-[13rem] antialiased'>Cozy & Sweet.</h1>
                 </div>
-                <div className="hero-content-line w-full h-100 overflow-hidden">
+                <div className="hero-content-line w-full h-100 overflow-hidden antialiased">
                   <p className='secondary-text mt-2 lg:mt-2 text-center text-[0.6rem] md:text-[1rem] font-semibold tracking-widest uppercase'>homestay in <span className='hover:underline decoration-2 underline-offset-2	'>
                     <Link hrefLang="en" rel="external" href={"https://en.wikipedia.org/wiki/Port_Dickson_(town)"}>Port Dickson</Link>
                     </span>,

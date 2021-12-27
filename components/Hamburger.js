@@ -80,7 +80,7 @@ export const Hamburger = ({ state }) => {
     }
 
     return (
-        <div className="hamburger-menu hidden z-[9] top-0 bottom-0 left-0 right-0 h-screen w-full fixed">
+        <div className="hamburger-menu hidden z-[59] top-0 bottom-0 left-0 right-0 h-screen w-full fixed">
             <div className="menu-secondary-background-color bg-gray-800 z-[-1] top-0 bottom-0 left-0 right-0 h-screen w-full fixed"></div>
             <div className="menu-layer relative bg-cyan-500 h-screen">
                 <div className="container mx-auto p-4 md:px-7">
