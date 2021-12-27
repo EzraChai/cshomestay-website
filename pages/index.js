@@ -10,9 +10,9 @@ import flag from "../public/Flag_of_Negeri_Sembilan.svg"
 export default function Home() {
 
   useEffect(() => {
-    gsap.to(".container", {duration: 0, css: {display: "block"}})
-    gsap.from(".main-text",{duration: 2, y:300, ease:"power3.inOut"})
-    gsap.from(".secondary-text",{duration: 2.5,y:300, ease:"power3.inOut"})
+    gsap.to(".container", {duration: 0, css: {display: "block"}});
+    gsap.from(".main-text",{duration: 2, y:300, ease:"power3.inOut"});
+    gsap.from(".secondary-text",{duration: 2.5,y:300, ease:"power3.inOut"});
   },[])
 
   return (
@@ -22,7 +22,7 @@ export default function Home() {
         <meta name="description" content="" />
         <meta name="keywords" content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson" />
       </Head>
-      <div className="container bg-zinc-100 mx-auto py-6">
+      <div className="container hidden bg-zinc-100 mx-auto py-6">
         <div className="wrapper px-2">
           <div className="home flex items-center h-[90vh] w-full flex-col">
             <div className="mt-[14rem] md:mt-[16rem]">
