@@ -28,13 +28,13 @@ export const PhoneGallery = () => {
             gsap.from(`.photo${i}`, {
             scrollTrigger:{
                 trigger: `.photo${i}`,
-                start: "top 50%",
+                start: "top 65%",
                 // toggleActions: "play pause resume pause"
             },
             duration: 1.3,
             x: "-600px",
             ease: "power3.inOut"
-        },.2)
+        })
         }
     },[])
 
