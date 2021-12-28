@@ -79,6 +79,23 @@ export const Hamburger = ({ state }) => {
         })
     }
 
+    const handleEnter = (e) => {
+        gsap.to(e.target, {
+            duration:.2,
+            skewX: 5,
+            ease: "power3.inOut"
+        })
+    }
+
+    const handleLeave = (e) => {
+        gsap.to(e.target,{
+            duration:.2,
+            skewX: 0,
+            ease: "power3.inOut"
+
+        })
+    }
+
     return (
         <div className="hamburger-menu hidden z-[59] top-0 bottom-0 left-0 right-0 h-screen w-full fixed">
             <div className="menu-secondary-background-color bg-gray-800 z-[-1] top-0 bottom-0 left-0 right-0 h-screen w-full fixed"></div>
@@ -88,14 +105,20 @@ export const Hamburger = ({ state }) => {
                         <div className="menu-links md:flex justify-between items-center relative top-36 md:top-[12rem]">
                             <nav className="block p-0 m-0">
                                 <ul className=" font-[700] text-4xl md:text-6xl lg:text-8xl">
-                                    <li className="line1 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-[580px] overflow-hidden relative text-white hover:text-gray-700">
-                                        <Link href={'/about'}>About</Link>
+                                    <li className="line1 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-[580px] overflow-hidden relative text-white">
+                                        <Link href={'/about'} passHref>
+                                            <div onMouseEnter={(e) => handleEnter(e)} onMouseLeave={(e) => handleLeave(e)}className=" hover:text-gray-700">About</div>
+                                        </Link>
                                     </li>
                                      <li className="line2 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-[580px] overflow-hidden relative text-white hover:text-gray-700">
-                                        <Link href={'/pictures'}>Pictures</Link>
+                                        <Link href={'/pictures'} passHref>
+                                            <div onMouseEnter={(e) => handleEnter(e)} onMouseLeave={(e) => handleLeave(e)}className=" hover:text-gray-700">Pictures</div>
+                                        </Link>
                                     </li>
                                     <li className="line3 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-[580px] overflow-hidden relative text-white hover:text-gray-700">
-                                        <Link href={'/contact-us'}>Contact us</Link>
+                                        <Link href={'/contact-us'} passHref>
+                                            <div onMouseEnter={(e) => handleEnter(e)} onMouseLeave={(e) => handleLeave(e)}className=" hover:text-gray-700">Contact us</div>
+                                        </Link>
                                     </li>
                                 </ul>
                             </nav>

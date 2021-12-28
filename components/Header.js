@@ -18,12 +18,6 @@ export const Header = () => {
 
 
     useEffect(() => {
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark')
-        } else {
-        document.documentElement.classList.remove('dark')
-        }
         const handleStop = () => {
             setState({
                 clicked: false,
@@ -77,7 +71,7 @@ export const Header = () => {
     }
 
     return (
-        <header className="h-[50px]">
+        <header className="h-[60px] md:h-[50px]">
             <div className="container mx-auto">
                 <div className="wrapper px-4 py-2 md:py-6 md:px-8">
                     <div className="inner-header relative z-[60] h-[50px] flex justify-between items-center">
