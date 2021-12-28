@@ -34,7 +34,7 @@ export const PhoneGallery = () => {
             duration: 1.3,
             x: "-600px",
             ease: "power3.inOut"
-        })
+        },.2)
         }
     },[])
 

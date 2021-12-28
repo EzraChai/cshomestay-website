@@ -37,7 +37,7 @@ export default function Home() {
                         <Link hrefLang="en" rel="external" href={"https://en.wikipedia.org/wiki/Negeri_Sembilan"} passHref>
                           <span>
                             <span className='ml-1 rounded-sm overflow-hidden'>
-                              <Image src={flag} width={24} height={12} alt="Flag of Negeri Sembilan, Malaysia"></Image>
+                              <Image src={flag} width={24} height={12} priority alt="Flag of Negeri Sembilan, Malaysia"></Image>
                             </span> Negeri Sembilan
                           </span>
                         </Link>
