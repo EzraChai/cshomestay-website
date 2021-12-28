@@ -29,13 +29,12 @@ export const PhoneGallery = () => {
             scrollTrigger:{
                 trigger: `.photo${i}`,
                 start: "top 65%",
-                markers: true
                 // toggleActions: "play pause resume pause"
             },
             duration: 1.3,
             x: "-600px",
             ease: "power3.inOut"
-        })
+        },.2)
         }
     },[])
 
