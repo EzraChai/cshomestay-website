@@ -11,6 +11,8 @@ export default function Pictures() {
   useEffect(() =>{
     setWidth(window.innerWidth)
     window.addEventListener('resize', handleResize)
+
+    return window.removeEventListener("resize",handleResize)
   },[width])
 
   const handleResize = () => {
