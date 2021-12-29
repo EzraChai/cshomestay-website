@@ -14,7 +14,7 @@ export const PhoneGallery = () => {
         gsap.to(".container-gallery",{
             duration: 0,
             css:{
-                display:"block"
+                display:"inline-block"
             }
         })
 
@@ -34,7 +34,7 @@ export const PhoneGallery = () => {
             duration: 1.3,
             x: "-600px",
             ease: "power3.inOut"
-        },.2)
+        },.1)
         }
     },[])
 
