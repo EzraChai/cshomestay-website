@@ -28,18 +28,37 @@ export const PhoneGallery = () => {
                 delay: .5
             })
 
-            for (let index = 0; index < gallery.children.length; index++) {
-                 gsap.from(gallery.children[index], {
-                scrollTrigger:{
-                    trigger: gallery.children[index],
-                    start: "top 65%",
-                    // toggleActions: "play pause resume pause"
-                },
-                duration: 1.3,
-                x: "-600px",
-                ease: "power3.inOut"
-            })
+            let proxy = { skew: 0 },
+                skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
+                clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees. 
+
+            ScrollTrigger.create({
+            onUpdate: (self) => {
+                let skew = clamp(self.getVelocity() / -300);
+                // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+                if (Math.abs(skew) > Math.abs(proxy.skew)) {
+                proxy.skew = skew;
+                gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
+                }
             }
+            });
+
+            // make the right edge "stick" to the scroll bar. force3D: true improves performance
+            gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
+
+
+            // for (let index = 0; index < gallery.children.length; index++) {
+            //      gsap.from(gallery.children[index], {
+            //     scrollTrigger:{
+            //         trigger: gallery.children[index],
+            //         start: "top 65%",
+            //         // toggleActions: "play pause resume pause"
+            //     },
+            //     duration: 1.3,
+            //     x: "-600px",
+            //     ease: "power3.inOut"
+            // })
+            // }
         
             //     gsap.from(`.photo${2}`, {
             //     scrollTrigger:{
@@ -77,7 +96,7 @@ export const PhoneGallery = () => {
             </div>
             <div ref={(el) => gallery = el} className="">
                 {photos.map((picture, i) => (
-                <div key={i} className={`photo${i} bg-slate-100 rounded-sm mb-8 overflow-hidden pb-6 p-3 shadow-lg`}>
+                <div key={i} className={`photo${i} skewElem bg-slate-100 rounded-sm mb-8 overflow-hidden pb-6 p-3 shadow-lg`}>
                     <Image src={picture.src} alt={picture.title} priority/>
                     <div className="title mt-1 cursive font-semibold ml-2 tracking-wider text-xl">
                         {picture.title}
