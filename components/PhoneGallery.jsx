@@ -28,9 +28,10 @@ export const PhoneGallery = () => {
                 delay: .5
             })
 
-                gsap.from(`.photo${2}`, {
+            for (let index = 0; index < gallery.children.length; index++) {
+                 gsap.from(gallery.children[index], {
                 scrollTrigger:{
-                    trigger: `.photo${1}`,
+                    trigger: gallery.children[index],
                     start: "top 65%",
                     // toggleActions: "play pause resume pause"
                 },
@@ -38,6 +39,18 @@ export const PhoneGallery = () => {
                 x: "-600px",
                 ease: "power3.inOut"
             })
+            }
+        
+            //     gsap.from(`.photo${2}`, {
+            //     scrollTrigger:{
+            //         trigger: `.photo${1}`,
+            //         start: "top 65%",
+            //         // toggleActions: "play pause resume pause"
+            //     },
+            //     duration: 1.3,
+            //     x: "-600px",
+            //     ease: "power3.inOut"
+            // })
 
             // for(let i = 0; i < photos.length; i++) {
             //     gsap.from(`.photo${i}`, {
