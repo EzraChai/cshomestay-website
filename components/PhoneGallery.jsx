@@ -11,12 +11,12 @@ export const PhoneGallery = () => {
 
     useEffect(() => {
 
-        gsap.to(".container-gallery",{
-            duration: 0,
-            css:{
-                display:"inline-block"
-            }
-        })
+        // gsap.to(".container-gallery",{
+        //     duration: 0,
+        //     css:{
+        //         display:"inline-block"
+        //     }
+        // })
 
         gsap.from(".text",{
             y:"-200px",
