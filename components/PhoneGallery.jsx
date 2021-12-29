@@ -11,12 +11,12 @@ export const PhoneGallery = () => {
 
     useEffect(() => {
 
-        // gsap.to(".container-gallery",{
-        //     duration: 0,
-        //     css:{
-        //         display:"inline-block"
-        //     }
-        // })
+        gsap.to(".container-gallery",{
+            duration: 0,
+            css:{
+                display:"block"
+            }
+        })
 
         gsap.from(".text",{
             y:"-200px",
@@ -39,7 +39,7 @@ export const PhoneGallery = () => {
     },[])
 
     return (
-        <div className="px-6 container-gallery">
+        <div className="px-6 container-gallery hidden">
             <div className="pt-8 ml-2 ">
                 <div className="w-full h-[100px] overflow-hidden">
                     <div className="text text-5xl font-bold">Gallery.</div>
