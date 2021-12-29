@@ -24,19 +24,31 @@ export const PhoneGallery = () => {
             delay: .5
         })
 
-        for(let i = 0; i < photos.length; i++) {
-            gsap.from(`.photo${i}`, {
+            gsap.from(`.photo${2}`, {
             scrollTrigger:{
-                trigger: `.photo${i}`,
+                trigger: `.photo${2}`,
                 start: "top 65%",
                 // toggleActions: "play pause resume pause"
             },
             duration: 1.3,
             x: "-600px",
             ease: "power3.inOut"
-        },.1)
-        }
-    },[])
+        })
+
+        // for(let i = 0; i < photos.length; i++) {
+        //     gsap.from(`.photo${i}`, {
+        //     scrollTrigger:{
+        //         trigger: `.photo${i}`,
+        //         start: "top 65%",
+        //         // toggleActions: "play pause resume pause"
+        //     },
+        //     duration: 1.3,
+        //     x: "-600px",
+        //     ease: "power3.inOut"
+        // })
+        // }
+    }
+    ,[])
 
     return (
         <div className="px-6 container-gallery hidden">
