@@ -32,6 +32,7 @@ export const About = () => {
         gsap.from(".secondary-text",{
             y:-100,
             duration: 1,
+            stagger: .2,
             delay: 1.5,
             ease: "bounce.out"
         })
