@@ -46,43 +46,6 @@ export const PhoneGallery = () => {
             // make the right edge "stick" to the scroll bar. force3D: true improves performance
             gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
 
-
-            // for (let index = 0; index < gallery.children.length; index++) {
-            //      gsap.from(gallery.children[index], {
-            //     scrollTrigger:{
-            //         trigger: gallery.children[index],
-            //         start: "top 65%",
-            //         // toggleActions: "play pause resume pause"
-            //     },
-            //     duration: 1.3,
-            //     x: "-600px",
-            //     ease: "power3.inOut"
-            // })
-            // }
-        
-            //     gsap.from(`.photo${2}`, {
-            //     scrollTrigger:{
-            //         trigger: `.photo${1}`,
-            //         start: "top 65%",
-            //         // toggleActions: "play pause resume pause"
-            //     },
-            //     duration: 1.3,
-            //     x: "-600px",
-            //     ease: "power3.inOut"
-            // })
-
-            // for(let i = 0; i < photos.length; i++) {
-            //     gsap.from(`.photo${i}`, {
-            //     scrollTrigger:{
-            //         trigger: `.photo${i}`,
-            //         start: "top 65%",
-            //         // toggleActions: "play pause resume pause"
-            //     },
-            //     duration: 1.3,
-            //     x: "-600px",
-            //     ease: "power3.inOut"
-            // })
-            // }
         }
     }
     ,[])
