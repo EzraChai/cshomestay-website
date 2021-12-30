@@ -10,10 +10,12 @@ import flag from "../public/Flag_of_Negeri_Sembilan.svg"
 
 export default function Home() {
 
+  let timeline = gsap.timeline()
+
   useEffect(() => {
-    gsap.to(".container", {duration: 0, css: {display: "block"}})
-    gsap.from(".main-text",{duration: 2, y:300, delay: .5, ease:"power3.inOut"})
-    gsap.from(".secondary-text",{duration: 2.5,y:300, delay: .6, ease:"power3.inOut"});
+    timeline.to(".container", {duration: 0, css: {display: "block"}})
+    .from(".main-text",{duration: 2, y:600, delay: 1, ease:"power3.inOut"},"end")
+    .from(".secondary-text",{duration: 1.5,y:600, delay: 2, ease:"power3.inOut"},"end");
   },[])
 
   return (
