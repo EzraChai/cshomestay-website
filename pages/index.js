@@ -12,8 +12,8 @@ export default function Home() {
 
   useEffect(() => {
     gsap.to(".container", {duration: 0, css: {display: "block"}})
-    gsap.from(".main-text",{duration: 2, y:300, delay: .4, ease:"power3.inOut"})
-    gsap.from(".secondary-text",{duration: 2.5,y:300, delay: .5, ease:"power3.inOut"});
+    gsap.from(".main-text",{duration: 2, y:300, delay: .5, ease:"power3.inOut"})
+    gsap.from(".secondary-text",{duration: 2.5,y:300, delay: .6, ease:"power3.inOut"});
   },[])
 
   return (
@@ -45,7 +45,6 @@ export default function Home() {
                     </span>
                     </p>
                 </div>
-                
               </div>
             <StrategicPlace />
           </div>

@@ -24,7 +24,6 @@ export const StrategicPlace = () => {
                 start: "50% bottom",
                 trigger: ".content-right",
                 toggleActions: "play pause resume pause",
-                markers:true
             }
         })
         gsap.from(".content-left", {
