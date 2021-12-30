@@ -49,7 +49,7 @@ export const StrategicPlace = () => {
                 trigger: ".content-left",
                 start: "50% bottom",
                 toggleActions: "play pause resume pause",
-                markers:true
+                // markers:true
 
             }
         })
