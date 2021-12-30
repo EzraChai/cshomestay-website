@@ -3,15 +3,16 @@ import Image from "next/image"
 import Link from "next/link"
 import gsap from "gsap"
 import {useEffect} from "react"
-import flag from "../public/Flag_of_Negeri_Sembilan.svg"
+import { StrategicPlace } from '../components/StrategicPlace'
 
+import flag from "../public/Flag_of_Negeri_Sembilan.svg"
 
 
 export default function Home() {
 
   useEffect(() => {
-    gsap.to(".container", {duration: 0, css: {display: "block"}});
-    gsap.from(".main-text",{duration: 2, y:300, delay: .4, ease:"power3.inOut"});
+    gsap.to(".container", {duration: 0, css: {display: "block"}})
+    gsap.from(".main-text",{duration: 2, y:300, delay: .4, ease:"power3.inOut"})
     gsap.from(".secondary-text",{duration: 2.5,y:300, delay: .5, ease:"power3.inOut"});
   },[])
 
@@ -46,11 +47,7 @@ export default function Home() {
                 </div>
                 
               </div>
-            <div className="mt-[30rem] w-full ">
-              <div className="flex justify-center mt-80 mb-24">
-                <iframe className="border-0 mt-4 aspect-square lg:overflow-hidden lg:rounded-lg lg:aspect-video lg:w-3/5" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1993.048515417508!2d101.85464963425447!3d2.474808281170744!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdf77fbf9bcc17%3A0x573234c80a0083d7!2sCozy%20%26%20Sweet%20Homestay!5e0!3m2!1sen!2smy!4v1640871664571!5m2!1sen!2smy" allowFullScreen loading="lazy"></iframe>
-              </div>
-            </div>
+            <StrategicPlace />
           </div>
         </div>
       </div>
