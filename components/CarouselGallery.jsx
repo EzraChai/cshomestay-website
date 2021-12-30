@@ -1,14 +1,13 @@
 import Image from "next/image"
 import {BsFillArrowLeftCircleFill} from "react-icons/bs"
 import gsap from "gsap"
-import {useEffect,useRef,useState} from "react"
+import {useEffect,useRef} from "react"
 import {photos} from "./photos"
 
 export const CarouselGallery = () => {
 
   const carousel = useRef(null);
 
-  // const [width, setWidth] = useState(0)
   let isAnimating = false
   let prevSlideFinished = false
 

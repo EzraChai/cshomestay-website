@@ -24,12 +24,11 @@ export default function Pictures() {
         <Head>
             <title>Pictures</title>
         </Head>
-        <div className="container w-full h-full bg-yellow-50 mx-auto pt-6 pb-[7rem]">
+        <div className="container w-full h-full bg-zinc-100 mx-auto pt-6 pb-[7rem]">
 
         {width !== 0 && width > 640?
               <CarouselGallery/>:
             <PhoneGallery/>
-
       }
         </div>
     </div>
