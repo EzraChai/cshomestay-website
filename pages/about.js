@@ -3,14 +3,16 @@ import { useEffect } from 'react'
 import gsap from "gsap"
 import {About} from "../components/About"
 
+
 export default function Solution() {
+
 
   useEffect(() => {
     gsap.to(".container", {duration: 0, css: {display: "block"}})
   },[])
 
   return (
-    <div>
+    <div data-scroll-section>
         <Head>
             <title>About</title>
         </Head>

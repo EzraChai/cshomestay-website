@@ -16,8 +16,8 @@ export default function Home() {
 
   useEffect(() => {
     timeline.to(".container", {duration: 0, css: {display: "block"}})
-    .from(".main-text",{duration: 2, y:600, delay: 1, ease:"power3.inOut"},"end")
-    .from(".secondary-text",{duration: 1.5,y:600, delay: 2, ease:"power3.inOut"},"end");
+    .from(".main-text",{duration: 2, y:600, delay: .6, ease:"power3.inOut"},"end")
+    .from(".secondary-text",{duration: 1.5,y:600, delay: 1.4, ease:"power3.inOut"},"end");
   },[])
 
   return (
@@ -50,7 +50,7 @@ export default function Home() {
                     </p>
                 </div>
               </div>
-            {/* <StrategicPlace /> */}
+            <StrategicPlace />
           </div>
         </div>
       </div>
