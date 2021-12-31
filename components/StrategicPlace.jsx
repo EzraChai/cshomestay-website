@@ -33,7 +33,7 @@ export const StrategicPlace = () => {
             duration: 1,
             delay: .5,
             scrollTrigger:{
-                start: "50% bottom",
+                start: "bottom bottom",
                 trigger: ".content-left",
                 toggleActions: "play pause resume pause",
                 // markers:true
@@ -47,10 +47,8 @@ export const StrategicPlace = () => {
             delay:1,
             scrollTrigger:{
                 trigger: ".content-left",
-                start: "50% bottom",
+                start: "bottom bottom",
                 toggleActions: "play pause resume pause",
-                // markers:true
-
             }
         })
     })
@@ -67,7 +65,7 @@ export const StrategicPlace = () => {
                            <div className="main-content-text text-9xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-700">Port Dickson</div>
                        </div>
                     </div>
-                   .</h2>
+                   </h2>
                   <p className="text-gray-600 mt-2">
                     - 4 minutes to the beach<br />
                     - 3 minutes to the hospital <br />
