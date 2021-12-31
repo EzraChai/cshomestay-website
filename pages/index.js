@@ -4,12 +4,14 @@ import Link from "next/link"
 import gsap from "gsap"
 import {useEffect} from "react"
 import { StrategicPlace } from '../components/StrategicPlace'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 import flag from "../public/Flag_of_Negeri_Sembilan.svg"
 
 
 export default function Home() {
 
+  const { scroll } = useLocomotiveScroll()
   let timeline = gsap.timeline()
 
   useEffect(() => {
@@ -19,7 +21,7 @@ export default function Home() {
   },[])
 
   return (
-    <div>
+    <div data-scroll-section>
       <Head>
         <title>Cozy & Sweet Homestay Port Dickson</title>
         <meta name="description" content="" />
@@ -48,7 +50,7 @@ export default function Home() {
                     </p>
                 </div>
               </div>
-            <StrategicPlace />
+            {/* <StrategicPlace /> */}
           </div>
         </div>
       </div>
