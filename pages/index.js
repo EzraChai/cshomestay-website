@@ -12,22 +12,23 @@ import flag from "../public/Flag_of_Negeri_Sembilan.svg"
 export default function Home() {
 
   const { scroll } = useLocomotiveScroll()
-  let timeline = gsap.timeline()
+
 
   useEffect(() => {
-    timeline.to(".container", {duration: 0, css: {display: "block"}})
-    .from(".main-text",{duration: 2, y:600, delay: .6, ease:"power3.inOut"},"end")
-    .from(".secondary-text",{duration: 1.5,y:600, delay: 1.4, ease:"power3.inOut"},"end");
+    gsap.to(".big-container", {duration: 0, css: {display: "block"}})
+    gsap.from(".main-text",{duration: 2, y:600, delay: .6, ease:"power3.inOut"},"end")
+    gsap.from(".secondary-text",{duration: 1.5,y:600, delay: 1.4, ease:"power3.inOut"},"end");
   },[])
 
   return (
-    <div data-scroll-section>
+    <div >
       <Head>
         <title>Cozy & Sweet Homestay Port Dickson</title>
         <meta name="description" content="" />
         <meta name="keywords" content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson" />
       </Head>
-      <div className="container hidden bg-zinc-100 mx-auto py-6">
+      <div data-scroll-section className="container big-container h-full hidden bg-zinc-100 mx-auto py-6">
+ 
         <div className="wrapper px-2">
           <div className="home flex items-center h-[90vh] w-full flex-col">
             <div className="mt-[14rem] md:mt-[16rem]">
@@ -50,9 +51,12 @@ export default function Home() {
                     </p>
                 </div>
               </div>
+              <div className="">
+                sdsdlm
+              </div>
             <StrategicPlace />
           </div>
-        </div>
+      </div>
       </div>
     </div>
   )

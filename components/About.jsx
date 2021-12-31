@@ -91,7 +91,7 @@ export const About = () => {
                     It is perfect for families with kids, big groups and couples as it is sweet and cozy.😊
                   </p>
               </div>
-              <div className="box3-about bg-white mt-6 md:mt-10 p-4 md:p-6 mx-1 lg:max-w-[1200px] lg:mx-auto md:mx-10 rounded-3xl">
+              <div className="box3-about mb-20 bg-white mt-6 md:mt-10 p-4 md:p-6 mx-1 lg:max-w-[1200px] lg:mx-auto md:mx-10 rounded-3xl">
                   <div className="text-xl lg:text-2xl font-semibold underline decoration-2">
                     <div className="hero-content-line w-full h-50 overflow-hidden">
                           <h3 className="secondary-text">
