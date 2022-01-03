@@ -8,6 +8,8 @@ body {
   margin: 0;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(51, 51, 51) #f1f1f1;
 }
 
 a {
@@ -33,61 +35,22 @@ a {
   font-family: "Oooh Baby", cursive;
 }
 
-/*! locomotive-scroll v3.6.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
-html.has-scroll-smooth {
-  overflow: hidden;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-html.has-scroll-dragging {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-.has-scroll-smooth body {
-  overflow: hidden;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(27, 27, 27);
 }
 
-.has-scroll-smooth [data-scroll-container] {
-  min-height: 100vh;
-}
-
-.c-scrollbar {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 11px;
-  height: 100%;
-  transform-origin: center right;
-  transition: transform 0.3s, opacity 0.3s;
-  opacity: 0;
-}
-
-.c-scrollbar:hover {
-  transform: scaleX(1.45);
-}
-
-.c-scrollbar:hover,
-.has-scroll-scrolling .c-scrollbar,
-.has-scroll-dragging .c-scrollbar {
-  opacity: 1;
-}
-
-.c-scrollbar_thumb {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: black;
-  opacity: 0.5;
-  width: 7px;
-  border-radius: 10px;
-  margin: 2px;
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-
-.has-scroll-dragging .c-scrollbar_thumb {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(58, 58, 58);
 }
