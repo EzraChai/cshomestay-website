@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from "next/link"
 import gsap from "gsap"
-import {useEffect} from "react"
+import {useEffect,useState} from "react"
 import { StrategicPlace } from '../components/StrategicPlace'
 
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -9,10 +9,11 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function Home() {
 
-    gsap.registerPlugin(ScrollTrigger)
-
+  const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    setLoaded(true)
     gsap.to(".big-container", {duration: 0, css: {display: "block"}})
     gsap.from(".main-text",{duration: 2, y:600 ,ease:"power3.inOut"})
     gsap.from(".secondary-text",{duration: 1.5,y:600, delay: .7, ease:"power3.inOut"})}
@@ -44,7 +45,7 @@ export default function Home() {
                     </p>
                 </div>
               </div>
-            <StrategicPlace />
+              {loaded&& <StrategicPlace />}
           </div>
       </div>
       </div>
