@@ -10,7 +10,7 @@ export const StrategicPlace = () => {
         gsap.to(".main-location", {
             css: {display: "block"},
             duration: 0,
-            delay: 1,
+            delay: 0,
         })
 
         gsap.from(".content-right", {
@@ -19,9 +19,11 @@ export const StrategicPlace = () => {
             ease: "power3.inOut",
             duration: 1,
             scrollTrigger:{
-                start: "50% bottom",
+                start: "bottom bottom",
                 trigger: ".content-right",
-                toggleActions: "play play play play",
+                toggleActions: "play pause play pause",
+                markers:true
+
             }
         })
         gsap.from(".content-left", {
@@ -33,8 +35,7 @@ export const StrategicPlace = () => {
             scrollTrigger:{
                 start: "bottom bottom",
                 trigger: ".content-left",
-                toggleActions: "play play play play",
-                // markers:true
+                toggleActions: "play pause play pause",
             }
         })
 
@@ -46,7 +47,7 @@ export const StrategicPlace = () => {
             scrollTrigger:{
                 trigger: ".content-left",
                 start: "bottom bottom",
-                toggleActions: "play play play play",
+                toggleActions: "play pause play pause",
             }
         })
     })

@@ -9,13 +9,14 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function Home() {
 
-  gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger)
+
 
   useEffect(() => {
     gsap.to(".big-container", {duration: 0, css: {display: "block"}})
-    gsap.from(".main-text",{duration: 1, y:600, delay: .3, ease:"power3.inOut"},"end")
-    gsap.from(".secondary-text",{duration: 0.75,y:600, delay: .7, ease:"power3.inOut"},"end");
-  },[])
+    gsap.from(".main-text",{duration: 2, y:600 ,ease:"power3.inOut"})
+    gsap.from(".secondary-text",{duration: 1.5,y:600, delay: .7, ease:"power3.inOut"})}
+  ,[])
 
   return (
     <div >
