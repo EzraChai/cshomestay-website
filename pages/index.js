@@ -20,14 +20,13 @@ export default function Home() {
     <div >
       <Head>
         <title>Cozy & Sweet Homestay Port Dickson</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Cozy & Sweet Homestay Port Dickson located in Port Dickson, Negeri Sembilan, Malaysia" />
         <meta name="keywords" content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson" />
       </Head>
-      <div data-scroll-section className="container smooth-scroll big-container h-full hidden bg-zinc-100 mx-auto py-6">
- 
-        <div className="wrapper px-2">
-          <div className="home flex items-center h-[90vh] w-full flex-col">
-            <div className="mt-[14rem] md:mt-[16rem]">
+      <div data-scroll-section className="container smooth-scroll big-container h-full hidden bg-zinc-100 mx-auto">
+        <div className="wrapper px-1 lg:px-2">
+          <div className="home flex items-center h-[40vh] lg:h-[90vh] w-full flex-col">
+            <div className="mt-[8rem] lg:mt-[16rem]">
                 <div className="hero-content-line w-full h-100 overflow-hidden">
                   <h1 className='main-text text-center font-bold text-[3rem] md:text-[6rem] lg:text-[13rem] antialiased'>Cozy & Sweet.</h1>
                 </div>
