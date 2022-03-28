@@ -12,7 +12,7 @@ export const StrategicPlace = () => {
         gsap.to(".main-location", {
             css: {display: "block"},
             duration: 0,
-            delay: 0.1,
+            delay: 1,
         },)
 
         gsap.from(".content-right", {

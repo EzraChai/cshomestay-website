@@ -12,8 +12,8 @@ export default function Home() {
 
   useEffect(() => {
     gsap.to(".big-container", {duration: 0, css: {display: "block"}})
-    gsap.from(".main-text",{duration: 2, y:600, delay: .6, ease:"power3.inOut"},"end")
-    gsap.from(".secondary-text",{duration: 1.5,y:600, delay: 1.4, ease:"power3.inOut"},"end");
+    gsap.from(".main-text",{duration: 2, y:600, delay: .3, ease:"power3.inOut"},"end")
+    gsap.from(".secondary-text",{duration: 1.5,y:600, delay: .7, ease:"power3.inOut"},"end");
   },[])
 
   return (
