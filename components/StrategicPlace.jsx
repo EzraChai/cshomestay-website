@@ -21,7 +21,7 @@ export const StrategicPlace = () => {
             scrollTrigger:{
                 start: "50% bottom",
                 trigger: ".content-right",
-                toggleActions: "play pause play play",
+                toggleActions: "play play play play",
             }
         })
         gsap.from(".content-left", {
@@ -33,8 +33,8 @@ export const StrategicPlace = () => {
             scrollTrigger:{
                 start: "bottom bottom",
                 trigger: ".content-left",
-                toggleActions: "play pause play play",
-                markers:true
+                toggleActions: "play play play play",
+                // markers:true
             }
         })
 
@@ -46,7 +46,7 @@ export const StrategicPlace = () => {
             scrollTrigger:{
                 trigger: ".content-left",
                 start: "bottom bottom",
-                toggleActions: "play pause play play",
+                toggleActions: "play play play play",
             }
         })
     })
