@@ -23,7 +23,7 @@ export const StrategicPlace = () => {
             scrollTrigger:{
                 start: "50% bottom",
                 trigger: ".content-right",
-                toggleActions: "play pause resume pause",
+                toggleActions: "play reset none reset",
             }
         })
         gsap.from(".content-left", {
