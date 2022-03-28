@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
       <Layout>
-        <main data-scroll-container>
+        <main>
           <Component  {...pageProps} />
         </main>
       </Layout>

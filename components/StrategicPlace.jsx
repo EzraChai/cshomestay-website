@@ -54,7 +54,7 @@ export const StrategicPlace = () => {
     })
 
     return (
-        <div className="main-location mt-14 lg:mt-24 w-full max-width-[1200px]">
+        <div className="main-location mt-4 lg:mt-24 w-full text-center md:text-left max-width-[1200px]">
               <div className="md:grid md:grid-cols-5 mt-24 lg:mt-80 mb-20">
                 <div className="content-left relative pt-20 px-11 col-span-3 ">
                   <h2 className="text-base lg:text-4xl font-semibold text-gray-600 ">The 
