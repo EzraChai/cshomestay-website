@@ -1,10 +1,8 @@
 import { gsap } from 'gsap'
 import { useEffect } from "react"
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export const StrategicPlace = () => {
 
-    gsap.registerPlugin(ScrollTrigger)
 
 
     useEffect(() => {
@@ -13,7 +11,7 @@ export const StrategicPlace = () => {
             css: {display: "block"},
             duration: 0,
             delay: 1,
-        },)
+        })
 
         gsap.from(".content-right", {
             x: '100px',
@@ -23,7 +21,7 @@ export const StrategicPlace = () => {
             scrollTrigger:{
                 start: "50% bottom",
                 trigger: ".content-right",
-                toggleActions: "play reset none reset",
+                toggleActions: "play pause play play",
             }
         })
         gsap.from(".content-left", {
@@ -35,8 +33,8 @@ export const StrategicPlace = () => {
             scrollTrigger:{
                 start: "bottom bottom",
                 trigger: ".content-left",
-                toggleActions: "play pause resume pause",
-                // markers:true
+                toggleActions: "play pause play play",
+                markers:true
             }
         })
 
@@ -48,7 +46,7 @@ export const StrategicPlace = () => {
             scrollTrigger:{
                 trigger: ".content-left",
                 start: "bottom bottom",
-                toggleActions: "play pause resume pause",
+                toggleActions: "play pause play play",
             }
         })
     })

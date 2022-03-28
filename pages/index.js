@@ -1,14 +1,15 @@
 import Head from 'next/head'
-import Image from "next/image"
 import Link from "next/link"
 import gsap from "gsap"
 import {useEffect} from "react"
 import { StrategicPlace } from '../components/StrategicPlace'
 
-import flag from "../public/Flag_of_Negeri_Sembilan.svg"
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 
 export default function Home() {
+
+  gsap.registerPlugin(ScrollTrigger)
 
   useEffect(() => {
     gsap.to(".big-container", {duration: 0, css: {display: "block"}})
@@ -33,14 +34,10 @@ export default function Home() {
                 <div className="hero-content-line w-full h-100 overflow-hidden antialiased">
                   <p className='secondary-text mt-2 lg:mt-2 text-center text-[0.6rem] md:text-[1rem] font-semibold tracking-widest uppercase'>homestay in <span className='hover:underline decoration-2 underline-offset-2	'>
                     <Link hrefLang="en" rel="external" href={"https://en.wikipedia.org/wiki/Port_Dickson_(town)"}>Port Dickson</Link>
-                    </span>,
+                    </span>, 
                     <span className='hover:underline decoration-2 underline-offset-2 cursor-pointer'>
                         <Link hrefLang="en" rel="external" href={"https://en.wikipedia.org/wiki/Negeri_Sembilan"} passHref>
-                          <span>
-                            <span className='ml-1 rounded-sm overflow-hidden'>
-                              <Image src={flag} width={24} height={12} priority alt="Flag of Negeri Sembilan, Malaysia"></Image>
-                            </span> Negeri Sembilan
-                          </span>
+                            <span> Negeri Sembilan</span> 
                         </Link>
                     </span>
                     </p>
