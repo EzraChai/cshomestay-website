@@ -22,7 +22,7 @@ export const StrategicPlace = () => {
                 start: "bottom bottom",
                 trigger: ".content-right",
                 toggleActions: "play pause play pause",
-                markers:true
+                // markers:true
 
             }
         })
