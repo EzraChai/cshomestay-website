@@ -35,7 +35,7 @@ export default function Home({data}) {
           <div className="home flex items-center h-[40vh] lg:h-[90vh] w-full flex-col">
             <div className="mt-[8rem] lg:mt-[16rem]">
                 <div className="hero-content-line w-full h-100 overflow-hidden">
-                  <h1 className='main-text text-center font-extrabold title-font text-[3rem] md:text-[5rem] lg:text-[12rem] antialiased'>Cozy & Sweet.</h1>
+                  <h1 className='main-text text-center font-extrabold title-font text-[2.8rem] md:text-[5rem] lg:text-[12rem] antialiased'>Cozy & Sweet.</h1>
                 </div>
                 <div className="hero-content-line w-full text-gray-600 h-100 title-font overflow-hidden antialiased">
                   <p className='secondary-text mt-2 lg:mt-2 text-center text-[0.6rem] md:text-[1rem] font-semibold tracking-widest uppercase'>homestay in <span className='hover:underline decoration-2 underline-offset-2'>
