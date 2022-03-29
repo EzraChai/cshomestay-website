@@ -1,9 +1,7 @@
 import { gsap } from 'gsap'
 import { useEffect } from "react"
 
-export const StrategicPlace = () => {
-
-
+const StrategicPlace = () => {
 
     useEffect(() => {
 
@@ -19,11 +17,9 @@ export const StrategicPlace = () => {
             ease: "power3.inOut",
             duration: 1,
             scrollTrigger:{
-                start: "bottom bottom",
+                start: "center bottom",
                 trigger: ".content-right",
                 toggleActions: "play pause play pause",
-                // markers:true
-
             }
         })
         gsap.from(".content-left", {
@@ -33,7 +29,7 @@ export const StrategicPlace = () => {
             duration: 1,
             delay: .5,
             scrollTrigger:{
-                start: "bottom bottom",
+                start: "center bottom",
                 trigger: ".content-left",
                 toggleActions: "play pause play pause",
             }
@@ -46,24 +42,24 @@ export const StrategicPlace = () => {
             delay:1,
             scrollTrigger:{
                 trigger: ".content-left",
-                start: "bottom bottom",
+                start: "center bottom",
                 toggleActions: "play pause play pause",
             }
         })
     })
 
     return (
-        <div className="main-location mt-4 lg:mt-24 w-full text-center md:text-left max-width-[1200px]">
-              <div className="md:grid md:grid-cols-5 mt-24 lg:mt-80 mb-20">
+        <div className="main-location mt-12 lg:mt-24 w-full text-center md:text-left max-width-[1200px]">
+              <div className="md:grid md:grid-cols-5 mt-24 lg:mt-80 lg:mb-32">
                 <div className="content-left relative pt-20 px-11 col-span-3 ">
                   <h2 className="text-base lg:text-4xl font-semibold text-gray-600 ">The 
-                  <span className="text-gray-800 text-2xl lg:text-6xl mx-1 lg:mx-4">strategic</span>
+                  <span className="text-gray-800 text-2xl font-bold lg:text-6xl mx-1 lg:mx-4">strategic</span>
                    homestay in <br className="mb-2" />
                     <div className="w-full h-50 overflow-hidden">
-                        <div className="main-content-text font-bold text-4xl md:text-5xl lg:text-9xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-700">Port Dickson</div>
+                        <div className="main-content-text title-font font-extrabold text-4xl md:text-5xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-700">Port Dickson</div>
                     </div>
                    </h2>
-                  <p className="text-gray-600 text-[0.9rem] mt-2">
+                  <p className="text-gray-500 tracking-wide font-semibold text-[0.9rem] mt-2">
                     - 4 minutes to the beach<br />
                     - 3 minutes to the hospital <br />
                     - 2 minutes to the McDonald&apos;s <br />
@@ -79,3 +75,5 @@ export const StrategicPlace = () => {
             </div>
     )
 }
+
+export default StrategicPlace

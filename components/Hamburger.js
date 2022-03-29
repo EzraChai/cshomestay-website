@@ -104,7 +104,7 @@ export const Hamburger = ({ state }) => {
                     <div className="wrapper relative">
                         <div className="menu-links md:flex justify-between items-center relative top-36 md:top-[12rem]">
                             <nav className="block p-0 m-0">
-                                <ul className=" font-[700] text-4xl md:text-6xl lg:text-8xl">
+                                <ul className="  font-bold text-4xl md:text-6xl lg:text-8xl">
                                     <li className="line1 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-[580px] overflow-hidden relative text-white">
                                         <Link href={'/about'} passHref>
                                             <div onMouseEnter={(e) => handleEnter(e)} onMouseLeave={(e) => handleLeave(e)}className=" hover:text-gray-700">About</div>
@@ -123,8 +123,8 @@ export const Hamburger = ({ state }) => {
                                 </ul>
                             </nav>
                             <div className="info mt-4 md:mt-0 text-white w-1/2 lg:w-full lg:flex lg:justify-center lg:flex-col lg:items-center">
-                                <h3 className="text-lg md:text-2xl lg:text-4xl font-semibold">Our Promise</h3>
-                                <p className="text-sm md:text-lg lg:text-xl">This is our home</p>
+                                <h3 className="text-lg md:text-2xl lg:text-4xl font-bold">Our Promise</h3>
+                                <p className="text-sm md:text-lg lg:text-xl">Provide you a comfortable place to rest</p>
                             </div>
                         </div>
                     </div>
