@@ -30,7 +30,7 @@ export default function Home({data}) {
         <meta name="description" content="Cozy & Sweet Homestay Port Dickson located in Port Dickson, Negeri Sembilan, Malaysia" />
         <meta name="keywords" content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson" />
       </Head>
-      <div data-scroll-section className="container smooth-scroll big-container h-full hidden bg-zinc-100 mx-auto">
+      <div data-scroll-section className=" smooth-scroll big-container h-full hidden bg-zinc-100 mx-auto">
         <div className="wrapper px-1 lg:px-2">
           <div className="home flex items-center h-[40vh] lg:h-[90vh] w-full flex-col">
             <div className="mt-[8rem] lg:mt-[16rem]">

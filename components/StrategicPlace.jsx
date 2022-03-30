@@ -49,14 +49,14 @@ const StrategicPlace = () => {
     })
 
     return (
-        <div className="main-location mt-12 lg:mt-24 w-full text-center md:text-left max-width-[1200px]">
-              <div className="md:grid md:grid-cols-5 mt-24 lg:mt-80 lg:mb-32">
+        <div className="main-location container mt-12 lg:mt-24 w-full text-center md:text-left max-width-[1200px]">
+              <div className="md:grid md:grid-cols-5 mt-24 lg:mt-80 lg:mb-40">
                 <div className="content-left relative pt-20 px-11 col-span-3 ">
-                  <h2 className="text-base lg:text-4xl font-semibold text-gray-600 ">The 
-                  <span className="text-gray-800 text-2xl font-bold lg:text-6xl mx-1 lg:mx-4">strategic</span>
+                  <h2 className="text-lg lg:text-4xl font-semibold text-gray-600 ">The 
+                  <span className="text-gray-800 text-2xl  lg:tracking-tight font-extrabold lg:text-6xl mx-1 lg:mx-4">strategic</span>
                    homestay in <br className="mb-2" />
                     <div className="w-full h-50 overflow-hidden">
-                        <div className="main-content-text title-font font-extrabold text-4xl md:text-5xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-700">Port Dickson</div>
+                        <div className="main-content-text title-font font-extrabold text-4xl md:text-5xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-cyan-500">Port Dickson</div>
                     </div>
                    </h2>
                   <p className="text-gray-500 tracking-wide font-semibold text-[0.9rem] mt-2">
