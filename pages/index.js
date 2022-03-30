@@ -8,8 +8,7 @@ import request, {gql} from "graphql-request"
 
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-const END_POINT="https://api-us-east-1.graphcms.com/v2/cl1awmyhm0ikd01yvad9d3vhx/master"
-
+const END_POINT = process.env.END_POINT
 
 export default function Home({data}) {
 
@@ -17,10 +16,10 @@ export default function Home({data}) {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
-    setLoaded(true)
     gsap.to(".big-container", {duration: 0, css: {display: "block"}})
     gsap.from(".main-text",{duration: 2, y:600 ,ease:"power3.inOut"})
     gsap.from(".secondary-text",{duration: 1.5,y:600, delay: .7, ease:"power3.inOut"})
+    setLoaded(true)
   },[])
 
   return (
@@ -34,7 +33,7 @@ export default function Home({data}) {
         <div className="wrapper px-1 lg:px-2">
           <div className="home flex items-center h-[40vh] lg:h-[90vh] w-full flex-col">
             <div className="mt-[8rem] lg:mt-[16rem]">
-                <div className="hero-content-line w-full h-100 overflow-hidden">
+                 <div className="hero-content-line w-full h-100 overflow-hidden">
                   <h1 className='main-text text-center font-extrabold title-font text-[2.8rem] md:text-[5rem] lg:text-[12rem] antialiased'>Cozy & Sweet.</h1>
                 </div>
                 <div className="hero-content-line w-full text-gray-600 h-100 title-font overflow-hidden antialiased">
@@ -46,7 +45,7 @@ export default function Home({data}) {
                             <span> Negeri Sembilan</span> 
                         </Link>
                     </span>
-                    </p>
+                  </p>
                 </div>
               </div>
               {loaded && <>
