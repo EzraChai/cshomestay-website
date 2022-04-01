@@ -6,7 +6,6 @@ import StrategicPlace from '../components/StrategicPlace'
 import Reviews from '../components/Reviews'
 import request, {gql} from "graphql-request"
 
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const END_POINT = process.env.END_POINT
 
@@ -15,7 +14,6 @@ export default function Home({data}) {
   const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger)
     gsap.to(".big-container", {duration: 0, css: {display: "block"}})
     gsap.from(".main-text",{duration: 2, y:600 ,ease:"power3.inOut"})
     gsap.from(".secondary-text",{duration: 1.5,y:600, delay: .7, ease:"power3.inOut"})
