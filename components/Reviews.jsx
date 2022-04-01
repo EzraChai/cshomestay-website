@@ -32,7 +32,7 @@ const Reviews = ({reviews}) => {
             scrollTrigger:{
                 start: "center bottom",
                 trigger: ".title",
-                toggleActions: "play pause play pause",
+                toggleActions: "play play play pause",
             }
         })    
   })

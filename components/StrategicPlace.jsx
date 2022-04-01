@@ -8,7 +8,6 @@ const StrategicPlace = () => {
         gsap.to(".main-location", {
             css: {display: "block"},
             duration: 0,
-            delay: 0.5,
         })
 
         gsap.from(".content-right", {
