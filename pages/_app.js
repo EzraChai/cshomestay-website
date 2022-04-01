@@ -18,11 +18,11 @@ Router.events.on("routeChangeError", progress.finish);
 
 
 
+gsap.registerPlugin(ScrollTrigger)
 
 
 function MyApp({ Component, pageProps }) {
 
-  gsap.registerPlugin(ScrollTrigger)
 
   return (
       <Layout>
