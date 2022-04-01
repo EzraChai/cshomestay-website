@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from "next/link"
-import gsap from "gsap"
+import gsap from "gsap/dist/gsap"
 import {useEffect,useState} from "react"
 import StrategicPlace from '../components/StrategicPlace'
 import Reviews from '../components/Reviews'

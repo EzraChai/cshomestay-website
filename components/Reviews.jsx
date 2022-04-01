@@ -1,5 +1,5 @@
 import Review from "./Review"
-import { gsap } from 'gsap'
+import { gsap } from 'gsap/dist/gsap'
 import { useEffect } from "react"
 
 
