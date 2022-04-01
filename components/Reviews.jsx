@@ -1,15 +1,17 @@
 import Review from "./Review"
 import { gsap } from 'gsap'
 import { useEffect } from "react"
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 
 const Reviews = ({reviews}) => {
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
     gsap.to(".reviews-location", {
             css: {display: "grid"},
             duration: 0,
-            delay: 0.5,
-        })
+      })
 
       gsap.from(".card", {
             y: '200px',
