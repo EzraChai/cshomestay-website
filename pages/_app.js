@@ -5,7 +5,6 @@ import Router from "next/router";
 import {gsap} from  "gsap/dist/gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-
 const progress = new ProgressBar({
   size: 3,
   color: "#ffffff",
