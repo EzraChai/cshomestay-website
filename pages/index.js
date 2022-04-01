@@ -48,7 +48,7 @@ export default function Home({data}) {
                   </p>
                 </div>
               </div>
-              {loaded && <>
+              {true && <>
               <StrategicPlace />
               <Reviews reviews={data.reviews}/>
               </>}
