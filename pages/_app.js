@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import {Layout} from "../components/Layout"
 import ProgressBar from "@badrap/bar-of-progress";
 import Router from "next/router";
-import {gsap} from  "gsap"
+import {gsap} from  "gsap/dist/gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 
