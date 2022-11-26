@@ -31,11 +31,10 @@ export const Hamburger = ({ state }) => {
       (state.clicked === true && state.initial === null)
     ) {
       // open Menu
-      gsap.to(
-        [".line1", ".line2", ".line3"],
-        { duration: 0, css: { opacity: 0 } },
-        0
-      );
+      gsap.to([".line1", ".line2", ".line3"], {
+        duration: 0,
+        css: { opacity: 0 },
+      });
       gsap.to(".info", { duration: 0, css: { opacity: 1 } });
 
       gsap.to(".hamburger-menu", {
