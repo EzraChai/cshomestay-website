@@ -22,7 +22,10 @@ export default function Home({ data }) {
           name="keywords"
           content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson"
         />
-        <meta property="og:image" content="https://cshomestay.vercel/api/og" />
+        <meta
+          property="og:image"
+          content="https://cshomestay.vercel.app/api/og"
+        />
       </Head>
       <div className=" smooth-scroll big-container h-full bg-zinc-100 pb-10 mx-auto">
         <div className="wrapper px-1 lg:px-2">
