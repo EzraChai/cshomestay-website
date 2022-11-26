@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image";
 import { photos } from "./photos"
 import {useEffect,useRef} from "react"
 import { gsap } from 'gsap/dist/gsap';

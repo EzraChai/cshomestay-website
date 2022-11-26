@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image";
 import {BsFillArrowLeftCircleFill} from "react-icons/bs"
 import gsap from "gsap"
 import {useEffect,useRef} from "react"
