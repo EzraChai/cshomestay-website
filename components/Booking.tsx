@@ -25,11 +25,11 @@ export default function Book() {
               href={"https://www.airbnb.com/rooms/53874417"}
               className="bg-white rounded-2xl"
             >
-              <div className=" justify-center items-center py-20">
+              <div className=" justify-center items-center py-20 px-10 lg:px-20">
                 <div className="flex justify-center items-center">
                   <Image
                     placeholder={"blur"}
-                    className="w-auto h-20"
+                    className="w-auto"
                     src={AirBnb}
                     alt="Airbnb logo"
                   />
@@ -58,11 +58,11 @@ export default function Book() {
               }
               className="bg-white rounded-2xl"
             >
-              <div className=" justify-center items-center py-20">
+              <div className=" justify-center items-center py-20 px-16 lg:px-28">
                 <div className="flex justify-center items-center">
                   <Image
                     placeholder={"blur"}
-                    className="w-auto h-20"
+                    className="w-auto"
                     src={Agoda}
                     alt="Agoda logo"
                   />
@@ -74,7 +74,7 @@ export default function Book() {
               href={"https://wa.link/z1sa7g"}
               className="bg-white rounded-2xl"
             >
-              <div className=" justify-center items-center p-20">
+              <div className=" justify-center items-center py-20 px-10">
                 <div className="flex justify-center items-center">
                   <Image
                     placeholder={"blur"}

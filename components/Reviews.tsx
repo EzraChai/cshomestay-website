@@ -9,7 +9,7 @@ const Reviews = ({ reviews }) => {
           from our guest.
         </p>
       </div>
-      <div className="reviews-location mx-auto container hidden lg:mt-20 mt-8 lg:grid lg:grid-cols-3 p-8 lg:p-0 lg:gap-10 pb-28 lg:pb-32">
+      <div className="reviews-location mx-auto container lg:mt-20 mt-8 lg:grid lg:grid-cols-3 p-8 lg:p-0 lg:gap-10 pb-28 lg:pb-32">
         {reviews.map((review, index) => (
           <Review key={index} review={review} />
         ))}
