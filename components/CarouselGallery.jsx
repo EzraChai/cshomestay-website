@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import {BsFillArrowLeftCircleFill} from "react-icons/bs"
 import gsap from "gsap"
 import {useEffect,useRef} from "react"
@@ -237,24 +237,31 @@ export const CarouselGallery = () => {
   }
 
   return (
-            <div className="hidden carousel-container max-w-[1500px] h-[500px] my-[10%] md:my-[25%] lg:my-[10%] mx-auto overflow-hidden relative">
-              <div ref={(el) => carousel = el} className="carousel relative w-[inherit] h-[inherit] z-[1]">
-                {photos.map((photo, index) => (
-                  <figure key={index} className="carousel__item item w-[275px] h-[175px] md:w-[450px] md:h-[300px] lg:w-[650px] lg:h-[400px] top-[50%] left-[50%] -translate-x-1/2">
-                    <Image className={"w-full h-full object-cover block"} src={photo.src} alt={photo.title}></Image>
-                      <div className="title absolute z-20 uppercase top-[85%] right-[18%] font-lg text-white font-bold shadow-md rounded-lg font-[13px] bottom-1 tracking-widest antialiased">
-                        {photo.title}
-                      </div>
-                  </figure>
-                ))}
-                
+    <div className="hidden carousel-container max-w-[1500px] h-[500px] my-[10%] md:my-[25%] lg:my-[10%] mx-auto overflow-hidden relative">
+      <div ref={(el) => carousel = el} className="carousel relative w-[inherit] h-[inherit] z-[1]">
+        {photos.map((photo, index) => (
+          <figure key={index} className="carousel__item item w-[275px] h-[175px] md:w-[450px] md:h-[300px] lg:w-[650px] lg:h-[400px] top-[50%] left-[50%] -translate-x-1/2">
+            <Image
+              className={"w-full h-full object-cover block"}
+              src={photo.src}
+              alt={photo.title}
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }}></Image>
+              <div className="title absolute z-20 uppercase top-[85%] right-[18%] font-lg text-white font-bold shadow-md rounded-lg font-[13px] bottom-1 tracking-widest antialiased">
+                {photo.title}
               </div>
-              <button disabled={isAnimating || prevSlideFinished} onClick={() => previous()} className="prev top-[35%] left-[5%] -translate-x-1/2 -translate-y-1/2 absolute cursor-pointer z-50 disabled:opacity-10 disabled:cursor-default">
-                <BsFillArrowLeftCircleFill className={"absolute w-[50px] h-[50px] text-zinc-600 hover:text-zinc-500 transition"}/>
-              </button>
-              <button disabled={isAnimating || middleIndex <= 1} onClick={() => next()} className="next w-[35px] h-[35px] lg:w-[50px] lg:h-[50px] top-[35%] right-[5%] -translate-x-1/2 -translate-y-1/2 absolute cursor-pointer z-50 disabled:opacity-10 disabled:cursor-default">
-                <BsFillArrowLeftCircleFill className={"absolute w-[50px] h-[50px] text-zinc-600 hover:text-zinc-500 rotate-180 transition"}/>
-              </button>
-            </div>
-  )
+          </figure>
+        ))}
+        
+      </div>
+      <button disabled={isAnimating || prevSlideFinished} onClick={() => previous()} className="prev top-[35%] left-[5%] -translate-x-1/2 -translate-y-1/2 absolute cursor-pointer z-50 disabled:opacity-10 disabled:cursor-default">
+        <BsFillArrowLeftCircleFill className={"absolute w-[50px] h-[50px] text-zinc-600 hover:text-zinc-500 transition"}/>
+      </button>
+      <button disabled={isAnimating || middleIndex <= 1} onClick={() => next()} className="next w-[35px] h-[35px] lg:w-[50px] lg:h-[50px] top-[35%] right-[5%] -translate-x-1/2 -translate-y-1/2 absolute cursor-pointer z-50 disabled:opacity-10 disabled:cursor-default">
+        <BsFillArrowLeftCircleFill className={"absolute w-[50px] h-[50px] text-zinc-600 hover:text-zinc-500 rotate-180 transition"}/>
+      </button>
+    </div>
+  );
 }

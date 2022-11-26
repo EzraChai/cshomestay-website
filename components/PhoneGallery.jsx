@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { photos } from "./photos"
 import {useEffect,useRef} from "react"
 import { gsap } from 'gsap/dist/gsap';
@@ -60,7 +60,14 @@ export const PhoneGallery = () => {
             <div ref={(el) => gallery = el} className="">
                 {photos.map((picture, i) => (
                 <div key={i} className={`photo${i} skewElem bg-slate-100 rounded-sm mb-8 overflow-hidden pb-6 p-3 shadow-lg`}>
-                    <Image src={picture.src} alt={picture.title} priority/>
+                    <Image
+                        src={picture.src}
+                        alt={picture.title}
+                        priority
+                        style={{
+                            maxWidth: "100%",
+                            height: "auto"
+                        }} />
                     <div className="title mt-1 cursive font-semibold ml-2 tracking-wider text-xl">
                         {picture.title}
                     </div>
@@ -69,5 +76,5 @@ export const PhoneGallery = () => {
             </div>
             
         </div>
-    )
+    );
 }
