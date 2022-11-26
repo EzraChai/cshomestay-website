@@ -15,12 +15,14 @@ export default function Home({ data }) {
         <title>Cozy & Sweet Homestay Port Dickson</title>
         <meta
           name="description"
-          content="Cozy & Sweet Homestay Port Dickson located in Port Dickson, Negeri Sembilan, Malaysia"
+          content="Cozy & Sweet Homestay Port Dickson located in Port Dickson, Negeri Sembilan, Malaysia.
+          Best place for you to stay when you plan travel to Port Dickson."
         />
         <meta
           name="keywords"
           content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson"
         />
+        <meta property="og:image" content="https://cshomestay.vercel/api/og" />
       </Head>
       <div className=" smooth-scroll big-container h-full bg-zinc-100 pb-10 mx-auto">
         <div className="wrapper px-1 lg:px-2">

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@badrap/bar-of-progress": "^0.1.2",
+    "@vercel/og": "^0.0.21",
     "graphql": "^16.3.0",
     "graphql-request": "^4.2.0",
     "locomotive-scroll": "^4.1.3",
