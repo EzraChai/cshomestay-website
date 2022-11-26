@@ -1,8 +1,8 @@
-import '../styles/globals.css'
-import {Layout} from "../components/Layout"
+import "../styles/globals.css";
+import { Layout } from "../components/Layout";
 import ProgressBar from "@badrap/bar-of-progress";
 import Router from "next/router";
-import {gsap} from  "gsap/dist/gsap"
+import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const progress = new ProgressBar({
@@ -16,21 +16,16 @@ Router.events.on("routeChangeStart", progress.start);
 Router.events.on("routeChangeComplete", progress.finish);
 Router.events.on("routeChangeError", progress.finish);
 
-
-
-gsap.registerPlugin(ScrollTrigger)
-
+gsap.registerPlugin(ScrollTrigger);
 
 function MyApp({ Component, pageProps }) {
-
-
   return (
-      <Layout>
-        <main>
-          <Component  {...pageProps} />
-        </main>
-      </Layout>
-  )
+    <Layout>
+      <main>
+        <Component {...pageProps} />
+      </main>
+    </Layout>
+  );
 }
 
-export default MyApp
+export default MyApp;

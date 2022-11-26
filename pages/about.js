@@ -1,28 +1,25 @@
-import Head from 'next/head'
-import { useEffect } from 'react'
-import gsap from "gsap"
-import {About} from "../components/About"
-
+import Head from "next/head";
+import { useEffect } from "react";
+import gsap from "gsap";
+import { About } from "../components/About";
 
 export default function Solution() {
-
-
   useEffect(() => {
-    gsap.to(".container", {duration: 0, css: {display: "block"}})
-  },[])
+    gsap.to(".container", { duration: 0, css: { display: "block" } });
+  }, []);
 
   return (
     <div data-scroll-section>
-        <Head>
-            <title>About</title>
-        </Head>
-        <div className="container hidden bg-zinc-100 mx-auto py-6">
-          <div className="wrapper px-2">
-            <div className="home mt-6">
-              <About></About>
-            </div>
+      <Head>
+        <title>About</title>
+      </Head>
+      <div className="container hidden bg-zinc-100 mx-auto py-6">
+        <div className="wrapper px-2">
+          <div className="home mt-6">
+            <About></About>
           </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
