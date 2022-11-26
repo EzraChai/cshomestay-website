@@ -1,6 +1,6 @@
 const StrategicPlace = () => {
   return (
-    <div className="main-location mx-auto container mt-6 lg:mt-12 w-full text-center md:text-left max-width-[1200px]">
+    <div className="main-location mx-auto container mt-6 lg:mt-12 w-full text-center md:text-left max-width-[100rem]">
       <div className="md:grid md:grid-cols-5 lg:mb-40">
         <div className="content-left relative pt-20 px-11 col-span-3 ">
           <h2 className="text-lg lg:text-4xl font-semibold text-gray-600 ">
