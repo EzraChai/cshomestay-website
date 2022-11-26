@@ -1,28 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
-import gsap from "gsap/dist/gsap";
-import { useEffect, useState } from "react";
 import StrategicPlace from "../components/StrategicPlace";
 import Reviews from "../components/Reviews";
 import request, { gql } from "graphql-request";
+import Mission from "../components/Mission";
+import Book from "../components/Booking";
 
 const END_POINT = process.env.END_POINT;
 
 export default function Home({ data }) {
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    gsap.to(".big-container", { duration: 0, css: { display: "block" } });
-    gsap.from(".main-text", { duration: 2, y: 600, ease: "power3.inOut" });
-    gsap.from(".secondary-text", {
-      duration: 1.5,
-      y: 600,
-      delay: 0.7,
-      ease: "power3.inOut",
-    });
-    setLoaded(true);
-  }, []);
-
   return (
     <>
       <Head>
@@ -33,10 +19,10 @@ export default function Home({ data }) {
         />
         <meta
           name="keywords"
-          content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson"
+          content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson"
         />
       </Head>
-      <div className=" smooth-scroll big-container h-full hidden bg-zinc-100 mx-auto">
+      <div className=" smooth-scroll big-container h-full bg-zinc-100 pb-10 mx-auto">
         <div className="wrapper px-1 lg:px-2">
           <div className="home flex items-center h-[40vh] lg:h-[90vh] w-full flex-col">
             <div className="mt-[8rem] lg:mt-[16rem]">
@@ -46,8 +32,8 @@ export default function Home({ data }) {
                 </h1>
               </div>
               <div className="hero-content-line w-full text-gray-600 h-100 title-font overflow-hidden antialiased">
-                <p className="secondary-text mt-2 lg:mt-2 text-center text-[0.6rem] md:text-[1rem] font-semibold tracking-widest uppercase">
-                  homestay in{" "}
+                <p className="primary-text mt-2 lg:mt-2 text-center text-[0.88rem] md:text-[1.2rem] font-semibold tracking-wide">
+                  Comfortable Homestay in{" "}
                   <span className="hover:underline decoration-2 underline-offset-2">
                     <Link
                       hrefLang="en"
@@ -71,12 +57,13 @@ export default function Home({ data }) {
                 </p>
               </div>
             </div>
-            {loaded && (
-              <>
-                <StrategicPlace />
-                <Reviews reviews={data.reviews} />
-              </>
-            )}
+            <div className="mt-24 lg:mt-72">
+              <Mission />
+              <StrategicPlace />
+              <Reviews reviews={data.reviews} />
+
+              <Book />
+            </div>
           </div>
         </div>
       </div>
