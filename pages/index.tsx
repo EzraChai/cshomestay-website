@@ -18,8 +18,8 @@ export default function Home({ data }) {
     tl.to(".big-container", { duration: 0, css: { display: "block" } });
     tl.from(".main-text", { duration: 2, y: 300, ease: "power3.inOut" });
     tl.from(".secondary-text", {
-      duration: 1.5,
-      y: 600,
+      duration: 1,
+      y: 300,
       ease: "power3.inOut",
     });
     setLoaded(true);
