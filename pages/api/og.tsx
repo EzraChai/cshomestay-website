@@ -15,6 +15,7 @@ export default function () {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
+          fontFamily: "Monserrat",
           backgroundColor: "#f5f5f5",
         }}
       >
