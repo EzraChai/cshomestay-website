@@ -2,7 +2,7 @@ import Review from "./Review";
 
 const Reviews = ({ reviews }) => {
   return (
-    <div className="bg-zinc-50 w-screen py-12">
+    <div className="bg-zinc-50 w-full py-12">
       <div className="title text-center mt-16 lg:mt-24">
         <p className="text-4xl lg:text-6xl lg:tracking-tight font-extrabold text-zinc-700">
           Honest reviews <br />
