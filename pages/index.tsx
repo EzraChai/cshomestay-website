@@ -44,7 +44,7 @@ export default function Home({ data }) {
         />
       </Head>
       <div className="smooth-scroll big-container hidden h-full bg-zinc-100 mx-auto">
-        <div className="wrapper px-1 lg:px-2">
+        <div className="wrapper lg:px-2">
           <div className="home flex items-center h-[40vh] lg:h-[90vh] w-full flex-col">
             <div className="mt-[8rem] lg:mt-[16rem]">
               <div className="hero-content-line w-full h-100 overflow-hidden">
