@@ -43,7 +43,7 @@ export default function Home({ data }) {
           content="https://cshomestay.vercel.app/api/og"
         />
       </Head>
-      <div className=" smooth-scroll big-container hidden h-full bg-zinc-100 mx-auto">
+      <div className="smooth-scroll big-container hidden h-full bg-zinc-100 mx-auto">
         <div className="wrapper px-1 lg:px-2">
           <div className="home flex items-center h-[40vh] lg:h-[90vh] w-full flex-col">
             <div className="mt-[8rem] lg:mt-[16rem]">

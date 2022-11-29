@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Book from "../components/Booking";
 
 export default function ContactUs() {
   return (
@@ -6,6 +7,7 @@ export default function ContactUs() {
       <Head>
         <title>Contact us</title>
       </Head>
+      <Book />
     </div>
   );
 }
