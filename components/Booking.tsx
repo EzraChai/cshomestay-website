@@ -19,7 +19,7 @@ export default function Book() {
           </div>
         </div>
         <div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 max-w-[80%] lg:max-w-[60%] mx-auto gap-10 pb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-[80%] lg:max-w-[60%] mx-auto gap-10 pb-8">
             <Link
               target={"_blank"}
               href={"https://www.airbnb.com/rooms/53874417"}

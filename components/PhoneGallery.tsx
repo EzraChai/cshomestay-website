@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { photos } from "./photos";
-
 export const PhoneGallery = () => {
   return (
     <div className="px-6 container-gallery hidden">
