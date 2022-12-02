@@ -7,6 +7,7 @@ import Mission from "../components/Mission";
 import Book from "../components/Booking";
 import { useEffect, useState } from "react";
 import gsap from "gsap/dist/gsap";
+import { Gallery } from "../components/Gallery";
 
 const END_POINT = process.env.END_POINT;
 
@@ -45,7 +46,7 @@ export default function Home({ data }) {
       </Head>
       <div className="pt-10 smooth-scroll big-container hidden h-full bg-zinc-100 mx-auto">
         <div className="wrapper">
-          <div className="home flex items-center h-[40vh] lg:h-[90vh] w-full flex-col">
+          <div className="home flex items-center h-[50vh] lg:h-[90vh] w-full flex-col">
             <div className="mt-[8rem] lg:mt-[16rem]">
               <div className="hero-content-line w-full h-100 overflow-hidden">
                 <h1 className="main-text text-center font-extrabold title-font text-[2.8rem] md:text-[5rem] lg:text-[12rem] antialiased">
@@ -83,9 +84,9 @@ export default function Home({ data }) {
       </div>
       <div className="mt-24">
         <Mission />
+        <Gallery />
         <StrategicPlace />
         <Reviews reviews={data.reviews} />
-
         <Book />
       </div>
     </>
