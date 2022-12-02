@@ -10,7 +10,7 @@ const StrategicPlace = () => {
             </span>
             homestay in <br className="mb-2" />
             <div className="w-full h-50 overflow-hidden">
-              <div className="main-content-text mt-1 title-font font-extrabold text-4xl md:text-5xl lg:text-8xl text-transparent text-zinc-800">
+              <div className="main-content-text mt-1 title-font font-extrabold text-4xl md:text-5xl lg:text-8xl text-zinc-800">
                 Port Dickson
               </div>
             </div>
