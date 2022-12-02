@@ -66,9 +66,9 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed w-full z-10 h-[60px] md:h-[50px]">
+    <header className="bg-white fixed w-full z-10 h-[60px] md:h-[80px]">
       <div className="container mx-auto">
-        <div className="wrapper px-4 py-2 md:py-6 md:px-8">
+        <div className="wrapper px-4 pt-1 pb-2 md:pt-3 md:py-6 md:px-8">
           <div className="inner-header relative z-[60] h-[50px] flex justify-between items-center">
             <div className="logo font-black md:text-2xl">
               <Link href="/">Cozy & Sweet.</Link>

@@ -16,7 +16,7 @@ export default function Home({ data }) {
   useEffect(() => {
     var tl = gsap.timeline();
     tl.to(".big-container", { duration: 0, css: { display: "block" } });
-    tl.from(".main-text", { duration: 2, y: 300, ease: "power3.inOut" });
+    tl.from(".main-text", { duration: 1, y: 300, ease: "power3.inOut" });
     tl.from(".secondary-text", {
       duration: 1,
       y: 300,
@@ -36,7 +36,7 @@ export default function Home({ data }) {
         />
         <meta
           name="keywords"
-          content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson"
+          content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson, cozy sweet homestay, cozysweet homestay"
         />
         <meta
           property="og:image"
@@ -44,7 +44,7 @@ export default function Home({ data }) {
         />
       </Head>
       <div className="pt-10 smooth-scroll big-container hidden h-full bg-zinc-100 mx-auto">
-        <div className="wrapper lg:px-2">
+        <div className="wrapper">
           <div className="home flex items-center h-[40vh] lg:h-[90vh] w-full flex-col">
             <div className="mt-[8rem] lg:mt-[16rem]">
               <div className="hero-content-line w-full h-100 overflow-hidden">
@@ -54,7 +54,7 @@ export default function Home({ data }) {
               </div>
               <div className="hero-content-line w-full text-gray-600 h-100 title-font overflow-hidden antialiased">
                 <p className="secondary-text mt-2 lg:mt-2 text-center text-[0.88rem] md:text-[1.2rem] font-semibold tracking-wide">
-                  Comfortable Homestay in{" "}
+                  Homestay in{" "}
                   <span className="hover:underline decoration-2 underline-offset-2">
                     <Link
                       hrefLang="en"
@@ -78,15 +78,15 @@ export default function Home({ data }) {
                 </p>
               </div>
             </div>
-            <div className="mt-24 lg:mt-72">
-              <Mission />
-              <StrategicPlace />
-              <Reviews reviews={data.reviews} />
-
-              <Book />
-            </div>
           </div>
         </div>
+      </div>
+      <div className="mt-24">
+        <Mission />
+        <StrategicPlace />
+        <Reviews reviews={data.reviews} />
+
+        <Book />
       </div>
     </>
   );

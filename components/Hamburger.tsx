@@ -138,7 +138,7 @@ export const Hamburger = ({ state }) => {
                         onMouseLeave={(e) => handleLeave(e)}
                         className=" hover:text-gray-700"
                       >
-                        Contact us
+                        Booking
                       </div>
                     </Link>
                   </li>
