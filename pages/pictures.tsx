@@ -8,8 +8,8 @@ export default function Pictures() {
       <Head>
         <title>Pictures</title>
       </Head>
-      <div className="pt-32 pb-12 w-full h-full max-w-5xl mx-auto p-5 md:p-10">
-        <div className="grid grid-cols-2 gap-2 md:gap-5">
+      <div className="pt-32 lg:pt-32 pb-12 w-full h-full max-w-5xl mx-auto p-5 md:p-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
           {photos.map((photo: PhotoInterface, index) => {
             return index % 3 == 0 ? (
               <div
@@ -23,7 +23,10 @@ export default function Pictures() {
                 />
               </div>
             ) : (
-              <div key={index} className=" rounded-xl overflow-hidden">
+              <div
+                key={index}
+                className=" col-span-2 md:col-span-1 rounded-xl overflow-hidden"
+              >
                 <Image
                   className="object-cover h-auto w-full"
                   src={photo.src}
