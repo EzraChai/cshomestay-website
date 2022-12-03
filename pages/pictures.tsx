@@ -8,8 +8,8 @@ export default function Pictures() {
       <Head>
         <title>Pictures</title>
       </Head>
-      <div className="pt-32 w-full h-full max-w-5xl mx-auto p-10">
-        <div className="grid grid-cols-2 gap-5">
+      <div className="pt-32 pb-12 w-full h-full max-w-5xl mx-auto p-5 md:p-10">
+        <div className="grid grid-cols-2 gap-2 md:gap-5">
           {photos.map((photo: PhotoInterface, index) => {
             return index % 3 == 0 ? (
               <div
