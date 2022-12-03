@@ -19,7 +19,7 @@ const StrategicPlace = () => {
                 </div>
               </div>
             </h2>
-            <p className="text-zinc-600 text-left flex flex-wrap justify-around tracking-wide font-semibold text-[0.9rem] mt-4 lg:mt-10 w-[60%] md:w-[70%] lg:w-[80%] mx-auto">
+            <p className="text-zinc-600 text-left flex flex-wrap justify-around tracking-wide font-semibold text-[0.9rem] mt-4 lg:mt-10 w-[65%] md:w-[70%] lg:w-[80%] mx-auto">
               <div className=" flex justify-around items-center  bg-maximumBlue/20  rounded-full p-2 gap-2 hover:border-maximumBlue/30 hover:bg-maximumBlue/10 border-2 border-transparent transition ">
                 <FaBus className="text-base lg:text-xl" />
                 <div className="text-sm lg:text-base font-bold">5 minutes</div>
