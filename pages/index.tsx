@@ -54,7 +54,7 @@ export default function Home({ data }) {
                 </h1>
               </div>
               <div className="hero-content-line w-full text-gray-600 h-100 title-font overflow-hidden antialiased">
-                <p className="secondary-text mt-2 lg:mt-2 text-center text-[0.88rem] md:text-[1.2rem] font-semibold tracking-wide">
+                <p className="secondary-text mt-2 lg:mt-2 text-center text-[0.77rem] md:text-[1.2rem] font-semibold tracking-wide">
                   Homestay in{" "}
                   <span className="hover:underline decoration-2 underline-offset-2">
                     <Link
