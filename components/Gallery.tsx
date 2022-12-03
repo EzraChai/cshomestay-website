@@ -5,6 +5,7 @@ import MainBedroom from "./../public/main-bedroom.webp";
 import SecondaryBedroom from "./../public/secondary-bedroom.webp";
 import Image from "next/image";
 import { FiImage } from "react-icons/fi";
+import Link from "next/link";
 
 export const Gallery = () => {
   return (
@@ -48,22 +49,28 @@ export const Gallery = () => {
             src={SecondaryBedroom}
             alt="Living room"
           />
-          <div className="group bottom-4 right-5 lg:w-[42%] lg:h-[12%] z-[1] bg-white hover:bg-black transition-all rounded-xl  lg:absolute flex justify-evenly items-center">
+          <Link
+            href={"/pictures"}
+            className="group bottom-4 right-5 lg:w-[42%] lg:h-[12%] z-[1] bg-white hover:bg-black transition-all rounded-xl  lg:absolute flex justify-evenly items-center"
+          >
             <FiImage className="group-hover:text-white transition" />
             <div className="text-black font-semibold text-xl py-2 group-hover:text-white transition ">
               All Photos
             </div>
-          </div>
+          </Link>
 
           <div className=" top-0 left-0 w-full h-full absolute flex justify-center bg-black opacity-0 hover:opacity-20 transition-opacity"></div>
         </div>
       </div>
-      <div className="group lg:hidden w-[40%] md:w-[18%] hover:cursor-pointer mx-auto border-2 border-zinc-700 bg-white hover:bg-black transition-all rounded-xl  flex justify-evenly items-center">
+      <Link
+        href={"/pictures"}
+        className="group lg:hidden w-[40%] md:w-[18%] mx-auto border-2 border-zinc-700 bg-white hover:bg-black transition-all rounded-xl flex justify-evenly items-center"
+      >
         <FiImage className="group-hover:text-white transition" />
         <div className="text-black font-semibold text-xl py-2 group-hover:text-white transition ">
           All Photos
         </div>
-      </div>
+      </Link>
     </>
   );
 };

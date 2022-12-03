@@ -1,29 +1,38 @@
 import Head from "next/head";
-import { CarouselGallery } from "../components/CarouselGallery";
-import { PhoneGallery } from "../components/PhoneGallery";
-import { useState, useEffect } from "react";
+import { PhotoInterface, photos } from "../components/photos";
+import Image from "next/image";
 
 export default function Pictures() {
-  const [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, [width]);
-
-  const handleResize = () => {
-    setWidth(window.innerWidth);
-  };
-
   return (
-    <div>
+    <div className=" bg-pinkLavender/40">
       <Head>
         <title>Pictures</title>
       </Head>
-      <div className="container w-full h-full bg-zinc-100 mx-auto pt-6 pb-[7rem]">
-        {width !== 0 && width > 640 ? <CarouselGallery /> : <PhoneGallery />}
+      <div className="pt-32 w-full h-full max-w-5xl mx-auto p-10">
+        <div className="grid grid-cols-2 gap-5">
+          {photos.map((photo: PhotoInterface, index) => {
+            return index % 3 == 0 ? (
+              <div
+                key={index}
+                className=" col-span-2 rounded-xl overflow-hidden"
+              >
+                <Image
+                  className="object-cover h-auto w-full"
+                  src={photo.src}
+                  alt={photo.title}
+                />
+              </div>
+            ) : (
+              <div key={index} className=" rounded-xl overflow-hidden">
+                <Image
+                  className="object-cover h-auto w-full"
+                  src={photo.src}
+                  alt={photo.title}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
