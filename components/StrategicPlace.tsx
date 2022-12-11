@@ -1,5 +1,6 @@
 import { FaUmbrellaBeach, FaBus, FaHospitalSymbol } from "react-icons/fa";
 import { SiMcdonalds } from "react-icons/si";
+import DistanceFromProperty from "./DistanceFromProperty";
 
 const StrategicPlace = () => {
   return (
@@ -20,22 +21,18 @@ const StrategicPlace = () => {
               </div>
             </h2>
             <p className="text-zinc-600 text-left flex flex-wrap justify-around tracking-wide font-semibold text-[0.9rem] mt-4 lg:mt-10 w-[65%] md:w-[70%] lg:w-[80%] mx-auto">
-              <div className=" flex justify-around items-center  bg-maximumBlue/20  rounded-full p-2 gap-2 hover:border-maximumBlue/30 hover:bg-maximumBlue/10 border-2 border-transparent transition ">
+              <DistanceFromProperty minutesNeeded={5}>
                 <FaBus className="text-base lg:text-xl" />
-                <div className="text-sm lg:text-base font-bold">5 minutes</div>
-              </div>
-              <div className=" flex justify-around items-center bg-maximumBlue/20  rounded-full p-2 gap-2 hover:border-maximumBlue/30 hover:bg-maximumBlue/10 border-2 border-transparent transition ">
+              </DistanceFromProperty>
+              <DistanceFromProperty minutesNeeded={4}>
                 <FaUmbrellaBeach className="text-base lg:text-xl" />
-                <div className="text-sm lg:text-base font-bold">4 minutes</div>
-              </div>
-              <div className=" flex justify-around items-center bg-maximumBlue/20  rounded-full p-2 gap-2 mt-3 lg:mt-0 hover:border-maximumBlue/30 hover:bg-maximumBlue/10 border-2 border-transparent transition ">
-                <FaHospitalSymbol className="text-base lg:text-xl" />
-                <div className="text-sm lg:text-base font-bold">3 minutes</div>
-              </div>
-              <div className=" flex justify-around items-center bg-maximumBlue/20  rounded-full p-2 gap-2 mt-3 lg:mt-0 hover:border-maximumBlue/30 hover:bg-maximumBlue/10 border-2 border-transparent transition ">
+              </DistanceFromProperty>
+              <DistanceFromProperty minutesNeeded={3}>
+                <FaHospitalSymbol className="text-sm lg:text-xl" />
+              </DistanceFromProperty>
+              <DistanceFromProperty minutesNeeded={2}>
                 <SiMcdonalds className="text-sm lg:text-xl" />
-                <div className="text-sm lg:text-base font-bold">2 minutes</div>
-              </div>
+              </DistanceFromProperty>
             </p>
             <div className="absolute -bottom-10 md:bottom-10 right-10 text-gray-400 text-xs float-right">
               based on Google map
