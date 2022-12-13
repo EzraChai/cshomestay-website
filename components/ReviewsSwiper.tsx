@@ -1,12 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import type { FC } from "react";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import Review from "./Review";
 import { A11y, Autoplay } from "swiper";
 
-const ReviewsSwipper: FC = ({ reviews }: any) => {
+const ReviewsSwipper = ({ reviews }: any) => {
   return (
     <Swiper
       className=" max-w-7xl mx-auto"

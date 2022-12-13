@@ -1,7 +1,7 @@
 import Review from "./Review";
 import ReviewsSwipper from "./ReviewsSwiper";
 
-const Reviews = ({ reviews }: any) => {
+const Reviews = ({ reviews }) => {
   return (
     <div className=" bg-zinc-800 py-12">
       <div className="title text-center mt-16 lg:mt-24">
