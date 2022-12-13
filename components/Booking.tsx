@@ -23,7 +23,7 @@ export default function Book() {
             <Link
               target={"_blank"}
               href={"https://www.airbnb.com/rooms/53874417"}
-              className="bg-white rounded-2xl"
+              className=" bg-white rounded-2xl overflow-hidden  hover:-translate-y-1 transition"
             >
               <div className=" justify-center items-center py-20 px-10 lg:px-20">
                 <div className="flex justify-center items-center">
@@ -39,7 +39,7 @@ export default function Book() {
             <Link
               target={"_blank"}
               href={"https://www.booking.com/Share-vOyRYY"}
-              className="bg-white rounded-2xl"
+              className="bg-white rounded-2xl hover:-translate-y-1 transition overflow-hidden"
             >
               <div className=" justify-center items-center py-20 px-6">
                 <div className="flex justify-center items-center mt-1">
@@ -56,7 +56,7 @@ export default function Book() {
               href={
                 "https://www.agoda.com/cozy-sweet-bayview-villa-3-br-2bth-6-beds-8pax/hotel/port-dickson-my.html"
               }
-              className="bg-white rounded-2xl"
+              className="bg-white rounded-2xl hover:-translate-y-1 transition overflow-hidden"
             >
               <div className=" justify-center items-center py-20 px-16 lg:px-28">
                 <div className="flex justify-center items-center">
@@ -72,7 +72,7 @@ export default function Book() {
             <Link
               target={"_blank"}
               href={"https://wa.link/z1sa7g"}
-              className="bg-white rounded-2xl"
+              className="bg-white rounded-2xl hover:-translate-y-1 transition overflow-hidden"
             >
               <div className=" justify-center items-center py-20 px-10">
                 <div className="flex justify-center items-center">

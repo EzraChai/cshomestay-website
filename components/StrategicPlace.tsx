@@ -21,16 +21,16 @@ const StrategicPlace = () => {
               </div>
             </h2>
             <p className="text-zinc-600 text-left flex flex-wrap justify-around tracking-wide font-semibold text-[0.9rem] mt-4 lg:mt-10 w-[65%] md:w-[70%] lg:w-[80%] mx-auto">
-              <DistanceFromProperty minutesNeeded={5}>
+              <DistanceFromProperty key={5} minutesNeeded={5}>
                 <FaBus className="text-base lg:text-xl" />
               </DistanceFromProperty>
-              <DistanceFromProperty minutesNeeded={4}>
+              <DistanceFromProperty key={4} minutesNeeded={4}>
                 <FaUmbrellaBeach className="text-base lg:text-xl" />
               </DistanceFromProperty>
-              <DistanceFromProperty minutesNeeded={3}>
+              <DistanceFromProperty key={3} minutesNeeded={3}>
                 <FaHospitalSymbol className="text-sm lg:text-xl" />
               </DistanceFromProperty>
-              <DistanceFromProperty minutesNeeded={2}>
+              <DistanceFromProperty key={2} minutesNeeded={2}>
                 <SiMcdonalds className="text-sm lg:text-xl" />
               </DistanceFromProperty>
             </p>

@@ -1,19 +1,20 @@
 import Head from "next/head";
 import Link from "next/link";
-import StrategicPlace from "../components/StrategicPlace";
-import Reviews from "../components/Reviews";
 import request, { gql } from "graphql-request";
+
+import Reviews from "../components/Reviews";
+import StrategicPlace from "../components/StrategicPlace";
 import Mission from "../components/Mission";
 import Book from "../components/Booking";
+import Gallery from "../components/Gallery";
+import Waiting from "../components/Waiting";
+
 import { useEffect, useState } from "react";
 import gsap from "gsap/dist/gsap";
-import { Gallery } from "../components/Gallery";
 
 const END_POINT = process.env.END_POINT;
 
 export default function Home({ data }) {
-  const [loaded, setLoaded] = useState(false);
-
   useEffect(() => {
     var tl = gsap.timeline();
     tl.to(".big-container", { duration: 0, css: { display: "block" } });
@@ -23,7 +24,6 @@ export default function Home({ data }) {
       y: 300,
       ease: "power3.inOut",
     });
-    setLoaded(true);
   }, []);
 
   return (
@@ -54,7 +54,7 @@ export default function Home({ data }) {
                 </h1>
               </div>
               <div className="hero-content-line w-full text-gray-600 h-100 title-font overflow-hidden antialiased">
-                <p className="secondary-text mt-2 lg:mt-2 text-center text-[0.77rem] md:text-[1.2rem] font-semibold tracking-wide">
+                <div className="secondary-text mt-2 lg:mt-2 text-center text-[0.77rem] md:text-[1.2rem] font-semibold tracking-wide">
                   Homestay in{" "}
                   <span className="hover:underline decoration-2 underline-offset-2">
                     <Link
@@ -76,7 +76,7 @@ export default function Home({ data }) {
                       <span> Negeri Sembilan</span>
                     </Link>
                   </span>
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -87,6 +87,7 @@ export default function Home({ data }) {
         <Gallery />
         <StrategicPlace />
         <Reviews reviews={data.reviews} />
+        <Waiting />
         <Book />
       </div>
     </>

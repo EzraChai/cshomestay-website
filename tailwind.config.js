@@ -1,5 +1,8 @@
 module.exports = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx}",    "./components/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -8,8 +11,8 @@ module.exports = {
         blueBell: "#ADA7C9",
         pinkLavender: "#D7B9D5",
         orchidPink: "#F4CAE0",
-      }
+      },
     },
   },
   plugins: [],
-}
+};

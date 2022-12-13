@@ -102,7 +102,7 @@ export const Hamburger = ({ state }) => {
 
   return (
     <div className="hamburger-menu hidden z-[59] top-0 bottom-0 left-0 right-0 h-screen w-full fixed">
-      <div className="menu-secondary-background-color bg-gray-800 z-[-1] top-0 bottom-0 left-0 right-0 h-screen w-full fixed"></div>
+      <div className="menu-secondary-background-color bg-zinc-800 z-[-1] top-0 bottom-0 left-0 right-0 h-screen w-full fixed"></div>
       <div className="menu-layer relative bg-cyan-500 h-screen">
         <div className="container mx-auto p-4 md:px-7">
           <div className="wrapper relative">
@@ -114,7 +114,7 @@ export const Hamburger = ({ state }) => {
                       <div
                         onMouseEnter={(e) => handleEnter(e)}
                         onMouseLeave={(e) => handleLeave(e)}
-                        className=" hover:text-gray-700"
+                        className=" hover:text-zinc-700"
                       >
                         About
                       </div>
@@ -125,7 +125,7 @@ export const Hamburger = ({ state }) => {
                       <div
                         onMouseEnter={(e) => handleEnter(e)}
                         onMouseLeave={(e) => handleLeave(e)}
-                        className=" hover:text-gray-700"
+                        className=" hover:text-zinc-700"
                       >
                         Pictures
                       </div>
@@ -136,7 +136,7 @@ export const Hamburger = ({ state }) => {
                       <div
                         onMouseEnter={(e) => handleEnter(e)}
                         onMouseLeave={(e) => handleLeave(e)}
-                        className=" hover:text-gray-700"
+                        className=" hover:text-zinc-700"
                       >
                         Booking
                       </div>
