@@ -13,7 +13,7 @@ const Reviews = ({ reviews }) => {
           our previous guest.
         </h2>
       </div>
-      <div className="lg:hidden reviews-location mx-auto container mt-8 p-8 md:px-16 pb-28 ">
+      <div className="lg:hidden reviews-location md:w-[80%] lg:w-full mx-auto container mt-8 p-8 md:px-16 pb-28 ">
         {reviews.map((review, index) => (
           <div key={index}>
             {index < 3 && <Review review={review} />}

@@ -11,7 +11,7 @@ import type { FC } from "react";
 const Gallery: FC = () => {
   return (
     <>
-      <div className="mt-24 pb-6 grid max-w-7xl md:max-w-4xl lg:max-w-7xl md:grid-cols-4 lg:grid-cols-8 grid-rows-8  gap-2 lg:gap-5 mx-auto px-4 md:px-24 lg:px-0">
+      <div className="mt-24 pb-6 grid max-w-7xl md:max-w-4xl lg:max-w-7xl md:grid-cols-4 lg:grid-cols-8 grid-rows-8 gap-2 lg:gap-5 mx-auto px-4 md:px-24 lg:px-0">
         <div className=" col-span-4 row-span-4 rounded-xl overflow-hidden relative hover:cursor-pointer">
           <Image
             className="object-cover h-full w-auto"

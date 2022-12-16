@@ -9,6 +9,7 @@ import Book from "../components/Booking";
 import Gallery from "../components/Gallery";
 import Waiting from "../components/Waiting";
 import Question from "../components/Question";
+import Bed from "../components/Bed";
 
 import { useEffect } from "react";
 import gsap from "gsap/dist/gsap";
@@ -86,6 +87,7 @@ export default function Home({ data }) {
       <div className="mt-24">
         <Mission />
         <Gallery />
+        <Bed />
         <StrategicPlace />
         <Question questions={data.questions} />
         <Reviews reviews={data.reviews} />
