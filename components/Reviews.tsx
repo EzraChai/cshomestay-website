@@ -29,7 +29,7 @@ const Reviews = ({ reviews }) => {
                 </button>
               </div>
             )}
-            {moreReviews && index > 3 && <Review review={review} />}
+            {moreReviews && index >= 3 && <Review review={review} />}
           </div>
         ))}
       </div>
