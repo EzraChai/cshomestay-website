@@ -16,7 +16,7 @@ export default function Solution() {
       <div className="container hidden bg-zinc-100 mx-auto py-6">
         <div className="wrapper px-2">
           <div className="home mt-6">
-            <About></About>
+            <About />
           </div>
         </div>
       </div>
