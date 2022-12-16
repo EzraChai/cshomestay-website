@@ -8,7 +8,6 @@ const ReviewsSwipper = ({ reviews }: any) => {
   return (
     <Swiper
       className=" max-w-7xl mx-auto"
-      spaceBetween={30}
       slidesPerView={3}
       grabCursor
       autoplay
