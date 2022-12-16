@@ -1,9 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { A11y, Autoplay } from "swiper";
 
 import "swiper/css";
-import "swiper/css/navigation";
 import Review from "./Review";
-import { A11y, Autoplay } from "swiper";
 
 const ReviewsSwipper = ({ reviews }: any) => {
   return (
