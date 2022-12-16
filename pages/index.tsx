@@ -8,8 +8,9 @@ import Mission from "../components/Mission";
 import Book from "../components/Booking";
 import Gallery from "../components/Gallery";
 import Waiting from "../components/Waiting";
+import Question from "../components/Question";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import gsap from "gsap/dist/gsap";
 
 const END_POINT = process.env.END_POINT;
@@ -86,6 +87,7 @@ export default function Home({ data }) {
         <Mission />
         <Gallery />
         <StrategicPlace />
+        <Question questions={data.questions} />
         <Reviews reviews={data.reviews} />
         <Waiting />
         <Book />
@@ -110,6 +112,10 @@ const getReviews = async () => {
           width
           height
         }
+      }
+      questions {
+        question
+        answer
       }
     }
   `;
