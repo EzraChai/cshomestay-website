@@ -16,9 +16,9 @@ const Waiting: FC = () => {
             className="group border-2 border-zinc-800 text-zinc-800 transition hover:bg-zinc-800 rounded-xl px-2 flex justify-around items-center gap-2"
           >
             <div className="rounded-full w-5 flex items-center justify-center h-5 group-hover:bg-white">
-              <BsFacebook className="group-hover:text-[#005cae]" />
+              <BsFacebook className="group-hover:text-[#005cae] transition" />
             </div>
-            <span className="mb-[0.1rem] text-xl font-semibold group-hover:text-white py-2">
+            <span className="mb-[0.1rem] text-xl font-semibold group-hover:text-white transition py-2">
               Follow us
             </span>
           </Link>

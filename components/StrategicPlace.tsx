@@ -4,7 +4,7 @@ import DistanceFromProperty from "./DistanceFromProperty";
 
 const StrategicPlace = () => {
   return (
-    <div className="main-location mx-auto container mt-12 max-w-7xl text-center md:text-left">
+    <div className="main-location mx-auto container mt-24 max-w-7xl text-center md:text-left">
       <div className="md:grid md:grid-cols-4 lg:grid-cols-5 lg:mb-40">
         <div className=" md:ml-8 lg:md-0 content-left relative col-span-2 lg:col-span-3 flex items-center justify-center ">
           <div className="text-center">
