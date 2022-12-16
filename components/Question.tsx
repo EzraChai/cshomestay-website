@@ -7,7 +7,7 @@ const Question = ({ questions }) => {
       <h2 className="text-4xl lg:text-6xl text-center mt-12 lg:tracking-tight font-extrabold text-zinc-800">
         Frequently Asked Questions.
       </h2>
-      <div className=" mt-8 mb-20 mx-4 lg:mt-16 lg:mb-16 px-4 pt-4 pb-1 max-w-5xl lg:mx-auto rounded-xl bg-zinc-800 text-white">
+      <div className=" mt-8 mb-20 mx-4 lg:mt-16 lg:mb-20 px-4 pt-4 pb-1 max-w-5xl lg:mx-auto rounded-xl bg-zinc-800 text-white">
         {questions.map((question, index) => (
           <Disclosure key={index}>
             {({ open }) => (

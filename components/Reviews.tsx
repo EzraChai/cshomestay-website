@@ -21,7 +21,7 @@ const Reviews = ({ reviews }) => {
               <div className="text-white">
                 <button
                   onClick={() => setMoreReviews((prev) => !prev)}
-                  className="group lg:hidden w-[50%] md:w-[18%] mx-auto border-2 border-zinc-100 hover:bg-black transition-all rounded-xl flex justify-evenly items-center"
+                  className="group lg:hidden px-2 mx-auto border-2 border-zinc-100 hover:bg-black transition-all rounded-xl flex justify-evenly items-center"
                 >
                   <div className=" font-semibold text-xl py-2 transition ">
                     More Reviews
