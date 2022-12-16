@@ -10,7 +10,7 @@ const Reviews = ({ reviews }) => {
         <h2 className="text-4xl lg:text-6xl lg:tracking-tight font-extrabold text-white">
           Reviews from
           <br />
-          our previous guest.
+          our previous guests.
         </h2>
       </div>
       <div className="lg:hidden reviews-location md:w-[80%] lg:w-full mx-auto container mt-8 p-8 md:px-16 pb-28 ">
