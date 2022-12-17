@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Review = ({ review }) => {
   return (
-    <div className="w-full min-h-[34rem]">
+    <div className="w-full lg:min-h-[34rem]">
       <div className="card p-4 pb-6 lg:p-8 mb-8 rounded-2xl bg-white mx-4">
         <div className="upper-card flex justify-between py-2 lg:py-4 items-center">
           <div className="flex items-center">

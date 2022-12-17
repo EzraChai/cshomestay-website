@@ -7,7 +7,7 @@ const PlacesToVisit = ({ places }) => {
         <h2 className="text-4xl text-white lg:text-6xl  px-2 lg:px-0 lg:tracking-tight text-center font-extrabold">
           Places to visit in Port Dickson.
         </h2>
-        <div className=" mt-10 grid lg:grid-cols-3 gap-10">
+        <div className=" mt-10 grid lg:grid-cols-3 md:grid-cols-2 gap-10">
           {places.map((place) => (
             <PlacesToVisitCard place={place} key={place.id} />
           ))}
