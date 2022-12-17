@@ -8,7 +8,10 @@ const Reviews = ({ reviews }) => {
     <div className=" bg-zinc-800 py-12">
       <div className="title text-center mt-16 lg:mt-24">
         <h2 className="text-4xl lg:text-6xl lg:tracking-tight font-extrabold text-white">
-          Reviews from
+          <span className="bg-gradient-to-r from-[#99fcff] to-[#d7f4ff] bg-clip-text text-transparent">
+            Reviews{" "}
+          </span>{" "}
+          from
           <br />
           our previous guests.
         </h2>

@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Book() {
   return (
-    <div className="bg-maximumBlue">
+    <div className="bg-cyan-500">
       <div className="book-now-card py-36 text-primary max-w-[100rem] mx-auto">
         <div className="header text-center">
           <div className=" text-white px-10 text-4xl lg:text-6xl lg:tracking-tight font-extrabold">

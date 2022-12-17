@@ -13,6 +13,7 @@ import Bed from "../components/Bed";
 
 import { useEffect } from "react";
 import gsap from "gsap/dist/gsap";
+import PlacesToVisit from "../components/PlacesToVisit";
 
 const END_POINT = process.env.END_POINT;
 
@@ -89,6 +90,7 @@ export default function Home({ data }) {
         <Gallery />
         <Bed />
         <StrategicPlace />
+        <PlacesToVisit places={data.places} />
         <Question questions={data.questions} />
         <Reviews reviews={data.reviews} />
         <Waiting />
@@ -118,6 +120,16 @@ const getReviews = async () => {
       questions {
         question
         answer
+      }
+      places {
+        id
+        nameOfThePlace
+        tag
+        description
+        url
+        image {
+          url
+        }
       }
     }
   `;
