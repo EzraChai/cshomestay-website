@@ -129,6 +129,8 @@ const getReviews = async () => {
         url
         image {
           url
+          width
+          height
         }
       }
     }

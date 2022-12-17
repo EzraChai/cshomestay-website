@@ -1,3 +1,4 @@
+import Image from "next/image";
 const PlacesToVisitCard = ({ place }) => {
   return (
     <div className="px-8 lg:px-0 relative z-[4] mt-24 hover:-translate-y-2 transition">
@@ -5,10 +6,15 @@ const PlacesToVisitCard = ({ place }) => {
         className="absolute w-72 h-60 left-[50%] -top-20 shadow-xl rounded-xl overflow-hidden"
         style={{ transform: "translate(-50%)" }}
       >
-        <div
-          className="h-full w-full bg-cover bg-center bg-no-repeat transition"
-          style={{ backgroundImage: `url(${place.image.url})` }}
-        />
+        <div className="relative h-full w-full bg-cover bg-center bg-no-repeat transition">
+          <Image
+            className="absolute inset-0 w-full h-full object-cover"
+            src={place.image.url}
+            width={place.image.width}
+            height={place.image.height}
+            alt={place.nameOfThePlace}
+          />
+        </div>
         <div className="bg-black z-[1] absolute inset-0 opacity-0 group-hover:opacity-25 transition"></div>
       </div>
 
