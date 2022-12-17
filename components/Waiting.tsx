@@ -4,7 +4,7 @@ import { BsFacebook } from "react-icons/bs";
 
 const Waiting: FC = () => {
   return (
-    <div className="relative h-[70vh]">
+    <div className="relative h-[70vh] overflow-hidden">
       <div className="flex flex-col justify-center items-center h-full">
         <h2 className="text-4xl lg:text-6xl px-2 lg:px-0 lg:tracking-tight text-center font-extrabold">
           Feel free to book with us.
