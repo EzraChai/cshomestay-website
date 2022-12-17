@@ -4,7 +4,7 @@ import DistanceFromProperty from "./DistanceFromProperty";
 
 const StrategicPlace = () => {
   return (
-    <div className="main-location mx-auto container mt-24 max-w-7xl text-center md:text-left">
+    <div className="main-location mx-auto container mt-24 max-w-7xl overflow-hidden text-center md:text-left">
       <div className="md:grid md:grid-cols-4 lg:grid-cols-5 lg:mb-40">
         <div className=" md:ml-12 lg:ml-0 lg:w-[90%] content-left relative col-span-2 lg:col-span-3 flex items-center justify-center ">
           <div className="text-center">
@@ -34,7 +34,7 @@ const StrategicPlace = () => {
                 <SiMcdonalds className="text-sm lg:text-xl" />
               </DistanceFromProperty>
             </p>
-            <div className="absolute -bottom-10 md:bottom-10 right-0 text-gray-400 text-xs float-right">
+            <div className="absolute -bottom-10 md:bottom-10 right-10 text-gray-400 text-xs float-right">
               based on Google map
             </div>
           </div>
