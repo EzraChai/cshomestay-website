@@ -31,7 +31,7 @@ export const LargeImageWithModal = ({ image }) => {
         <div className="fixed inset-0 flex items-center justify-center">
           <Dialog.Panel
             className={
-              "max-w-5xl rounded-lg overflow-hidden w-full align-middle bg-white"
+              "max-w-5xl rounded-lg mx-2 overflow-hidden w-full align-middle bg-white"
             }
           >
             <Image className="" src={image} alt={"image"} />
@@ -48,8 +48,8 @@ export const SmallImageWithModal = ({ image }) => {
   return (
     <>
       <div
+        className=" relative col-span-2 row-span-2 rounded-xl overflow-hidden md:h-72 h-[10rem] w-auto hover:cursor-pointer"
         onClick={() => setIsOpen(true)}
-        className=" relative col-span-2  row-span-2 rounded-xl overflow-hidden md:h-72 h-[10rem] w-auto hover:cursor-pointer"
       >
         <Image className="object-cover h-full w-auto" src={image} alt="image" />
         <div className=" top-0 left-0 w-full h-full absolute flex justify-center bg-black opacity-0 hover:opacity-20 transition-opacity"></div>
@@ -65,7 +65,7 @@ export const SmallImageWithModal = ({ image }) => {
         <div className="fixed inset-0 flex items-center justify-center">
           <Dialog.Panel
             className={
-              "max-w-5xl rounded-lg overflow-hidden w-full align-middle bg-white"
+              "max-w-5xl mx-2 rounded-lg overflow-hidden w-full align-middle bg-white"
             }
           >
             <Image className="" src={image} alt={"image"} />

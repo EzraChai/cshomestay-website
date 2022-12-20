@@ -3,15 +3,10 @@ import LivingRoom2 from "./../public/living-room.webp";
 import DiningRoom from "./../public/dining.webp";
 import MainBedroom from "./../public/main-bedroom.webp";
 import SecondaryBedroom from "./../public/secondary-bedroom.webp";
-import Image from "next/image";
 import { FiImage } from "react-icons/fi";
 import Link from "next/link";
 import type { FC } from "react";
-import {
-  LargeImageWithModal,
-  SmallImageWithModal,
-  SmallImageWithModalAndLink,
-} from "./ImageWithModal";
+import { LargeImageWithModal, SmallImageWithModal } from "./ImageWithModal";
 
 const Gallery: FC = () => {
   return (
@@ -22,21 +17,24 @@ const Gallery: FC = () => {
         <SmallImageWithModal image={DiningRoom} />
         <SmallImageWithModal image={MainBedroom} />
         <SmallImageWithModal image={SecondaryBedroom} />
-        {/* <SmallImageWithModalAndLink image={SecondaryBedroom} /> */}
 
+        <div className="hidden lg:block bottom-12 right-5 lg:w-[10%] lg:h-[5%] z-[19] lg:absolute ">
+          <Link
+            href={"/pictures"}
+            className="group   bg-white hover:bg-black transition-all rounded-xl flex justify-evenly items-center"
+          >
+            <FiImage className="group-hover:text-white transition" />
+            <div className="text-black font-semibold text-xl py-2 group-hover:text-white transition ">
+              All Photos
+            </div>
+          </Link>
+        </div>
+      </div>
+
+      <div className="flex justify-center items-center">
         <Link
           href={"/pictures"}
-          className="group bottom-10 right-5 lg:w-[10%] lg:h-[5%] z-[19] bg-white hover:bg-black transition-all rounded-xl lg:absolute flex justify-evenly items-center"
-        >
-          <FiImage className="group-hover:text-white transition" />
-          <div className="text-black font-semibold text-xl py-2 group-hover:text-white transition ">
-            All Photos
-          </div>
-        </Link>
-
-        <Link
-          href={"/pictures"}
-          className="group lg:hidden w-[40%] md:w-[18%] mx-auto border-2 border-zinc-700 bg-white hover:bg-black transition-all rounded-xl flex justify-evenly items-center"
+          className="group lg:hidden w-[40%] border-2 border-zinc-700 bg-white hover:bg-black transition-all rounded-xl flex justify-evenly items-center"
         >
           <FiImage className="group-hover:text-white transition" />
           <div className="text-black font-semibold text-xl py-2 group-hover:text-white transition ">
