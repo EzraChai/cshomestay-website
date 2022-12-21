@@ -18,7 +18,7 @@ const Gallery: FC = () => {
         <SmallImageWithModal image={MainBedroom} />
         <SmallImageWithModal image={SecondaryBedroom} />
 
-        <div className="hidden lg:block bottom-12 right-3 lg:w-[10%] lg:h-[5%] z-[19] lg:absolute ">
+        <div className="hidden lg:block bottom-12 right-3 lg:w-[10%] lg:h-[5%] z-[1] lg:absolute ">
           <Link
             href={"/pictures"}
             className="group   bg-white hover:bg-black transition-all rounded-xl flex justify-evenly items-center"
