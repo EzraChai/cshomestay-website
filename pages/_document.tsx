@@ -45,10 +45,11 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           {/* Cloudflare Web Analytics  */}
-          <script
+          <Script
             defer
             src="https://static.cloudflareinsights.com/beacon.min.js"
             data-cf-beacon='{"token": "4ec9b78224e1427982bf6c292150068c"}'
+            strategy={"afterInteractive"}
           />
           {/* <!-- End Cloudflare Web Analytics --> */}
         </Head>
