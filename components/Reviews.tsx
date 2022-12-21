@@ -23,6 +23,7 @@ const Reviews = ({ reviews }) => {
             {index === 3 && moreReviews === false && (
               <div className="text-white">
                 <button
+                  aria-label="more reviews button"
                   onClick={() => setMoreReviews((prev) => !prev)}
                   className="group lg:hidden px-2 mx-auto border-2 border-zinc-100 hover:bg-black transition-all rounded-xl flex justify-evenly items-center"
                 >

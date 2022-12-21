@@ -10,8 +10,8 @@ const PlacesToVisitCard = ({ place }) => {
           <Image
             className="absolute inset-0 w-full h-full object-cover"
             src={place.image.url}
-            width={place.image.width}
-            height={place.image.height}
+            width={288}
+            height={240}
             alt={place.nameOfThePlace}
           />
         </div>

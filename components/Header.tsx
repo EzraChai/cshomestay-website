@@ -78,6 +78,7 @@ export const Header = () => {
             </div>
             <div className="menu flex justify-end">
               <button
+                aria-label="menu"
                 className="pointer w-[50%] md:w-[60%]"
                 disabled={disabled}
                 onClick={() => handleMenu()}

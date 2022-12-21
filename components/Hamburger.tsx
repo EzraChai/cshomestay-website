@@ -108,7 +108,7 @@ export const Hamburger = ({ state }) => {
           <div className="wrapper relative">
             <div className="menu-links md:flex justify-between items-center relative top-36 md:top-[12rem]">
               <nav className="block p-0 m-0">
-                <ul className="  font-bold text-4xl md:text-6xl lg:text-8xl">
+                <ul className="font-bold text-4xl md:text-6xl lg:text-8xl">
                   <li className="line1 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-[580px] overflow-hidden relative text-white">
                     <Link href={"/about"} passHref>
                       <div
