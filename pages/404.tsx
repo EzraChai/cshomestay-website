@@ -2,7 +2,10 @@ import Link from "next/link";
 
 export default function Custom404() {
   return (
-    <div className="flex min-h-screen justify-center items-center">
+    <div className=" flex min-h-screen justify-center items-center">
+      <div className="absolute flex items-center justify-center text-[24rem] font-extrabold text-zinc-50 z-[-1] inset-0">
+        404
+      </div>
       <div className="">
         <div className="text-[7rem] bg-gradient-to-r from-red-600 bg-clip-text text-transparent to-orange-400 font-extrabold uppercase">
           Oops!
