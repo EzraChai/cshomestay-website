@@ -43,6 +43,7 @@ const Question = ({ questions }) => {
         If you have other questions,
         <br />
         <Link
+          rel={"noopener"}
           className="group font-bold flex text-zinc-900 items-center mx-auto w-32 justify-center border-b-2 border-transparent hover:border-blue-900 transition"
           href={"https://wa.link/z1sa7g"}
           target={"_blank"}

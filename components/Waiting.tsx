@@ -11,6 +11,7 @@ const Waiting: FC = () => {
         </h2>
         <div className="mt-6">
           <Link
+            rel={"noopener"}
             href={"https://www.facebook.com/profile.php?id=100079928042529"}
             target={"_blank"}
             className="group border-2 border-zinc-800 text-zinc-800 transition hover:bg-zinc-800 rounded-xl px-2 flex justify-around items-center gap-2"
