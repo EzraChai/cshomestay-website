@@ -44,17 +44,17 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
             rel="stylesheet"
           />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
           {/* Cloudflare Web Analytics  */}
-          <Script
-            strategy={"worker"}
+          <script
+            defer
             src="https://static.cloudflareinsights.com/beacon.min.js"
             data-cf-beacon='{"token": "4ec9b78224e1427982bf6c292150068c"}'
           />
           {/* <!-- End Cloudflare Web Analytics --> */}
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
         </body>
       </Html>
     );

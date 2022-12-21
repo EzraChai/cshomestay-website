@@ -14,6 +14,7 @@ import Bed from "../components/Bed";
 import { useEffect } from "react";
 import gsap from "gsap/dist/gsap";
 import PlacesToVisit from "../components/PlacesToVisit";
+import Script from "next/script";
 
 const END_POINT = process.env.END_POINT;
 
