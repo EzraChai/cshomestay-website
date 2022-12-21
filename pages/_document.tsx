@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -48,11 +49,11 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           {/* Cloudflare Web Analytics  */}
-          <script
-            defer
+          <Script
+            strategy={"worker"}
             src="https://static.cloudflareinsights.com/beacon.min.js"
             data-cf-beacon='{"token": "4ec9b78224e1427982bf6c292150068c"}'
-          ></script>
+          />
           {/* <!-- End Cloudflare Web Analytics --> */}
         </body>
       </Html>

@@ -9,7 +9,7 @@ export default function Solution() {
   }, []);
 
   return (
-    <div data-scroll-section>
+    <>
       <Head>
         <title>About</title>
       </Head>
@@ -20,6 +20,6 @@ export default function Solution() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -20,7 +20,7 @@ const StrategicPlace = () => {
                 </div>
               </div>
             </h2>
-            <p className="text-zinc-600 text-left flex flex-wrap justify-around tracking-wide font-semibold text-[0.9rem] mt-4 lg:mt-10 w-[65%] md:w-[70%] lg:w-[80%] mx-auto">
+            <div className="text-zinc-600 text-left flex flex-wrap justify-around tracking-wide font-semibold text-[0.9rem] mt-4 lg:mt-10 w-[65%] md:w-[70%] lg:w-[80%] mx-auto">
               <DistanceFromProperty key={5} minutesNeeded={5}>
                 <FaBus className="text-base lg:text-xl" />
               </DistanceFromProperty>
@@ -33,7 +33,7 @@ const StrategicPlace = () => {
               <DistanceFromProperty key={2} minutesNeeded={2}>
                 <SiMcdonalds className="text-sm lg:text-xl" />
               </DistanceFromProperty>
-            </p>
+            </div>
             <div className="absolute -bottom-10 md:bottom-10 right-10 text-gray-400 text-xs float-right">
               based on Google map
             </div>
