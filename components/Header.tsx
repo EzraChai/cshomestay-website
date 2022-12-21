@@ -16,10 +16,11 @@ export const Header = () => {
 
   useEffect(() => {
     const handleStop = () => {
-      setState({
+      setState((prev) => ({
+        ...prev,
         clicked: false,
         menuName: "Menu",
-      });
+      }));
     };
 
     router.events.on("routeChangeComplete", handleStop);
@@ -37,15 +38,17 @@ export const Header = () => {
         menuName: "Close",
       });
     } else if (state.clicked === true) {
-      setState({
+      setState((prev) => ({
+        ...prev,
         clicked: !state.clicked,
         menuName: "Menu",
-      });
+      }));
     } else if (state.clicked === false) {
-      setState({
+      setState((prev) => ({
+        ...prev,
         clicked: !state.clicked,
         menuName: "Close",
-      });
+      }));
     }
   };
 
