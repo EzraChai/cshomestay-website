@@ -11,8 +11,8 @@ const Review = ({ review }) => {
                 <Image
                   className="rounded-full"
                   src={review.avatar.url}
-                  width={review.avatar.width}
-                  height={review.avatar.height}
+                  width={40}
+                  height={40}
                   alt={`Avatar of ${review.username}`}
                   sizes="100vw"
                   style={{
