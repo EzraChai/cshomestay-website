@@ -77,7 +77,7 @@ export default function Home({ data }) {
                       href={"https://en.wikipedia.org/wiki/Negeri_Sembilan"}
                       passHref
                     >
-                      <span> Negeri Sembilan</span>
+                      <span>Negeri Sembilan</span>
                     </Link>
                   </span>
                 </div>
@@ -88,7 +88,7 @@ export default function Home({ data }) {
       </div>
       <div className="mt-24">
         <Mission />
-        <Gallery />
+        <Gallery images={data.images} />
         <Bed />
         <StrategicPlace />
         <PlacesToVisit places={data.places} />
@@ -118,6 +118,15 @@ const getReviews = async () => {
           height
         }
         website {
+          url
+          width
+          height
+        }
+      }
+      images(first: 5) {
+        id
+        title
+        image {
           url
           width
           height

@@ -5,18 +5,18 @@ import MainBedroom from "./../public/main-bedroom.webp";
 import SecondaryBedroom from "./../public/secondary-bedroom.webp";
 import { FiImage } from "react-icons/fi";
 import Link from "next/link";
-import type { FC } from "react";
 import { LargeImageWithModal, SmallImageWithModal } from "./ImageWithModal";
 
-const Gallery: FC = () => {
+const Gallery = ({ images }: any) => {
   return (
     <>
       <div className="relative mt-24 pb-6 grid max-w-7xl md:max-w-4xl lg:max-w-7xl md:grid-cols-4 lg:grid-cols-8 grid-rows-8 gap-2 lg:gap-5 mx-auto px-4 md:px-24 lg:px-0">
-        <LargeImageWithModal image={LivingRoom} />
-        <SmallImageWithModal image={LivingRoom2} />
-        <SmallImageWithModal image={DiningRoom} />
-        <SmallImageWithModal image={MainBedroom} />
-        <SmallImageWithModal image={SecondaryBedroom} />
+        {images.map((image, index) => {
+          if (index === 0)
+            return <LargeImageWithModal key={image.id} image={image} />;
+
+          return <SmallImageWithModal key={image.id} image={image} />;
+        })}
 
         <div className="hidden lg:block bottom-12 right-3 lg:w-[10%] lg:h-[5%] z-[1] lg:absolute ">
           <Link

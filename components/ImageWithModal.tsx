@@ -14,8 +14,10 @@ export const LargeImageWithModal = ({ image }) => {
       >
         <Image
           className="object-cover h-full w-auto"
-          src={image}
-          alt="Living room"
+          src={image.image.url}
+          width={image.image.width}
+          height={image.image.height}
+          alt={image.title}
         />
         <div className=" top-0 left-0 w-full h-full absolute flex justify-center bg-black opacity-0 hover:opacity-20 transition-opacity"></div>
       </div>
@@ -39,7 +41,12 @@ export const LargeImageWithModal = ({ image }) => {
               "max-w-5xl rounded-lg mx-2 overflow-hidden w-full align-middle bg-white"
             }
           >
-            <Image className="" src={image} alt={"image"} />
+            <Image
+              src={image.image.url}
+              width={image.image.width}
+              height={image.image.height}
+              alt={image.image.title}
+            />
           </Dialog.Panel>
         </div>
       </Dialog>
@@ -56,7 +63,13 @@ export const SmallImageWithModal = ({ image }) => {
         className=" relative col-span-2 row-span-2 rounded-xl overflow-hidden md:h-72 h-[10rem] w-auto hover:cursor-pointer"
         onClick={() => setIsOpen(true)}
       >
-        <Image className="object-cover h-full w-auto" src={image} alt="image" />
+        <Image
+          className="object-cover h-full w-auto"
+          src={image.image.url}
+          width={image.image.width}
+          height={image.image.height}
+          alt={image.title}
+        />
         <div className=" top-0 left-0 w-full h-full absolute flex justify-center bg-black opacity-0 hover:opacity-20 transition-opacity"></div>
       </div>
 
@@ -79,7 +92,12 @@ export const SmallImageWithModal = ({ image }) => {
               "max-w-5xl mx-2 rounded-lg overflow-hidden w-full align-middle bg-white"
             }
           >
-            <Image className="" src={image} alt={"image"} />
+            <Image
+              src={image.image.url}
+              width={image.image.width}
+              height={image.image.height}
+              alt={image.title}
+            />
           </Dialog.Panel>
         </div>
       </Dialog>
