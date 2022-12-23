@@ -1,6 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import { GraphQLClient, gql } from "graphql-request";
+import {
+  SmallPictureWithModal,
+  BigPictureWithModal,
+} from "../components/ImageWithModal";
 
 const END_POINT = process.env.END_POINT;
 const HYGRAPH_PERMANENT_TOKEN = process.env.HYGRAPH_PERMANENT_TOKEN;
@@ -16,31 +19,9 @@ export default function Pictures({ data }) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
           {data.images.map((photo, index) => {
             return index % 3 == 0 ? (
-              <div
-                key={photo.id}
-                className=" col-span-2 rounded-xl overflow-hidden"
-              >
-                <Image
-                  className="object-cover h-auto w-full"
-                  src={photo.image.url}
-                  width={photo.image.width}
-                  height={photo.image.height}
-                  alt={photo.title}
-                />
-              </div>
+              <BigPictureWithModal key={photo.id} image={photo} />
             ) : (
-              <div
-                key={photo.id}
-                className=" col-span-2 md:col-span-1 rounded-xl overflow-hidden"
-              >
-                <Image
-                  className="object-cover h-auto w-full"
-                  src={photo.image.url}
-                  width={photo.image.width}
-                  height={photo.image.height}
-                  alt={photo.title}
-                />
-              </div>
+              <SmallPictureWithModal key={photo.id} image={photo} />
             );
           })}
         </div>
