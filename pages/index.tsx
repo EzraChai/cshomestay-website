@@ -101,7 +101,7 @@ export default function Home({ data }) {
   );
 }
 
-const getReviews = async () => {
+const getData = async () => {
   const client = new GraphQLClient(END_POINT, {
     headers: {
       Authorization: `Bearer ${HYGRAPH_PERMANENT_TOKEN}`,
@@ -155,7 +155,7 @@ const getReviews = async () => {
 };
 
 export const getStaticProps = async () => {
-  const data = await getReviews();
+  const data = await getData();
   return {
     props: {
       data,
