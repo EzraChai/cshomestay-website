@@ -1,5 +1,4 @@
 import house from "../public/house.webp";
-import livingRoom2 from "../public/living-room.webp";
 import livingRoom from "../public/living-room.jpg";
 import dining from "../public/dining.webp";
 import mainBed from "../public/main-bedroom.webp";

@@ -1,8 +1,7 @@
 import { Dialog } from "@headlessui/react";
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { FiImage } from "react-icons/fi";
+import { RiCloseFill } from "react-icons/ri";
 
 export const LargeImageWithModal = ({ image }) => {
   let [isOpen, setIsOpen] = useState<boolean>(false);
@@ -27,8 +26,14 @@ export const LargeImageWithModal = ({ image }) => {
         open={isOpen}
         onClose={() => setIsOpen(false)}
       >
-        <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
+        <div className="fixed inset-0 bg-black/70" aria-hidden="true" />
         <div className="fixed inset-0 flex items-center justify-center">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="group flex justify-center items-center absolute right-10 top-5 outline-none w-12 h-12 rounded-full hover:bg-zinc-500 transition"
+          >
+            <RiCloseFill className="text-3xl text-white " />
+          </button>
           <Dialog.Panel
             className={
               "max-w-5xl rounded-lg mx-2 overflow-hidden w-full align-middle bg-white"
@@ -61,8 +66,14 @@ export const SmallImageWithModal = ({ image }) => {
         open={isOpen}
         onClose={() => setIsOpen(false)}
       >
-        <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
+        <div className="fixed inset-0 bg-black/70" aria-hidden="true" />
         <div className="fixed inset-0 flex items-center justify-center">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="group flex justify-center items-center absolute right-10 top-5 outline-none w-12 h-12 rounded-full hover:bg-zinc-500 transition"
+          >
+            <RiCloseFill className="text-3xl text-white " />
+          </button>
           <Dialog.Panel
             className={
               "max-w-5xl mx-2 rounded-lg overflow-hidden w-full align-middle bg-white"
