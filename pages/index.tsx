@@ -142,7 +142,7 @@ const getReviews = async () => {
     }
   `;
 
-  return await client.request(END_POINT, query);
+  return await client.request(query);
 };
 
 export const getStaticProps = async () => {
