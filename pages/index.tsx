@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import request, { gql } from "graphql-request";
+import { GraphQLClient, gql } from "graphql-request";
 
 import Reviews from "../components/Reviews";
 import StrategicPlace from "../components/StrategicPlace";
@@ -16,6 +16,7 @@ import gsap from "gsap/dist/gsap";
 import PlacesToVisit from "../components/PlacesToVisit";
 
 const END_POINT = process.env.END_POINT;
+const HYGRAPH_PERMANENT_TOKEN = process.env.HYGRAPH_PERMANENT_TOKEN;
 
 export default function Home({ data }) {
   useEffect(() => {
@@ -101,6 +102,11 @@ export default function Home({ data }) {
 }
 
 const getReviews = async () => {
+  const client = new GraphQLClient(END_POINT, {
+    headers: {
+      Authorization: `Bearer ${HYGRAPH_PERMANENT_TOKEN}`,
+    },
+  });
   const query = gql`
     {
       reviews {
@@ -136,7 +142,7 @@ const getReviews = async () => {
     }
   `;
 
-  return await request(END_POINT, query);
+  return await client.request(END_POINT, query);
 };
 
 export const getStaticProps = async () => {
