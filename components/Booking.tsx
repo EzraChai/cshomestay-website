@@ -26,7 +26,7 @@ export default function Book() {
               href={"https://wa.link/z1sa7g"}
               className="bg-white rounded-2xl relative hover:-translate-y-1 transition overflow-hidden"
             >
-              <div className="absolute bottom-4 right-4 border-2 border-zinc-800 text-zinc-800 tracking-wider hover:text-white hover:bg-cyan-600 select-none transition uppercase font-bold text-xs flex justify-center items-center rounded-xl px-2 py-[0.125rem]">LOWEST PRICE</div>
+              <div className="absolute bottom-4 right-4 border-2 border-zinc-800 text-zinc-800 tracking-wider hover:text-white  select-none uppercase font-bold text-xs flex justify-center items-center rounded-xl px-2 py-[0.125rem]">LOWEST PRICE</div>
               <div className=" justify-center items-center py-20 px-10">
                 <div className="flex justify-center items-center">
                   <Image
