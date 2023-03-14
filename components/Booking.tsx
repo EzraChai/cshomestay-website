@@ -23,16 +23,16 @@ export default function Book() {
             <Link
               rel={"noopener"}
               target={"_blank"}
-              href={"https://www.airbnb.com/rooms/53874417"}
-              className=" bg-white rounded-2xl overflow-hidden  hover:-translate-y-1 transition"
+              href={"https://wa.link/z1sa7g"}
+              className="bg-white rounded-2xl relative hover:-translate-y-1 transition overflow-hidden"
             >
-              <div className=" justify-center items-center py-20 px-10 lg:px-20">
+              <div className="absolute bottom-4 right-4 border-2 border-zinc-800 text-zinc-800 tracking-wider hover:text-white hover:bg-cyan-600 select-none transition uppercase font-bold text-xs flex justify-center items-center rounded-xl px-2 py-[0.125rem]">LOWEST PRICE</div>
+              <div className=" justify-center items-center py-20 px-10">
                 <div className="flex justify-center items-center">
                   <Image
                     placeholder={"blur"}
-                    className="w-auto"
-                    src={AirBnb}
-                    alt="Airbnb logo"
+                    src={Whatsapp}
+                    alt="Whatsapp logo"
                   />
                 </div>
               </div>
@@ -72,25 +72,27 @@ export default function Book() {
                 </div>
               </div>
             </Link>
+
             <Link
               rel={"noopener"}
               target={"_blank"}
-              href={"https://wa.link/z1sa7g"}
-              className="bg-white rounded-2xl hover:-translate-y-1 transition overflow-hidden"
+              href={"https://www.airbnb.com/rooms/53874417"}
+              className=" bg-white rounded-2xl overflow-hidden  hover:-translate-y-1 transition"
             >
-              <div className=" justify-center items-center py-20 px-10">
+              <div className=" justify-center items-center py-20 px-10 lg:px-20">
                 <div className="flex justify-center items-center">
                   <Image
                     placeholder={"blur"}
-                    src={Whatsapp}
-                    alt="Whatsapp logo"
+                    className="w-auto"
+                    src={AirBnb}
+                    alt="Airbnb logo"
                   />
                 </div>
               </div>
             </Link>
           </div>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }
