@@ -43,9 +43,18 @@ export default function Home({ data }) {
           name="keywords"
           content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson, cozy sweet homestay, cozysweet homestay"
         />
+        <meta property="og:title" content="Cozy & Sweet Homestay Port Dickson - A cozy and affordable place to stay"></meta>
         <meta
           property="og:image"
           content="https://cshomestay.vercel.app/api/og"
+        />
+        <meta
+          property="og:description"
+          content="Get ready to spent your holiday in Port Dickson and stay with us."
+        />
+        <meta
+          property="og:url"
+          content="https://cshomestay.vercel.app"
         />
       </Head>
       <div className="pt-10 smooth-scroll big-container hidden h-full bg-zinc-100 mx-auto">
