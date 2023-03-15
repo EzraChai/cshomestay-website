@@ -1,9 +1,9 @@
 import Image from "next/image";
 const PlacesToVisitCard = ({ place }) => {
   return (
-    <div className="px-8 lg:px-0 relative z-[4] mt-24 hover:-translate-y-2 transition">
+    <div className=" px-4 md:px-8 lg:mx-4 lg:px-0 relative z-[4] mt-12 md:mt-24  transition ">
       <div
-        className="absolute w-72 h-60 left-[50%] -top-20 shadow-xl rounded-xl overflow-hidden"
+        className="absolute w-[211.2px] md:w-72 h-44 md:h-60 left-[50%] -top-10 md:-top-20 shadow-xl rounded-xl overflow-hidden"
         style={{ transform: "translate(-50%)" }}
       >
         <div className="relative h-full w-full bg-cover bg-center bg-no-repeat transition">
@@ -27,7 +27,7 @@ const PlacesToVisitCard = ({ place }) => {
             {place.tag.map((tag, index) => (
               <div
                 key={index}
-                className=" border-2 border-zinc-800 text-zinc-800 tracking-wider hover:text-white hover:bg-cyan-600 select-none transition uppercase font-bold text-xs flex justify-center items-center rounded-xl px-2 py-[0.125rem]"
+                className=" border-2 border-zinc-800 text-zinc-800 tracking-wider hover:text-white hover:bg-cyan-600 select-none transition uppercase font-bold text-[0.65rem] md:text-[0.70rem] flex justify-center items-center rounded-xl px-2 py-[0.125rem]"
               >
                 {tag}
               </div>
