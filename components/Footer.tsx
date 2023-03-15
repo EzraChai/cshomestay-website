@@ -3,11 +3,11 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <div className="bg-white text-zinc-900 mt-14 flex items-center justify-center flex-col">
-            <div className="logo font-black md:text-2xl">
+            <div className="logo font-black text-xl md:text-2xl">
                 <Link href="/">Cozy & Sweet.</Link>
             </div>
-            <div className="mt-4 mb-12 text-zinc-500">
-                © {new Date().getFullYear()} Cozy & Sweet Homestay Port Dickson. All right reserved.
+            <div className="mt-4 mb-12 text-sm md:text-normal text-center text-zinc-500">
+                © {new Date().getFullYear()} Cozy & Sweet Homestay Port Dickson. <br className="md:hidden" /> All right reserved.
             </div>
             <div className="flex justify-center pb-16">
                 <Link href={"/"} className="font-semibold border-b-2 border-transparent hover:border-blue-900 transition">Home</Link>
