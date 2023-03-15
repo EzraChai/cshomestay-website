@@ -10,6 +10,7 @@ import Gallery from "../components/Gallery";
 import Waiting from "../components/Waiting";
 import Question from "../components/Question";
 import Bed from "../components/Bed";
+import Footer from "../components/Footer"
 
 import { useEffect } from "react";
 import gsap from "gsap/dist/gsap";
@@ -106,6 +107,7 @@ export default function Home({ data }) {
         <Waiting />
         <Book />
       </div>
+      <Footer />
     </>
   );
 }

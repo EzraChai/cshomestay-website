@@ -1,8 +1,3 @@
-import LivingRoom from "./../public/living-room.jpg";
-import LivingRoom2 from "./../public/living-room.webp";
-import DiningRoom from "./../public/dining.webp";
-import MainBedroom from "./../public/main-bedroom.webp";
-import SecondaryBedroom from "./../public/secondary-bedroom.webp";
 import { FiImage } from "react-icons/fi";
 import Link from "next/link";
 import { LargeImageWithModal, SmallImageWithModal } from "./ImageWithModal";
