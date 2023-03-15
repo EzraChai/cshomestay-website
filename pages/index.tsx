@@ -46,7 +46,7 @@ export default function Home({ data }) {
         <meta property="og:title" content="Cozy & Sweet Homestay Port Dickson - A cozy and affordable place to stay"></meta>
         <meta
           property="og:image"
-          content="https://cshomestay.vercel.app/api/og?1"
+          content="https://cshomestay.vercel.app/api/image/og"
         />
         <meta
           property="og:description"
