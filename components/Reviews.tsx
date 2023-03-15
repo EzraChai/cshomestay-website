@@ -16,7 +16,7 @@ const Reviews = ({ reviews }) => {
           our previous guests.
         </h2>
       </div>
-      <div className="lg:hidden reviews-location md:w-[80%] lg:w-full mx-auto container mt-8 p-8 md:px-16 pb-28 ">
+      <div className="md:hidden reviews-location md:w-[80%] lg:w-full mx-auto container mt-8 p-8 md:px-16 pb-28 ">
         {reviews.map((review, index) => (
           <div key={index}>
             {index < 3 && <Review review={review} />}
@@ -36,6 +36,9 @@ const Reviews = ({ reviews }) => {
             {moreReviews && index >= 3 && <Review review={review} />}
           </div>
         ))}
+      </div>
+      <div className="hidden md:block lg:hidden md:mt-12 md:mx-4 md:pb-32">
+        <ReviewsSwipper reviews={reviews} />
       </div>
       <div className="hidden lg:block lg:mt-20 lg:pb-32">
         <ReviewsSwipper reviews={reviews} />

@@ -2,6 +2,7 @@ import PlacesToVisitCard from "./PlacesToVisitCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
+import { A11y, Autoplay } from "swiper";
 
 
 const PlacesToVisit = ({ places }) => {
@@ -27,7 +28,7 @@ const PlacesToVisit = ({ places }) => {
               slidesPerView: 3.3,
             },
           }}
-          className=" mt-10">
+          className=" mt-14">
           {places.map((place) => (
             <SwiperSlide key={place.id}>
               <PlacesToVisitCard place={place} />
