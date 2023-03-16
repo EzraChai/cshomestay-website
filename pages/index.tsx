@@ -7,7 +7,6 @@ import StrategicPlace from "../components/StrategicPlace";
 import Mission from "../components/Mission";
 import Book from "../components/Booking";
 import Gallery from "../components/Gallery";
-import Waiting from "../components/Waiting";
 import Question from "../components/Question";
 import Bed from "../components/Bed";
 import Footer from "../components/Footer"
@@ -15,6 +14,7 @@ import Footer from "../components/Footer"
 import { useEffect } from "react";
 import gsap from "gsap/dist/gsap";
 import PlacesToVisit from "../components/PlacesToVisit";
+import Facilities from "@/components/Facilities";
 
 const END_POINT = process.env.END_POINT;
 const HYGRAPH_PERMANENT_TOKEN = process.env.HYGRAPH_PERMANENT_TOKEN;
@@ -100,6 +100,7 @@ export default function Home({ data }) {
         <Mission />
         <Gallery images={data.images} />
         <Bed />
+        <Facilities facilities={data.facilities} />
         <StrategicPlace />
         <PlacesToVisit places={data.places} />
         <Question questions={data.questions} />
@@ -155,6 +156,15 @@ const getData = async () => {
         url
         locationLink
         image {
+          url
+          width
+          height
+        }
+      }
+      facilities {
+        id
+        title
+        image{
           url
           width
           height

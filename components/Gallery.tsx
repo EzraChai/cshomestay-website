@@ -29,7 +29,7 @@ const Gallery = ({ images }: any) => {
       <div className="flex justify-center items-center">
         <Link
           href={"/pictures"}
-          className="group lg:hidden w-[40%] border-2 border-zinc-700 bg-white hover:bg-black transition-all rounded-xl flex justify-evenly items-center"
+          className="group lg:hidden w-[40%] md:w-[20%] border-2 border-zinc-700 bg-white hover:bg-black transition-all rounded-xl flex justify-evenly items-center"
         >
           <FiImage className="group-hover:text-white transition" />
           <div className="text-black font-semibold text-xl py-2 group-hover:text-white transition ">
