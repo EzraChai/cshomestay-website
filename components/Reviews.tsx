@@ -1,6 +1,8 @@
+import Link from "next/link";
 import Review from "./Review";
 import ReviewsSwipper from "./ReviewsSwiper";
 import { useState } from "react";
+import { BsFacebook } from "react-icons/bs";
 
 const Reviews = ({ reviews }) => {
   const [moreReviews, setMoreReviews] = useState<boolean>(false);
@@ -40,7 +42,7 @@ const Reviews = ({ reviews }) => {
       <div className="hidden md:block lg:hidden md:mt-12 md:mx-4 md:pb-32">
         <ReviewsSwipper reviews={reviews} />
       </div>
-      <div className="hidden lg:block lg:mt-20 lg:pb-32">
+      <div className="hidden lg:block lg:mt-20 lg:pb-12">
         <ReviewsSwipper reviews={reviews} />
       </div>
     </div>

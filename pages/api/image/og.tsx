@@ -1,9 +1,7 @@
 import { ImageResponse } from "@vercel/og";
-import Image from "next/image";
-import HouseImage from "../../public/house.webp"
 
 export const config = {
-  runtime: "experimental-edge",
+  runtime: "edge",
 };
 
 export default function og() {

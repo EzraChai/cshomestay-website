@@ -104,7 +104,7 @@ export default function Home({ data }) {
         <PlacesToVisit places={data.places} />
         <Question questions={data.questions} />
         <Reviews reviews={data.reviews} />
-        <Waiting />
+        {/* <Waiting /> */}
         <Book />
       </div>
       <Footer />
@@ -153,6 +153,7 @@ const getData = async () => {
         tag
         description
         url
+        locationLink
         image {
           url
           width

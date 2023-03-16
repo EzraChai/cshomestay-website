@@ -1,5 +1,5 @@
 const withBudleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZ === "true",
+  enabled: process.env.ANALYZE === "true",
 });
 
 module.exports = withBudleAnalyzer({
