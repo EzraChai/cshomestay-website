@@ -7,7 +7,7 @@ const PlacesToVisitCard = ({ place }) => {
         style={{ transform: "translate(-50%)" }}
       >
         <div className="relative h-full w-full bg-cover bg-center bg-no-repeat transition">
-          <Image
+          <Imag e
             className="absolute inset-0 w-full h-full object-cover"
             src={place.image.url}
             width={288}

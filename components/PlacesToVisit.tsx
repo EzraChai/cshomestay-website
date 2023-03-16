@@ -19,6 +19,7 @@ const PlacesToVisit = ({ places }) => {
         </div> */}
         {/* <div className=" mt-10 grid lg:grid-cols-3 md:grid-cols-2 gap-10"> */}
         <Swiper
+          grabCursor
           slidesPerView={1.2}
           breakpoints={{
             640: {
@@ -28,15 +29,14 @@ const PlacesToVisit = ({ places }) => {
               slidesPerView: 3.3,
             },
           }}
+          modules={[A11y]}
           className=" mt-14">
           {places.map((place) => (
             <SwiperSlide key={place.id}>
               <PlacesToVisitCard place={place} />
-
             </SwiperSlide>
           ))}
         </Swiper>
-        {/* </div> */}
       </div>
     </div>
   );
