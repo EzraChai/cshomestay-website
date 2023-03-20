@@ -10,6 +10,7 @@ import Gallery from "../components/Gallery";
 import Question from "../components/Question";
 import Bed from "../components/Bed";
 import Footer from "../components/Footer"
+import Chat from "../components/Chat"
 
 import { useEffect } from "react";
 import gsap from "gsap/dist/gsap";
@@ -96,6 +97,7 @@ export default function Home({ data }) {
           </div>
         </div>
       </div>
+      <Chat />
       <div className="mt-24">
         <Mission />
         <Gallery images={data.images} />
@@ -105,7 +107,6 @@ export default function Home({ data }) {
         <PlacesToVisit places={data.places} />
         <Question questions={data.questions} />
         <Reviews reviews={data.reviews} />
-        {/* <Waiting /> */}
         <Book />
       </div>
       <Footer />
