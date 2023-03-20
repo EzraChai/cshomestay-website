@@ -45,6 +45,19 @@ const Reviews = ({ reviews }) => {
       <div className="hidden lg:block lg:mt-20 lg:pb-12">
         <ReviewsSwipper reviews={reviews} />
       </div>
+      <div className="flex flex-col items-center justify-center text-white mb-4">
+        <div className="text-zinc-300 mb-2">
+          Feel free to
+        </div>
+        <Link
+          rel={"noopener"}
+          className="group font-bold flex gap-1 text-zinc-50 items-center mx-auto justify-center border-b-2 border-transparent hover:border-cyan-400 transition"
+          href={"https://www.facebook.com/profile.php?id=100079928042529"}
+          target={"_blank"}
+        >
+          <BsFacebook /> Follow us
+        </Link>
+      </div>
     </div>
   );
 };
