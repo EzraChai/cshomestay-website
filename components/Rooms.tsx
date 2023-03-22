@@ -24,7 +24,7 @@ const Rooms = ({ rooms }: any) => {
       }}
       grabCursor
       modules={[A11y]}
-      className=" mt-6 mb-12 lg:mt-14">
+      className=" mt-6 md:mb-12 lg:mt-14">
       {rooms.map((room) => (
         <SwiperSlide key={room.id}>
           <Room room={room} />
