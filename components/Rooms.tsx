@@ -3,7 +3,7 @@ import Room from "./Room";
 import { A11y } from "swiper";
 
 const Rooms = ({ rooms }: any) => {
-  return <div className="pt-32 pb-12 max-w-7xl mx-auto">
+  return <div className="pt-32 md:pb-12 max-w-7xl mx-auto">
     <div className="md:grid pb-4 items-center grid-cols-5">
       <div className=" px-4 col-span-2 text-xl md:text-3xl lg:text-5xl font-bold text-zinc-800">More <br className="hidden md:block" /> than enough.</div>
       <div className=" px-4 col-span-3 text-md lg:text-xl text-zinc-600">Spacious, corner-lot apartment
