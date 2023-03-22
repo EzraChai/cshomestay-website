@@ -6,8 +6,8 @@ import { A11y } from "swiper";
 
 const Facilities = ({ facilities }: any) => {
     return (
-        <div className="max-w-7xl mx-auto pt-6 md:pb-12">
-            <h2 className="mt-16 lg:mt-24 text-4xl text-center lg:text-6xl lg:tracking-tight font-extrabold text-zinc-800">
+        <div className="max-w-7xl mt-24 lg:mt-0 mx-auto pt-6 md:pb-24">
+            <h2 className=" text-4xl text-center lg:text-6xl lg:tracking-tight font-extrabold text-zinc-800">
                 Facilities
             </h2>
             <Swiper

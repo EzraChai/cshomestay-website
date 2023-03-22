@@ -2,20 +2,21 @@ import Head from "next/head";
 import Link from "next/link";
 import { GraphQLClient, gql } from "graphql-request";
 
-import Reviews from "../components/Reviews";
-import StrategicPlace from "../components/StrategicPlace";
-import Mission from "../components/Mission";
-import Book from "../components/Booking";
-import Gallery from "../components/Gallery";
-import Question from "../components/Question";
-import Bed from "../components/Bed";
-import Footer from "../components/Footer"
-import Chat from "../components/Chat"
+import Reviews from "@/components/Reviews";
+import StrategicPlace from "@/components/StrategicPlace";
+import Mission from "@/components/Mission";
+import Book from "@/components/Booking";
+import Gallery from "@/components/Gallery";
+import Question from "@/components/Question";
+import Rooms from "@/components/Rooms";
+import Footer from "@/components/Footer";
+import Chat from "@/components/Chat";
+import PlacesToVisit from "@/components/PlacesToVisit";
+import Facilities from "@/components/Facilities";
+
 
 import { useEffect } from "react";
 import gsap from "gsap/dist/gsap";
-import PlacesToVisit from "../components/PlacesToVisit";
-import Facilities from "@/components/Facilities";
 
 const END_POINT = process.env.END_POINT;
 const HYGRAPH_PERMANENT_TOKEN = process.env.HYGRAPH_PERMANENT_TOKEN;
@@ -108,9 +109,9 @@ export default function Home({ data }) {
       <div className="mt-12 lg:mt-24">
         <Mission />
         <Gallery images={data.images} />
-        <Bed />
-        <Facilities facilities={data.facilities} />
+        <Rooms rooms={data.rooms} />
         <StrategicPlace />
+        <Facilities facilities={data.facilities} />
         <PlacesToVisit places={data.places} />
         <Question questions={data.questions} />
         <Reviews reviews={data.reviews} />
@@ -177,6 +178,15 @@ const getData = async () => {
           width
           height
         }
+      }
+       rooms {
+        image {
+          url
+          width
+          height
+        }
+        totalNumber
+        title
       }
     }
   `;

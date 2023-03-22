@@ -34,7 +34,7 @@ const StrategicPlace = () => {
                 <SiMcdonalds className="text-sm lg:text-xl" />
               </DistanceFromProperty>
             </div>
-            <div className="absolute -bottom-10 md:bottom-10 right-10 text-gray-400 text-xs float-right">
+            <div className="absolute italic -bottom-10 md:bottom-10 right-10 text-gray-600 text-sm float-right">
               based on Google map
             </div>
           </div>
