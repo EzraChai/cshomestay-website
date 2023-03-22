@@ -4,6 +4,7 @@ import ProgressBar from "@badrap/bar-of-progress";
 import Router from "next/router";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { Analytics } from '@vercel/analytics/react';
 
 const progress = new ProgressBar({
   size: 3,
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }) {
       <main>
         <Component {...pageProps} />
       </main>
+      <Analytics />
     </Layout>
   );
 }
