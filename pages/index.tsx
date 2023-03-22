@@ -112,9 +112,9 @@ export default function Home({ data }) {
         <Facilities facilities={data.facilities} />
         <StrategicPlace />
         <PlacesToVisit places={data.places} />
+        <Question questions={data.questions} />
         <Reviews reviews={data.reviews} />
         <Book />
-        <Question questions={data.questions} />
       </div>
       <Footer />
     </>
