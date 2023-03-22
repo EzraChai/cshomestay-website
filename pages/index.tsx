@@ -59,15 +59,15 @@ export default function Home({ data }) {
           content="https://cshomestay.vercel.app"
         />
       </Head>
-      <div className="pt-10 smooth-scroll big-container hidden h-full bg-white mx-auto">
-        <div className="relative wrapper">
-          <div className="mt-24 lg:mt-32 absolute rounded-lg lg:rounded-2xl overflow-hidden w-[297px] lg:w-[1080px] left-0 right-0 mr-auto ml-auto">
+      <div className="pt-10 pb-10 smooth-scroll big-container hidden h-full bg-white mx-auto">
+        <div className="relative wrapper overflow-hidden">
+          <div className="mt-10 md:mt-24 lg:mt-32 absolute lg:rounded-2xl overflow-hidden w-[563px] lg:w-[1080px] left-0 right-0 mr-auto ml-auto">
             <video autoPlay loop aria-hidden muted>
               <source src="https://media.graphassets.com/mywVYgpT1C6G9DEMMyZU" type="video/mp4" />
             </video>
           </div>
 
-          <div className="absolute opacity-70 bg-white w-[297px] lg:w-[1080px] h-full left-0 right-0 mr-auto ml-auto"></div>
+          <div className="absolute opacity-70 bg-white w-[563px] lg:w-[1080px] h-full left-0 right-0 mr-auto ml-auto"></div>
           <div className="home flex items-center h-[50vh] lg:h-[90vh] w-full flex-col">
             <div className="mt-[8rem] lg:mt-[16rem]">
               <div className="hero-content-line w-full h-100 overflow-hidden">
@@ -105,7 +105,7 @@ export default function Home({ data }) {
         </div>
       </div>
       <Chat />
-      <div className="mt-24">
+      <div className="lg:mt-24">
         <Mission />
         <Gallery images={data.images} />
         <Bed />

@@ -1,6 +1,6 @@
 export default function Mission() {
   return (
-    <div className=" mt-24 lg:mt-24 py-12 lg:py-20 flex flex-col items-center max-w-7xl bg-cyan-500/20 rounded-xl mx-4 lg:mx-auto">
+    <div className=" lg:mt-24 py-12 lg:py-20 flex flex-col items-center max-w-7xl bg-cyan-500/20 rounded-xl mx-4 lg:mx-auto">
       <h3 className="text-md text-center lg:text-3xl font-semibold text-zinc-600">
         Our mission is to
       </h3>
