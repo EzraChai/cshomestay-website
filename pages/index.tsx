@@ -62,7 +62,7 @@ export default function Home({ data }) {
       <div className="pt-10 smooth-scroll big-container hidden h-full bg-white mx-auto">
         <div className="relative wrapper">
           <div className="mt-32 absolute rounded-2xl overflow-hidden w-[1080px] left-0 right-0 mr-auto ml-auto">
-            <video autoPlay loop aria-hidden>
+            <video autoPlay loop aria-hidden muted>
               <source src="https://media.graphassets.com/mywVYgpT1C6G9DEMMyZU" type="video/mp4" />
             </video>
           </div>
