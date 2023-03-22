@@ -59,8 +59,15 @@ export default function Home({ data }) {
           content="https://cshomestay.vercel.app"
         />
       </Head>
-      <div className="pt-10 smooth-scroll big-container hidden h-full bg-zinc-100 mx-auto">
-        <div className="wrapper">
+      <div className="pt-10 smooth-scroll big-container hidden h-full bg-white mx-auto">
+        <div className="mt-32 relative wrapper">
+          <div className="absolute rounded-2xl overflow-hidden w-[1080px] left-0 right-0 mr-auto ml-auto">
+            <video autoPlay loop aria-hidden>
+              <source src="https://media.graphassets.com/mywVYgpT1C6G9DEMMyZU" type="video/mp4" />
+            </video>
+          </div>
+
+          <div className="absolute opacity-70 bg-white w-[1080px] h-full left-0 right-0 mr-auto ml-auto"></div>
           <div className="home flex items-center h-[50vh] lg:h-[90vh] w-full flex-col">
             <div className="mt-[8rem] lg:mt-[16rem]">
               <div className="hero-content-line w-full h-100 overflow-hidden">
