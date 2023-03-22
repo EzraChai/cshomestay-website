@@ -15,7 +15,9 @@ const Chat = () => {
             <TooltipProvider>
                 <Tooltip>
                     <TooltipTrigger>
-                        <Link href={"https://wa.link/z1sa7g"}
+                        <Link
+                            scroll={false}
+                            href={"https://wa.link/z1sa7g"}
                             target={"_blank"}
                             rel={"noopener"}>
                             <div className="relative">

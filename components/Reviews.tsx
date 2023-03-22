@@ -50,6 +50,7 @@ const Reviews = ({ reviews }) => {
           Feel free to
         </div>
         <Link
+          scroll={false}
           rel={"noopener"}
           className="group font-bold flex gap-1 text-zinc-50 items-center mx-auto justify-center border-b-2 border-transparent hover:border-cyan-400 transition"
           href={"https://www.facebook.com/profile.php?id=100079928042529"}

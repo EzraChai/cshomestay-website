@@ -21,6 +21,7 @@ export default function Book() {
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-[80%] lg:max-w-[60%] mx-auto gap-10 pb-8">
             <Link
+              scroll={false}
               rel={"noopener"}
               target={"_blank"}
               href={"https://wa.link/z1sa7g"}
@@ -38,6 +39,7 @@ export default function Book() {
               </div>
             </Link>
             <Link
+              scroll={false}
               rel={"noopener"}
               target={"_blank"}
               href={"https://www.booking.com/Share-vOyRYY"}
@@ -54,6 +56,7 @@ export default function Book() {
               </div>
             </Link>
             <Link
+              scroll={false}
               rel={"noopener"}
               target={"_blank"}
               href={
@@ -74,6 +77,7 @@ export default function Book() {
             </Link>
 
             <Link
+              scroll={false}
               rel={"noopener"}
               target={"_blank"}
               href={"https://www.airbnb.com/rooms/53874417"}

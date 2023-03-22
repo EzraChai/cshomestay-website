@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+
 import { Layout } from "../components/Layout";
 import ProgressBar from "@badrap/bar-of-progress";
 import Router from "next/router";
