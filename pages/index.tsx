@@ -105,7 +105,7 @@ export default function Home({ data }) {
         </div>
       </div>
       <Chat />
-      <div className="lg:mt-24">
+      <div className="mt-12 lg:mt-24">
         <Mission />
         <Gallery images={data.images} />
         <Bed />
