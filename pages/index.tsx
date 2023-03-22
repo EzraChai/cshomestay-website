@@ -69,7 +69,7 @@ export default function Home({ data }) {
 
           <div className="absolute opacity-70 bg-white w-[563px] md:w-[1080px] h-full left-0 right-0 mr-auto ml-auto"></div>
           <div className="home flex items-center h-[50vh] lg:h-[90vh] w-full flex-col">
-            <div className="mt-[9rem] lg:mt-[16rem]">
+            <div className="mt-[10rem] lg:mt-[16rem]">
               <div className="hero-content-line w-full h-100 overflow-hidden">
                 <h1 className="main-text text-center font-extrabold title-font text-[2.8rem] md:text-[5rem] lg:text-[12rem] antialiased">
                   Cozy & Sweet.
