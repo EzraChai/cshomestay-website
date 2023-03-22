@@ -5,6 +5,7 @@ const PlacesToVisitCard = ({ place }) => {
   return (
     <div className=" px-4 md:px-8 min-h-[400px] lg:mx-4 lg:px-0 relative z-[4] mt-12 md:mt-24  transition ">
       <Link
+        scroll={false}
         rel={"noopener"}
         target={"_blank"}
         href={place.locationLink}>

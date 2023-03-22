@@ -1,4 +1,5 @@
 import { FiImage } from "react-icons/fi";
+import { BsInfoCircleFill } from "react-icons/bs"
 import Link from "next/link";
 import { LargeImageWithModal, SmallImageWithModal } from "./ImageWithModal";
 
@@ -39,6 +40,7 @@ const Gallery = ({ images }: any) => {
           </div>
         </Link>
       </div>
+      <div className=" text-zinc-800 text-sm flex justify-center items-center"> <BsInfoCircleFill className="mr-2" /> Click the image to enlarge.</div>
     </>
   );
 };

@@ -1,6 +1,8 @@
 import PlacesToVisitCard from "./PlacesToVisitCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import { BsInfoCircleFill } from "react-icons/bs"
+
 import "swiper/css";
 import { A11y } from "swiper";
 
@@ -31,6 +33,7 @@ const PlacesToVisit = ({ places }) => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className=" text-zinc-800 text-sm flex justify-center items-center"> <BsInfoCircleFill className="mr-2" /> Click the card to show the direction.</div>
       </div>
     </div>
   );
