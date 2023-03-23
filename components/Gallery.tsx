@@ -40,7 +40,7 @@ const Gallery = ({ images }: any) => {
           </div>
         </Link>
       </div>
-      <div className="mt-6 text-zinc-800 text-sm flex justify-center items-center"><BsInfoCircleFill className="mr-2" /> Click the image to enlarge.</div>
+      <div className="mt-6 text-zinc-800 text-sm flex justify-center items-center"><BsInfoCircleFill className="mr-2" /> Click on the image to enlarge it.</div>
     </>
   );
 };

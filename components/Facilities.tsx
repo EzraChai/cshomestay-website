@@ -8,7 +8,7 @@ const Facilities = ({ facilities }: any) => {
     return (
         <div className="max-w-7xl mt-24 lg:mt-0 mx-auto pt-6 md:pb-24">
             <h2 className=" text-4xl text-center lg:text-6xl lg:tracking-tight font-extrabold text-zinc-800">
-                Facilities
+                Facilities.
             </h2>
             <Swiper
                 slidesPerView={1.6}

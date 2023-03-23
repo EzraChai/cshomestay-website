@@ -33,7 +33,7 @@ const PlacesToVisit = ({ places }) => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="mt-4 text-zinc-800 text-sm flex justify-center items-center"><BsInfoCircleFill className="mr-2" /> Click the card to show the direction.</div>
+        <div className="mt-4 text-zinc-800 text-sm flex justify-center items-center"><BsInfoCircleFill className="mr-2" /> Click on the card to show the location.</div>
       </div>
     </div>
   );

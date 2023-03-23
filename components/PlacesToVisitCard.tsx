@@ -1,16 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MdLocationOn } from "react-icons/md";
 
 const PlacesToVisitCard = ({ place }) => {
   return (
     <div className=" px-4 md:px-8 min-h-[400px] lg:mx-4 lg:px-0 relative z-[4] mt-12 md:mt-24  transition ">
-      <Link
-        scroll={false}
+      <Link scroll={false}
         rel={"noopener"}
         target={"_blank"}
         href={place.locationLink}>
-        <div
-          className="absolute w-[211.2px] md:w-72 h-44 md:h-60 left-[50%] -top-10 md:-top-20 shadow-xl rounded-xl overflow-hidden"
+        <div className="absolute w-[211.2px] md:w-72 h-44 md:h-60 left-[50%] -top-10 md:-top-20 shadow-xl rounded-xl overflow-hidden"
           style={{ transform: "translate(-50%)" }}
         >
           <div className="relative h-full w-full bg-cover bg-center bg-no-repeat transition">
@@ -39,7 +38,9 @@ const PlacesToVisitCard = ({ place }) => {
                 </div>
               ))}
             </div>
-            <div className="text-zinc-500">{place.description}</div>
+            <p className="pb-2 text-zinc-500">{place.description}</p>
+            <div
+              className="font-semibold border-b-2 border-transparent inline-flex items-center group-hover:border-blue-900 group-hover:text-blue-900 transition"><MdLocationOn className="mr-[0.1rem]" /> Location</div>
           </div>
         </div>
       </Link>

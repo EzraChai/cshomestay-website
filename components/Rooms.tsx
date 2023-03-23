@@ -8,7 +8,7 @@ const Rooms = ({ rooms }: any) => {
       <div className=" px-4 col-span-2 text-xl md:text-3xl lg:text-5xl font-bold text-zinc-800">More <br className="hidden md:block" /> than enough.</div>
       <div className=" px-4 col-span-3 text-md lg:text-xl text-zinc-600">Spacious, corner-lot apartment
         with 3 bedrooms, 2 bathrooms, a living room and a kitchen.
-        Relax with the whole family at this peaceful place to stay.😊
+        Relax with your family at this peaceful place.😊
         <div className="mt-2 text-zinc-600 text-sm italic">Suitable for 10 people at most.</div>
       </div>
     </div>
@@ -25,8 +25,8 @@ const Rooms = ({ rooms }: any) => {
       grabCursor
       modules={[A11y]}
       className=" mt-6 md:mb-12 lg:mt-14">
-      {rooms.map((room) => (
-        <SwiperSlide key={room.id}>
+      {rooms.map((room, index) => (
+        <SwiperSlide key={index}>
           <Room room={room} />
         </SwiperSlide>
       ))}
