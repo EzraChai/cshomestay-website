@@ -10,11 +10,11 @@ const Footer = () => {
                 © {new Date().getFullYear()} Cozy & Sweet Homestay Port Dickson. <br className="md:hidden" /> All right reserved.
             </div>
             <div className="flex justify-center pb-16">
-                <Link href={"/"} className="font-semibold border-b-2 border-transparent hover:border-blue-900 transition">Home</Link>
+                <Link href={"/"} className="font-semibold border-b-2 border-transparent hover:border-cyan-400 transition">Home</Link>
                 <div className="text-zinc-400 px-6">|</div>
-                <Link href={"/pictures"} className="font-semibold border-b-2 border-transparent hover:border-blue-900 transition">Pictures</Link>
+                <Link href={"/pictures"} className="font-semibold border-b-2 border-transparent hover:border-cyan-400 transition">Pictures</Link>
                 <div className="text-zinc-400 px-6">|</div>
-                <Link href={"/about"} className="font-semibold border-b-2 border-transparent hover:border-blue-900 transition">About</Link>
+                <Link href={"/about"} className="font-semibold border-b-2 border-transparent hover:border-cyan-400 transition">About</Link>
             </div>
         </div>
     )

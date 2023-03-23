@@ -4,7 +4,7 @@ import { MdLocationOn } from "react-icons/md";
 
 const PlacesToVisitCard = ({ place }) => {
   return (
-    <div className=" px-4 md:px-8 min-h-[400px] lg:mx-4 lg:px-0 relative z-[4] mt-12 md:mt-24  transition ">
+    <div className="group px-4 md:px-8 min-h-[400px] lg:mx-4 lg:px-0 relative z-[4] mt-12 md:mt-24  transition ">
       <Link scroll={false}
         rel={"noopener"}
         target={"_blank"}
@@ -21,9 +21,8 @@ const PlacesToVisitCard = ({ place }) => {
               alt={place.nameOfThePlace}
             />
           </div>
-          <div className="bg-black z-[1] absolute inset-0 opacity-0 group-hover:opacity-25 transition"></div>
         </div>
-        <div className=" group rounded-xl pt-36 bg-white overflow-hidden transition">
+        <div className=" rounded-xl pt-36 bg-white overflow-hidden transition">
           <div className="p-6">
             <div className="font-bold text-zinc-800 text-2xl text-center">
               {place.nameOfThePlace}
@@ -40,7 +39,7 @@ const PlacesToVisitCard = ({ place }) => {
             </div>
             <p className="pb-2 text-zinc-500">{place.description}</p>
             <div
-              className="font-semibold border-b-2 border-transparent inline-flex items-center group-hover:border-blue-900 group-hover:text-blue-900 pl-[0.05rem] pr-1 transition"><MdLocationOn className="mr-[0.1rem]" /> Location</div>
+              className="font-semibold border-b-2 border-transparent inline-flex items-center group-hover:border-cyan-600 group-hover:text-cyan-600 pl-[0.05rem] pr-1 transition"><MdLocationOn className="mr-[0.1rem]" /> Location</div>
           </div>
         </div>
       </Link>
