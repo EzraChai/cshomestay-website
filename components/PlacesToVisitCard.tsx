@@ -40,7 +40,7 @@ const PlacesToVisitCard = ({ place }) => {
             </div>
             <p className="pb-2 text-zinc-500">{place.description}</p>
             <div
-              className="font-semibold border-b-2 border-transparent inline-flex items-center group-hover:border-blue-900 group-hover:text-blue-900 pl-[0.1rem] pr-1 transition"><MdLocationOn className="mr-[0.1rem]" /> Location</div>
+              className="font-semibold border-b-2 border-transparent inline-flex items-center group-hover:border-blue-900 group-hover:text-blue-900 pl-[0.05rem] pr-1 transition"><MdLocationOn className="mr-[0.1rem]" /> Location</div>
           </div>
         </div>
       </Link>
