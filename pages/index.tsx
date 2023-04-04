@@ -14,7 +14,6 @@ import Chat from "@/components/Chat";
 import PlacesToVisit from "@/components/PlacesToVisit";
 import Facilities from "@/components/Facilities";
 
-
 import { useEffect } from "react";
 import gsap from "gsap/dist/gsap";
 
@@ -46,7 +45,10 @@ export default function Home({ data }) {
           name="keywords"
           content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson, cozy sweet homestay, cozysweet homestay"
         />
-        <meta property="og:title" content="Cozy & Sweet Homestay Port Dickson - A cozy and affordable place to stay"></meta>
+        <meta
+          property="og:title"
+          content="Cozy & Sweet Homestay Port Dickson - A cozy and affordable place to stay"
+        ></meta>
         <meta
           property="og:image"
           content="https://cshomestay.vercel.app/api/image/og"
@@ -55,16 +57,16 @@ export default function Home({ data }) {
           property="og:description"
           content="Get ready to spent your holiday in Port Dickson and stay with us."
         />
-        <meta
-          property="og:url"
-          content="https://cshomestay.vercel.app"
-        />
+        <meta property="og:url" content="https://cshomestay.vercel.app" />
       </Head>
       <div className="pt-10 pb-10 smooth-scroll big-container hidden h-full bg-white mx-auto">
         <div className="relative wrapper overflow-hidden">
           <div className="mt-20 md:mt-24 lg:mt-32 absolute lg:rounded-2xl overflow-hidden w-[563px] md:w-[1080px] left-0 right-0 mr-auto ml-auto">
             <video autoPlay loop aria-hidden muted>
-              <source src="https://media.graphassets.com/mywVYgpT1C6G9DEMMyZU" type="video/mp4" />
+              <source
+                src="https://media.graphassets.com/jsoYJFeuRcSlNF66uFf5"
+                type="video/webm"
+              />
             </video>
           </div>
 
@@ -78,7 +80,7 @@ export default function Home({ data }) {
               </div>
               <div className="hero-content-line w-full text-zinc-800 h-100 title-font overflow-hidden antialiased">
                 <div className="secondary-text mt-2 lg:mt-2 text-center text-[0.77rem] md:text-[1.2rem] font-semibold tracking-wide">
-                  Homestay in{" "}
+                  {"Homestay in "}
                   <span className="hover:underline decoration-2 underline-offset-2">
                     <Link
                       hrefLang="en"
@@ -88,7 +90,7 @@ export default function Home({ data }) {
                       Port Dickson
                     </Link>
                   </span>
-                  ,
+                  {", "}
                   <span className="hover:underline decoration-2 underline-offset-2 cursor-pointer">
                     <Link
                       hrefLang="en"
@@ -96,7 +98,7 @@ export default function Home({ data }) {
                       href={"https://en.wikipedia.org/wiki/Negeri_Sembilan"}
                       passHref
                     >
-                      <span>Negeri Sembilan</span>
+                      <span>{"Negeri Sembilan"}</span>
                     </Link>
                   </span>
                 </div>
@@ -173,13 +175,13 @@ const getData = async () => {
       facilities {
         id
         title
-        image{
+        image {
           url
           width
           height
         }
       }
-       rooms {
+      rooms {
         image {
           url
           width
