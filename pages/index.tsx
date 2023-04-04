@@ -67,6 +67,10 @@ export default function Home({ data }) {
                 src="https://media.graphassets.com/jsoYJFeuRcSlNF66uFf5"
                 type="video/webm"
               />
+              <source
+                src="https://media.graphassets.com/mywVYgpT1C6G9DEMMyZU"
+                type="video/mp4"
+              />
             </video>
           </div>
 
