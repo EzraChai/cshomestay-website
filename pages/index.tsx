@@ -62,7 +62,7 @@ export default function Home({ data }) {
       <div className="pt-10 pb-10 smooth-scroll big-container hidden h-full bg-white mx-auto">
         <div className="relative wrapper overflow-hidden">
           <div className="mt-20 md:mt-24 lg:mt-32 absolute lg:rounded-2xl overflow-hidden w-[563px] md:w-[1080px] left-0 right-0 mr-auto ml-auto">
-            <video autoPlay loop preload={"true"} aria-hidden muted>
+            <video autoPlay loop preload={"auto"} aria-hidden muted>
               <source
                 src="https://media.graphassets.com/jsoYJFeuRcSlNF66uFf5"
                 type="video/webm"
