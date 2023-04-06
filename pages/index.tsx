@@ -71,6 +71,7 @@ export default function Home({ data }) {
                 src="https://media.graphassets.com/mywVYgpT1C6G9DEMMyZU"
                 type="video/mp4"
               />
+              Your browser does not support the video tag.
             </video>
           </div>
 

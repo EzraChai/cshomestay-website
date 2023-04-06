@@ -28,11 +28,11 @@ export const LargeImageWithModal = ({ image }) => {
         open={isOpen}
         onClose={() => setIsOpen(false)}
       >
-        <div className="fixed inset-0 bg-black/70" aria-hidden="true" />
+        <div className="fixed inset-0 bg-black/80" aria-hidden="true" />
         <div className="fixed inset-0 flex items-center justify-center">
           <button
             onClick={() => setIsOpen(false)}
-            className="group flex justify-center items-center absolute right-10 top-5 outline-none w-12 h-12 rounded-full hover:bg-zinc-500 transition"
+            className="group flex justify-center items-center absolute right-5 md:right-10 top-5 outline-none w-12 h-12 rounded-full hover:bg-zinc-500 transition"
           >
             <RiCloseFill className="text-3xl text-white " />
           </button>
