@@ -11,7 +11,7 @@ export default function Solution() {
   return (
     <>
       <Head>
-        <title>About</title>
+        <title>About | Cozy & Sweet Homestay Port Dickson</title>
       </Head>
       <div className="container hidden bg-zinc-100 mx-auto py-6">
         <div className="wrapper px-2">

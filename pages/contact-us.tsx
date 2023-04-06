@@ -5,7 +5,7 @@ export default function ContactUs() {
   return (
     <>
       <Head>
-        <title>Contact us</title>
+        <title>Contact Us | Cozy & Sweet Homestay Port Dickson</title>
       </Head>
       <Book />
     </>

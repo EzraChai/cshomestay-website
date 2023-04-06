@@ -10,22 +10,24 @@ const HYGRAPH_PERMANENT_TOKEN = process.env.HYGRAPH_PERMANENT_TOKEN;
 
 export default function Pictures({ data }) {
   return (
-    <div className="bg-pinkLavender/40">
+    <>
       <Head>
-        <title>Pictures</title>
+        <title>Pictures | Cozy & Sweet Homestay Port Dickson</title>
       </Head>
-      <div className="pt-32 lg:pt-32 pb-12 w-full h-full max-w-5xl mx-auto p-5 md:p-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
-          {data.images.map((photo, index) => {
-            return index % 3 == 0 ? (
-              <BigPictureWithModal key={photo.id} image={photo} />
-            ) : (
-              <SmallPictureWithModal key={photo.id} image={photo} />
-            );
-          })}
+      <div className="bg-pinkLavender/40">
+        <div className="pt-32 lg:pt-32 pb-12 w-full h-full max-w-5xl mx-auto p-5 md:p-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
+            {data.images.map((photo, index) => {
+              return index % 3 == 0 ? (
+                <BigPictureWithModal key={photo.id} image={photo} />
+              ) : (
+                <SmallPictureWithModal key={photo.id} image={photo} />
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

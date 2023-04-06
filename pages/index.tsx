@@ -43,7 +43,7 @@ export default function Home({ data }) {
         />
         <meta
           name="keywords"
-          content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson, cozy sweet homestay, cozysweet homestay"
+          content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson, cshomestay,cozy sweet homestay, cozysweet homestay"
         />
         <meta
           property="og:title"
