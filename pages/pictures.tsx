@@ -9,9 +9,8 @@ const END_POINT = process.env.END_POINT;
 const HYGRAPH_PERMANENT_TOKEN = process.env.HYGRAPH_PERMANENT_TOKEN;
 
 export default function Pictures({ data }) {
-  console.log(data.images);
   return (
-    <div className=" bg-pinkLavender/40">
+    <div className="bg-pinkLavender/40">
       <Head>
         <title>Pictures</title>
       </Head>
