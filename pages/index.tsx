@@ -58,6 +58,10 @@ export default function Home({ data }) {
           content="Get ready to spent your holiday in Port Dickson and stay with us."
         />
         <meta property="og:url" content="https://cshomestay.vercel.app" />
+        <meta
+          name="google-site-verification"
+          content="SUGhy7TGs0Wx3FzM_6F4BcLxwGq-3oXGYrFoa4ydUhQ"
+        />
       </Head>
       <div className="pt-10 pb-10 smooth-scroll big-container hidden h-full bg-white mx-auto">
         <div className="relative wrapper overflow-hidden">
