@@ -16,9 +16,7 @@ import Facilities from "@/components/Facilities";
 
 import { useEffect } from "react";
 import gsap from "gsap/dist/gsap";
-
-const END_POINT = process.env.END_POINT;
-const HYGRAPH_PERMANENT_TOKEN = process.env.HYGRAPH_PERMANENT_TOKEN;
+import { client } from "@/lib/hygraph";
 
 export default function Home({ data }) {
   useEffect(() => {
@@ -63,8 +61,8 @@ export default function Home({ data }) {
           content="SUGhy7TGs0Wx3FzM_6F4BcLxwGq-3oXGYrFoa4ydUhQ"
         />
       </Head>
-      <div className="pt-10 pb-10 smooth-scroll big-container hidden h-full bg-white mx-auto">
-        <div className="relative wrapper overflow-hidden">
+      <div className="hidden h-full pt-10 pb-10 mx-auto bg-white smooth-scroll big-container">
+        <div className="relative overflow-hidden wrapper">
           <div className="mt-20 md:mt-24 lg:mt-32 absolute lg:rounded-2xl overflow-hidden w-[563px] md:w-[1080px] left-0 right-0 mr-auto ml-auto">
             <video autoPlay loop preload={"auto"} aria-hidden muted>
               <source
@@ -82,12 +80,12 @@ export default function Home({ data }) {
           <div className="absolute opacity-70 bg-white w-[563px] md:w-[1080px] h-full left-0 right-0 mr-auto ml-auto"></div>
           <div className="home mt-4 flex items-center h-[50vh] lg:h-[90vh] w-full flex-col">
             <div className="mt-[10rem] lg:mt-[16rem]">
-              <div className="hero-content-line w-full h-100 overflow-hidden">
+              <div className="w-full overflow-hidden hero-content-line h-100">
                 <h1 className="main-text text-center font-extrabold title-font text-[2.8rem] md:text-[5rem] lg:text-[12rem] antialiased">
                   Cozy & Sweet.
                 </h1>
               </div>
-              <div className="hero-content-line w-full text-zinc-800 h-100 title-font overflow-hidden antialiased">
+              <div className="w-full overflow-hidden antialiased hero-content-line text-zinc-800 h-100 title-font">
                 <div className="secondary-text mt-2 lg:mt-2 text-center text-[0.77rem] md:text-[1.2rem] font-semibold tracking-wide">
                   {"Homestay in "}
                   <span className="hover:underline decoration-2 underline-offset-2">
@@ -100,7 +98,7 @@ export default function Home({ data }) {
                     </Link>
                   </span>
                   {", "}
-                  <span className="hover:underline decoration-2 underline-offset-2 cursor-pointer">
+                  <span className="cursor-pointer hover:underline decoration-2 underline-offset-2">
                     <Link
                       hrefLang="en"
                       rel="external"
@@ -134,11 +132,6 @@ export default function Home({ data }) {
 }
 
 const getData = async () => {
-  const client = new GraphQLClient(END_POINT, {
-    headers: {
-      Authorization: `Bearer ${HYGRAPH_PERMANENT_TOKEN}`,
-    },
-  });
   const query = gql`
     {
       reviews {

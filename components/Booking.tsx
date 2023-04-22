@@ -8,13 +8,13 @@ import Image from "next/image";
 
 export default function Book() {
   return (
-    <div className="bg-cyan-500">
+    <div className=" bg-cyan-500">
       <div className="book-now-card py-36 text-primary max-w-[100rem] mx-auto">
-        <div className="header text-center">
-          <div className=" text-white px-10 text-4xl lg:text-6xl lg:tracking-tight font-extrabold">
+        <div className="text-center header">
+          <div className="px-10 text-4xl font-extrabold text-white lg:text-6xl lg:tracking-tight">
             Book now.
           </div>
-          <div className=" text-zinc-100 text-xl lg:text-3xl font-semibold text-center mt-2 mb-12">
+          <div className="mt-2 mb-12 text-xl font-semibold text-center text-zinc-100 lg:text-3xl">
             With your favourite platform.
           </div>
         </div>
@@ -25,11 +25,13 @@ export default function Book() {
               rel={"noopener"}
               target={"_blank"}
               href={"https://wa.link/z1sa7g"}
-              className="bg-white rounded-2xl relative hover:-translate-y-1 transition overflow-hidden"
+              className="relative overflow-hidden transition bg-white rounded-2xl hover:-translate-y-1"
             >
-              <div className="absolute bottom-4 right-4 border-2 border-zinc-800 text-zinc-800 tracking-wider select-none uppercase font-bold text-xs flex justify-center items-center rounded-xl px-2 py-[0.125rem]">LOWEST FARE</div>
-              <div className=" justify-center items-center py-20 px-10">
-                <div className="flex justify-center items-center">
+              <div className="absolute bottom-4 right-4 border-2 border-zinc-800 text-zinc-800 tracking-wider select-none uppercase font-bold text-xs flex justify-center items-center rounded-xl px-2 py-[0.125rem]">
+                LOWEST FARE
+              </div>
+              <div className="items-center justify-center px-10 py-20 ">
+                <div className="flex items-center justify-center">
                   <Image
                     placeholder={"blur"}
                     src={Whatsapp}
@@ -43,10 +45,10 @@ export default function Book() {
               rel={"noopener"}
               target={"_blank"}
               href={"https://www.booking.com/Share-vOyRYY"}
-              className="bg-white rounded-2xl hover:-translate-y-1 transition overflow-hidden"
+              className="overflow-hidden transition bg-white rounded-2xl hover:-translate-y-1"
             >
-              <div className=" justify-center items-center py-20 px-6">
-                <div className="flex justify-center items-center mt-1">
+              <div className="items-center justify-center px-6 py-20 ">
+                <div className="flex items-center justify-center mt-1">
                   <Image
                     placeholder={"blur"}
                     src={BookingDotCom}
@@ -62,10 +64,10 @@ export default function Book() {
               href={
                 "https://www.agoda.com/cozy-sweet-bayview-villa-3-br-2bth-6-beds-8pax/hotel/port-dickson-my.html"
               }
-              className="bg-white rounded-2xl hover:-translate-y-1 transition overflow-hidden"
+              className="overflow-hidden transition bg-white rounded-2xl hover:-translate-y-1"
             >
-              <div className=" justify-center items-center py-20 px-16 lg:px-28">
-                <div className="flex justify-center items-center">
+              <div className="items-center justify-center px-16 py-20 lg:px-28">
+                <div className="flex items-center justify-center">
                   <Image
                     placeholder={"blur"}
                     className="w-auto"
@@ -81,10 +83,10 @@ export default function Book() {
               rel={"noopener"}
               target={"_blank"}
               href={"https://www.airbnb.com/rooms/53874417"}
-              className=" bg-white rounded-2xl overflow-hidden  hover:-translate-y-1 transition"
+              className="overflow-hidden transition bg-white rounded-2xl hover:-translate-y-1"
             >
-              <div className=" justify-center items-center py-20 px-10 lg:px-20">
-                <div className="flex justify-center items-center">
+              <div className="items-center justify-center px-10 py-20 lg:px-20">
+                <div className="flex items-center justify-center">
                   <Image
                     placeholder={"blur"}
                     className="w-auto"
@@ -96,7 +98,7 @@ export default function Book() {
             </Link>
           </div>
         </div>
-      </div >
-    </div >
+      </div>
+    </div>
   );
 }

@@ -103,12 +103,12 @@ export const Hamburger = ({ state }) => {
   return (
     <div className="hamburger-menu hidden z-[59] top-0 bottom-0 left-0 right-0 h-screen w-full fixed">
       <div className="menu-secondary-background-color bg-zinc-800 z-[-1] top-0 bottom-0 left-0 right-0 h-screen w-full fixed"></div>
-      <div className="menu-layer relative bg-cyan-500 h-screen">
-        <div className="container mx-auto p-4 md:px-7">
-          <div className="wrapper relative">
+      <div className="relative h-screen menu-layer bg-cyan-500">
+        <div className="container p-4 mx-auto md:px-7">
+          <div className="relative wrapper">
             <div className="menu-links md:flex justify-between items-center relative top-36 md:top-[12rem]">
               <nav className="block p-0 m-0">
-                <ul className="font-bold text-4xl md:text-6xl lg:text-8xl">
+                <ul className="text-4xl font-bold md:text-6xl lg:text-8xl">
                   <li className="line1 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-[580px] overflow-hidden relative text-white">
                     <Link href={"/about"} passHref>
                       <div
@@ -142,10 +142,21 @@ export const Hamburger = ({ state }) => {
                       </div>
                     </Link>
                   </li>
+                  <li className="line3 cursor-pointer h-[70px] md:h-[100px] lg:h-[140px] w-full md:w-[480px] lg:w-[580px] overflow-hidden relative text-white hover:text-gray-700">
+                    <Link href={"/question"} passHref>
+                      <div
+                        onMouseEnter={(e) => handleEnter(e)}
+                        onMouseLeave={(e) => handleLeave(e)}
+                        className=" hover:text-zinc-700"
+                      >
+                        Questions
+                      </div>
+                    </Link>
+                  </li>
                 </ul>
               </nav>
-              <div className="info mt-4 md:mt-0 text-white w-1/2 lg:w-full lg:flex lg:justify-center lg:flex-col lg:items-center">
-                <h3 className="text-lg md:text-2xl lg:text-4xl font-bold">
+              <div className="w-1/2 mt-4 text-white info md:mt-0 lg:w-full lg:flex lg:justify-center lg:flex-col lg:items-center">
+                <h3 className="text-lg font-bold md:text-2xl lg:text-4xl">
                   Our Promise
                 </h3>
                 <p className="text-sm md:text-lg lg:text-xl">
