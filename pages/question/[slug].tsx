@@ -20,7 +20,7 @@ export default function QuestionPage({ content }) {
             )}
           </Head>
         )}
-        <article className="max-w-3xl px-4 pt-32 pb-24 mx-auto md:px-0">
+        <article className="max-w-3xl px-4 pt-24 pb-24 mx-auto lg:pt-32 md:px-0">
           {data.image && (
             <Image
               className="mb-8 overflow-hidden rounded-xl"
