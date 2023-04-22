@@ -6,35 +6,37 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function QuestionPage({ content }) {
-  let data = content.howTo;
-  return (
-    <>
-      {data && (
-        <Head>
-          <title>
-            {`${data.title} | Questions | Cozy & Sweet Homestay Port Dickson`}
-          </title>
-          {data.image && (
-            <meta property="og:image" content={`${data.image.url}`} />
-          )}
-        </Head>
-      )}
-      <article className="max-w-3xl px-4 pt-32 pb-24 mx-auto md:px-0">
-        {data.image && (
-          <Image
-            className="mb-8 overflow-hidden rounded-xl"
-            src={data.image.url}
-            height={data.image.height}
-            width={data.image.width}
-            alt={`${data.title}&apos; background image.`}
-          />
+  if (content) {
+    let data = content.howTo;
+    return (
+      <>
+        {data && (
+          <Head>
+            <title>
+              {`${data.title} | Questions | Cozy & Sweet Homestay Port Dickson`}
+            </title>
+            {data.image && (
+              <meta property="og:image" content={`${data.image.url}`} />
+            )}
+          </Head>
         )}
-        <div className="prose lg:prose-xl prose-h1:lg:text-[2.7rem] prose-img:rounded-xl prose-img:overflow-hidden ">
-          <MDXRemote {...data.content} />
-        </div>
-      </article>
-    </>
-  );
+        <article className="max-w-3xl px-4 pt-32 pb-24 mx-auto md:px-0">
+          {data.image && (
+            <Image
+              className="mb-8 overflow-hidden rounded-xl"
+              src={data.image.url}
+              height={data.image.height}
+              width={data.image.width}
+              alt={`${data.title}&apos; background image.`}
+            />
+          )}
+          <div className="prose lg:prose-xl prose-h1:lg:text-[2.7rem] prose-img:rounded-xl prose-img:overflow-hidden ">
+            <MDXRemote {...data.content} />
+          </div>
+        </article>
+      </>
+    );
+  }
 }
 
 export async function getStaticProps({ params }) {
