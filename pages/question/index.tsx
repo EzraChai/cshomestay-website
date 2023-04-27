@@ -16,6 +16,14 @@ export default function QuestionPage({ questions }) {
           property="og:image"
           content="https://cshomestay.vercel.app/api/image/og"
         />
+        <meta property="og:image:type" content="image/png" />
+        <meta
+          property="og:image"
+          content="https://cshomestay.vercel.app/og-whatsapp.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
         <meta
           property="og:description"
           content="Frequently asked questions by the guests."
