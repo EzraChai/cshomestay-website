@@ -38,7 +38,7 @@ export default function QuestionPage({ questions }) {
           {questions.howTos.map((question, index) => (
             <li className=" group" key={question.id}>
               <Link href={`/question/${question.slug}`}>
-                {index === 0 && <hr />}
+                {index === 0 && <hr className="text-zinc-600" />}
                 <h4 className="py-4 text-2xl font-bold transition-colors lg:py-6 lg:text-4xl lg:tracking-tight group-hover:text-black text-zinc-600 ">
                   {question.title}
                 </h4>

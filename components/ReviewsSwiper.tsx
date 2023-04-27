@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y, Autoplay } from "swiper";
+import { A11y, Autoplay, Mousewheel } from "swiper";
 
 import "swiper/css";
 import Review from "./Review";
@@ -7,16 +7,19 @@ import Review from "./Review";
 const ReviewsSwipper = ({ reviews }: any) => {
   return (
     <Swiper
-      className=" max-w-7xl mx-auto"
+      mousewheel={{
+        forceToAxis: true,
+      }}
+      className="mx-auto  max-w-7xl"
       slidesPerView={2}
       breakpoints={{
         1024: {
           slidesPerView: 3,
-        }
+        },
       }}
       grabCursor
       autoplay
-      modules={[A11y, Autoplay]}
+      modules={[A11y, Autoplay, Mousewheel]}
     >
       {reviews.map((review, index) => (
         <SwiperSlide key={index}>
