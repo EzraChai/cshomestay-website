@@ -34,7 +34,7 @@ export default function QuestionPage({ questions }) {
         <h2 className="text-4xl font-extrabold text-center lg:text-6xl lg:tracking-tight text-zinc-800">
           Questions.
         </h2>
-        <ul className="mt-6">
+        <ul className="mt-12">
           {questions.howTos.map((question, index) => (
             <li className="" key={question.id}>
               <Link href={`/question/${question.slug}`}>

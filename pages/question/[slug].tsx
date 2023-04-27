@@ -15,9 +15,12 @@ export default function QuestionPage({ content }) {
             <title>
               {`${data.title} | Questions | Cozy & Sweet Homestay Port Dickson`}
             </title>
-            {data.image && (
-              <meta property="og:image" content={`${data.image.url}`} />
-            )}
+            <meta property="og:image" content={data.image.url} />
+            <meta property="og:image" content={data.whatsappOgImage.url} />
+            <meta property="og:image:width" content="400" />
+            <meta property="og:image:height" content="300" />
+
+            <meta property="og:type" content="website" />
           </Head>
         )}
         <article className="max-w-3xl px-4 pt-24 pb-24 mx-auto lg:pt-32 md:px-0">
@@ -86,6 +89,9 @@ async function getQuestionBySlug(slug: string) {
           url
           width
           height
+        }
+        whatsappOgImage {
+          url
         }
         content
         title
