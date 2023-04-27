@@ -8,6 +8,19 @@ export default function QuestionPage({ questions }) {
     <>
       <Head>
         <title>Questions | Cozy & Sweet Homestay Port Dickson</title>
+        <meta
+          property="og:title"
+          content="Cozy & Sweet Homestay Port Dickson - Questions"
+        ></meta>
+        <meta
+          property="og:image"
+          content="https://cshomestay.vercel.app/api/image/og"
+        />
+        <meta
+          property="og:description"
+          content="Frequently asked questions by the guests."
+        />
+        <meta property="og:url" content="https://cshomestay.vercel.app" />
       </Head>
       <div className="max-w-3xl px-4 pt-24 mx-auto md:pt-32">
         <h2 className="text-4xl font-extrabold text-center lg:text-6xl lg:tracking-tight text-zinc-800">
@@ -15,13 +28,13 @@ export default function QuestionPage({ questions }) {
         </h2>
         <ul className="mt-6">
           {questions.howTos.map((question, index) => (
-            <li key={question.id}>
-              <Link className="p-4" href={`/question/${question.slug}`}>
-                {index === 0 && <hr className="mb-4 lg:mb-6" />}
-                <h4 className="text-2xl font-bold lg:text-4xl lg:tracking-tight text-zinc-700">
+            <li className="" key={question.id}>
+              <Link href={`/question/${question.slug}`}>
+                {index === 0 && <hr />}
+                <h4 className="py-2 text-2xl font-bold lg:py-4 lg:text-4xl lg:tracking-tight text-zinc-700">
                   {question.title}
                 </h4>
-                <hr className="mt-4 lg:mt-6" />
+                <hr />
               </Link>
             </li>
           ))}
