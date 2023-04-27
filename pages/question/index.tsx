@@ -39,7 +39,7 @@ export default function QuestionPage({ questions }) {
             <li className="" key={question.id}>
               <Link href={`/question/${question.slug}`}>
                 {index === 0 && <hr />}
-                <h4 className="py-2 text-2xl font-bold lg:py-4 lg:text-4xl lg:tracking-tight text-zinc-700">
+                <h4 className="py-4 text-2xl font-bold lg:text-4xl lg:tracking-tight text-zinc-700">
                   {question.title}
                 </h4>
                 <hr />
