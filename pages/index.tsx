@@ -51,6 +51,14 @@ export default function Home({ data }) {
           property="og:image"
           content="https://cshomestay.vercel.app/api/image/og"
         />
+        <meta property="og:image:type" content="image/png" />
+        <meta
+          property="og:image"
+          content="https://cshomestay.vercel.app/api/image/og"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="400" />
         <meta
           property="og:description"
           content="Get ready to spent your holiday in Port Dickson and stay with us."
