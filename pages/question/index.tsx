@@ -10,7 +10,7 @@ export default function QuestionPage({ questions }) {
         <title>Questions | Cozy & Sweet Homestay Port Dickson</title>
         <meta
           property="og:title"
-          content="Cozy & Sweet Homestay Port Dickson - Questions"
+          content="Questions | Cozy & Sweet Homestay Port Dickson"
         ></meta>
         <meta
           property="og:image"
