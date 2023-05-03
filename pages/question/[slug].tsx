@@ -6,11 +6,11 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function QuestionPage({ content }) {
-  if (content) {
-    let data = content.howTo;
+  if (!!content) {
+    const data = content.howTo;
     return (
       <>
-        {data && (
+        {!!data && (
           <Head>
             <title>
               {`${data.title} | Questions | Cozy & Sweet Homestay Port Dickson`}
@@ -24,7 +24,7 @@ export default function QuestionPage({ content }) {
           </Head>
         )}
         <article className="max-w-3xl px-4 pt-24 pb-24 mx-auto lg:pt-32 md:px-0">
-          {data.image && (
+          {!!data.image && (
             <Image
               className="mb-8 overflow-hidden rounded-xl"
               src={data.image.url}
@@ -34,7 +34,7 @@ export default function QuestionPage({ content }) {
             />
           )}
           <div className="prose lg:prose-xl prose-h1:lg:text-[2.7rem] prose-img:rounded-xl prose-img:overflow-hidden ">
-            <MDXRemote {...data.content} />
+            <MDXRemote {...data.content} components={{ ...components }} />
           </div>
         </article>
       </>
@@ -42,9 +42,25 @@ export default function QuestionPage({ content }) {
   }
 }
 
+const components = {
+  img: (props) => {
+    const alt = props.alt.split(".");
+    if (alt[1] === "mp4") {
+      return (
+        <video className="overflow-hidden rounded-xl" controls>
+          <source src={props.src} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      );
+    } else {
+      return <img src={props.src} alt={props.alt} />;
+    }
+  },
+};
+
 export async function getStaticProps({ params }) {
   let data = await getQuestionBySlug(params.slug);
-  if (data) {
+  if (!!data) {
     data.howTo.content = await serialize(data.howTo.content);
     return {
       props: { content: data },
