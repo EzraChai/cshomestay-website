@@ -5,7 +5,7 @@ import ProgressBar from "@badrap/bar-of-progress";
 import Router from "next/router";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 const progress = new ProgressBar({
   size: 3,
@@ -23,7 +23,7 @@ gsap.registerPlugin(ScrollTrigger);
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <main>
+      <main className="selection:bg-purple-600 selection:text-white">
         <Component {...pageProps} />
       </main>
       <Analytics />

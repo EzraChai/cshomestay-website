@@ -8,7 +8,7 @@ import { A11y, Mousewheel } from "swiper";
 
 const PlacesToVisit = ({ places }) => {
   return (
-    <div className="relative overflow-hidden z-[1] mt-24 pt-24 pb-32 bg-gray-600 bg-gradient-to-b from-cyan-500 to-[#c4ecf3]">
+    <div className="relative overflow-hidden z-[1] mt-24 pt-24 pb-32  bg-gradient-to-b from-cyan-500 to-cyan-50">
       <div className="mx-auto max-w-7xl">
         <h2 className="px-2 text-4xl font-extrabold text-center text-white lg:text-6xl lg:px-0 lg:tracking-tight">
           Places to visit in <br className="md:hidden" /> Port Dickson.
