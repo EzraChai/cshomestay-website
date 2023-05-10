@@ -32,7 +32,7 @@ export const LargeImageWithModal = ({ image }) => {
         <div className="fixed inset-0 flex items-center justify-center">
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute flex items-center justify-center w-12 h-12 transition rounded-full outline-none top-1 right-1 group md:right-10 hover:bg-zinc-500"
+            className="absolute flex items-center justify-center w-12 h-12 transition rounded-full outline-none top-1 right-1 group md:top-5 md:right-10 hover:bg-zinc-500"
           >
             <RiCloseFill className="text-3xl text-white " />
           </button>
@@ -83,7 +83,7 @@ export const SmallImageWithModal = ({ image }) => {
         <div className="fixed inset-0 flex items-center justify-center">
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute flex items-center justify-center w-12 h-12 transition rounded-full outline-none group right-1 top-1 hover:bg-zinc-500"
+            className="absolute flex items-center justify-center w-12 h-12 transition rounded-full outline-none group right-1 top-1 md:top-5 md:right-10 hover:bg-zinc-500"
           >
             <RiCloseFill className="text-3xl text-white " />
           </button>
@@ -134,7 +134,7 @@ export const SmallPictureWithModal = ({ image }) => {
         <div className="fixed inset-0 flex items-center justify-center">
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute flex items-center justify-center w-12 h-12 transition rounded-full outline-none group right-1 top-1 hover:bg-zinc-500"
+            className="absolute flex items-center justify-center w-12 h-12 transition rounded-full outline-none group right-1 top-1 md:top-5 md:right-10 hover:bg-zinc-500"
           >
             <RiCloseFill className="text-3xl text-white " />
           </button>
@@ -185,7 +185,7 @@ export const BigPictureWithModal = ({ image }) => {
         <div className="fixed inset-0 flex items-center justify-center">
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute flex items-center justify-center w-12 h-12 transition rounded-full outline-none group right-1 top-1 hover:bg-zinc-500"
+            className="absolute flex items-center justify-center w-12 h-12 transition rounded-full outline-none md:top-5 group right-1 top-1 md:right-10 hover:bg-zinc-500"
           >
             <RiCloseFill className="text-3xl text-white " />
           </button>
