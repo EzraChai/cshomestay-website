@@ -10,8 +10,9 @@ const Rooms = ({ rooms }: any) => {
           More <br className="hidden md:block" /> than enough.
         </div>
         <div className="col-span-3 px-4 text-md lg:text-xl text-zinc-600">
-          Spacious, corner-lot apartment with 3 bedrooms, 2 bathrooms, a living
-          room and a kitchen. Relax with your family at this peaceful place.😊
+          Spacious, corner-lot condominium with 3 bedrooms, 2 bathrooms, a
+          living room and a kitchen. Relax with your family at this peaceful
+          place.😊
           <div className="mt-2 text-sm italic text-zinc-600">
             Suitable for 10 people at most.
           </div>

@@ -41,12 +41,13 @@ export default function Home({ data }) {
         />
         <meta
           name="keywords"
-          content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson, cshomestay,cozy sweet homestay, cozysweet homestay"
+          content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson, cshomestay,cshomestay port dickson, cozy sweet homestay, cozysweet homestay"
         />
         <meta
           property="og:title"
           content="Cozy & Sweet Homestay Port Dickson - A cozy and affordable place to stay"
-        ></meta>
+        />
+        <meta property="og:type" content="website" />
         <meta property="og:image" content="https://i.ibb.co/zH54RQW/og.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />

@@ -49,7 +49,7 @@ export const About = () => {
           </div>
         </div>
         <p className="mt-2 text-gray-600 lg:text-lg">
-          Spacious (1100 ft&sup2;), corner-lot apartment <br />
+          Spacious (1100 ft&sup2;), corner-lot condominium <br />
           - 3 bedrooms <MdKingBed className="inline-flex" />
           <br /> - 2 bathrooms <MdShower className="inline-flex" />.{" "}
           <br className="mb-2" />
