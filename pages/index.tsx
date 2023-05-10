@@ -49,7 +49,7 @@ export default function Home({ data }) {
         ></meta>
         <meta
           property="og:image"
-          content="https://cshomestay.vercel.app/api/image/og"
+          content="https://i.ibb.co/b2LNNKG/house.jpg"
         />
         <meta property="og:image:type" content="image/png" />
         <meta
