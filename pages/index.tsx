@@ -47,11 +47,10 @@ export default function Home({ data }) {
           property="og:title"
           content="Cozy & Sweet Homestay Port Dickson - A cozy and affordable place to stay"
         ></meta>
-        <meta
-          property="og:image"
-          content="https://i.ibb.co/b2LNNKG/house.jpg"
-        />
-        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image" content="https://i.ibb.co/zH54RQW/og.png" />
+        s <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta
           property="og:image"
           content="https://cshomestay.vercel.app/og-whatsapp.png"
