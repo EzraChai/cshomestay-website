@@ -102,7 +102,7 @@ export default function Home({ data }) {
                       rel="external"
                       href={"https://en.wikipedia.org/wiki/Port_Dickson_(town)"}
                     >
-                      Port Dickson
+                      {"Port Dickson"}
                     </Link>
                   </span>
                   {", "}
@@ -111,9 +111,8 @@ export default function Home({ data }) {
                       hrefLang="en"
                       rel="external"
                       href={"https://en.wikipedia.org/wiki/Negeri_Sembilan"}
-                      passHref
                     >
-                      <span>{"Negeri Sembilan"}</span>
+                      {"Negeri Sembilan"}
                     </Link>
                   </span>
                 </div>
