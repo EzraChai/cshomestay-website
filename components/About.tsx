@@ -71,7 +71,7 @@ export const About = () => {
           </div>
         </div>
         <p className="mt-2 text-gray-600 lg:text-lg ">
-          The apartment is equipped with: <br className="mb-2" />
+          The condominium is equipped with: <br className="mb-2" />
           - Air conditioners
           <br />
           - Smart TV (Youtube <FaYoutube className="inline-flex" />) <br />

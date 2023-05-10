@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { GraphQLClient, gql } from "graphql-request";
+import { gql } from "graphql-request";
 
 import Reviews from "@/components/Reviews";
 import StrategicPlace from "@/components/StrategicPlace";
@@ -37,7 +37,7 @@ export default function Home({ data }) {
         <meta
           name="description"
           content="Cozy & Sweet Homestay Port Dickson located in Port Dickson, Negeri Sembilan, Malaysia.
-          Best place for you to stay when you plan travel to Port Dickson."
+          Best place for you to stay when you plan travel to Port Dickson. Cozy and affordable place to stay."
         />
         <meta
           name="keywords"
@@ -48,7 +48,7 @@ export default function Home({ data }) {
           content="Cozy & Sweet Homestay Port Dickson - A cozy and affordable place to stay"
         ></meta>
         <meta property="og:image" content="https://i.ibb.co/zH54RQW/og.png" />
-        s <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta
