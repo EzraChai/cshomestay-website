@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { GraphQLClient, gql } from "graphql-request";
+import { gql } from "graphql-request";
 
 import Reviews from "@/components/Reviews";
 import StrategicPlace from "@/components/StrategicPlace";
@@ -37,21 +37,21 @@ export default function Home({ data }) {
         <meta
           name="description"
           content="Cozy & Sweet Homestay Port Dickson located in Port Dickson, Negeri Sembilan, Malaysia.
-          Best place for you to stay when you plan travel to Port Dickson."
+          Best place for you to stay when you plan travel to Port Dickson. Cozy and affordable place to stay."
         />
         <meta
           name="keywords"
-          content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson, cshomestay,cozy sweet homestay, cozysweet homestay"
+          content="port dickson,homestay port dickson,homestay,cozy,sweet,cozy and sweet,cozy homestay,best homestay,best homestay port dickson, homestay in port dickson, Port Dickson, cshomestay,cshomestay port dickson, cozy sweet homestay, cozysweet homestay"
         />
         <meta
           property="og:title"
           content="Cozy & Sweet Homestay Port Dickson - A cozy and affordable place to stay"
-        ></meta>
-        <meta
-          property="og:image"
-          content="https://cshomestay.vercel.app/api/image/og"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://i.ibb.co/zH54RQW/og.png" />
         <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta
           property="og:image"
           content="https://cshomestay.vercel.app/og-whatsapp.png"
@@ -102,7 +102,7 @@ export default function Home({ data }) {
                       rel="external"
                       href={"https://en.wikipedia.org/wiki/Port_Dickson_(town)"}
                     >
-                      Port Dickson
+                      {"Port Dickson"}
                     </Link>
                   </span>
                   {", "}
@@ -111,9 +111,8 @@ export default function Home({ data }) {
                       hrefLang="en"
                       rel="external"
                       href={"https://en.wikipedia.org/wiki/Negeri_Sembilan"}
-                      passHref
                     >
-                      <span>{"Negeri Sembilan"}</span>
+                      {"Negeri Sembilan"}
                     </Link>
                   </span>
                 </div>

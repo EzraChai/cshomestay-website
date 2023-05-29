@@ -10,16 +10,16 @@ export const LargeImageWithModal = ({ image }) => {
     <>
       <div
         onClick={() => setIsOpen(true)}
-        className=" col-span-4 row-span-4 rounded-xl overflow-hidden relative hover:cursor-pointer"
+        className="relative col-span-4 row-span-4 overflow-hidden rounded-xl hover:cursor-pointer"
       >
         <Image
-          className="object-cover h-full w-auto"
+          className="object-cover w-auto h-full"
           src={image.image.url}
           width={image.image.width}
           height={image.image.height}
           alt={image.title}
         />
-        <div className=" top-0 left-0 w-full h-full absolute flex justify-center bg-black opacity-0 hover:opacity-20 transition-opacity"></div>
+        <div className="absolute top-0 left-0 flex justify-center w-full h-full transition-opacity bg-black opacity-0 hover:opacity-20"></div>
       </div>
 
       <Dialog
@@ -32,7 +32,7 @@ export const LargeImageWithModal = ({ image }) => {
         <div className="fixed inset-0 flex items-center justify-center">
           <button
             onClick={() => setIsOpen(false)}
-            className="group flex justify-center items-center absolute right-5 md:right-10 top-5 outline-none w-12 h-12 rounded-full hover:bg-zinc-500 transition"
+            className="absolute flex items-center justify-center w-12 h-12 transition rounded-full outline-none top-1 right-1 group md:top-5 md:right-10 hover:bg-zinc-500"
           >
             <RiCloseFill className="text-3xl text-white " />
           </button>
@@ -64,13 +64,13 @@ export const SmallImageWithModal = ({ image }) => {
         onClick={() => setIsOpen(true)}
       >
         <Image
-          className="object-cover h-full w-auto"
+          className="object-cover w-auto h-full"
           src={image.image.url}
           width={image.image.width}
           height={image.image.height}
           alt={image.title}
         />
-        <div className=" inset-0 absolute flex justify-center bg-black opacity-0 hover:opacity-20 transition-opacity" />
+        <div className="absolute inset-0 flex justify-center transition-opacity bg-black opacity-0 hover:opacity-20" />
       </div>
 
       <Dialog
@@ -83,7 +83,7 @@ export const SmallImageWithModal = ({ image }) => {
         <div className="fixed inset-0 flex items-center justify-center">
           <button
             onClick={() => setIsOpen(false)}
-            className="group flex justify-center items-center absolute right-10 top-5 outline-none w-12 h-12 rounded-full hover:bg-zinc-500 transition"
+            className="absolute flex items-center justify-center w-12 h-12 transition rounded-full outline-none group right-1 top-1 md:top-5 md:right-10 hover:bg-zinc-500"
           >
             <RiCloseFill className="text-3xl text-white " />
           </button>
@@ -112,11 +112,11 @@ export const SmallPictureWithModal = ({ image }) => {
     <>
       <div
         onClick={() => setIsOpen(true)}
-        className="group relative col-span-2 md:col-span-1 rounded-xl overflow-hidden cursor-pointer"
+        className="relative col-span-2 overflow-hidden cursor-pointer group md:col-span-1 rounded-xl"
       >
-        <div className="absolute inset-0 flex justify-center bg-black opacity-0 hover:opacity-20 transition-opacity" />
+        <div className="absolute inset-0 flex justify-center transition-opacity bg-black opacity-0 hover:opacity-20" />
         <Image
-          className="object-cover h-auto w-full"
+          className="object-cover w-full h-auto"
           src={image.image.url}
           width={image.image.width}
           height={image.image.height}
@@ -134,7 +134,7 @@ export const SmallPictureWithModal = ({ image }) => {
         <div className="fixed inset-0 flex items-center justify-center">
           <button
             onClick={() => setIsOpen(false)}
-            className="group flex justify-center items-center absolute right-10 top-5 outline-none w-12 h-12 rounded-full hover:bg-zinc-500 transition"
+            className="absolute flex items-center justify-center w-12 h-12 transition rounded-full outline-none group right-1 top-1 md:top-5 md:right-10 hover:bg-zinc-500"
           >
             <RiCloseFill className="text-3xl text-white " />
           </button>
@@ -163,11 +163,11 @@ export const BigPictureWithModal = ({ image }) => {
     <>
       <div
         onClick={() => setIsOpen(true)}
-        className=" relative col-span-2 rounded-xl overflow-hidden cursor-pointer"
+        className="relative col-span-2 overflow-hidden cursor-pointer rounded-xl"
       >
-        <div className="absolute inset-0 flex justify-center bg-black opacity-0 hover:opacity-20 transition-opacity" />
+        <div className="absolute inset-0 flex justify-center transition-opacity bg-black opacity-0 hover:opacity-20" />
         <Image
-          className="object-cover h-auto w-full"
+          className="object-cover w-full h-auto"
           src={image.image.url}
           width={image.image.width}
           height={image.image.height}
@@ -185,7 +185,7 @@ export const BigPictureWithModal = ({ image }) => {
         <div className="fixed inset-0 flex items-center justify-center">
           <button
             onClick={() => setIsOpen(false)}
-            className="group flex justify-center items-center absolute right-10 top-5 outline-none w-12 h-12 rounded-full hover:bg-zinc-500 transition"
+            className="absolute flex items-center justify-center w-12 h-12 transition rounded-full outline-none md:top-5 group right-1 top-1 md:right-10 hover:bg-zinc-500"
           >
             <RiCloseFill className="text-3xl text-white " />
           </button>
