@@ -13,6 +13,10 @@ const PlacesToVisit = ({ places }) => {
         <h2 className="px-2 text-4xl font-extrabold text-center text-white lg:text-6xl lg:px-0 lg:tracking-tight">
           Places to visit in <br className="md:hidden" /> Port Dickson.
         </h2>
+        <div className="mt-2 mb-12 text-xl font-semibold text-center text-zinc-100 lg:text-3xl">
+          Other than beaches.
+        </div>
+
         <Swiper
           grabCursor
           mousewheel={{ forceToAxis: true }}
