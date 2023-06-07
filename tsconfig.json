@@ -30,7 +30,7 @@
     "**/*.ts",
     "**/*.tsx",
     "components/Header.tsx"
-  ],
+, "pages/_document.jsx"  ],
   "exclude": [
     "node_modules"
   ],
