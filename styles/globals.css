@@ -40,10 +40,6 @@ a {
   transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.cursive {
-  font-family: "Oooh Baby", cursive;
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
