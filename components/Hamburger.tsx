@@ -155,12 +155,12 @@ export const Hamburger = ({ state }) => {
                   </li>
                 </ul>
               </nav>
-              <div className="w-1/2 mt-4 text-white info md:mt-0 lg:w-full lg:flex lg:justify-center lg:flex-col lg:items-center">
+              <div className="w-1/2 mt-8 text-white info md:mt-0 lg:w-full lg:flex lg:justify-center lg:flex-col lg:items-center">
                 <h3 className="text-lg font-bold md:text-2xl lg:text-4xl">
                   Our Promise
                 </h3>
-                <p className="text-sm md:text-lg lg:text-xl">
-                  Provide you a comfy place to stay in Port Dickson
+                <p className="text-sm md:mt-1 lg:text-center lg:max-w-xl text-neutral-100 md:text-lg lg:text-xl">
+                  We promise a memorable and comfortable stay in our homestay.
                 </p>
               </div>
             </div>
