@@ -6,22 +6,6 @@ const Review = ({ review }) => {
       <div className="card p-4 pb-6 lg:p-8 mb-8 rounded-2xl bg-white mx-4">
         <div className="upper-card flex justify-between py-2 lg:py-4 items-center">
           <div className="flex items-center">
-            {review.avatar && (
-              <div className="w-12 h-12 pr-2 ">
-                <Image
-                  className="rounded-full"
-                  src={review.avatar.url}
-                  width={40}
-                  height={40}
-                  alt={`Avatar of ${review.username}`}
-                  sizes="100vw"
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-            )}
             <h6 className="font-semibold text-lg lg:text-xl text-zinc-900">
               {review.username}
             </h6>
