@@ -82,7 +82,7 @@ export default function Book() {
               scroll={false}
               rel={"noopener"}
               target={"_blank"}
-              href={"https://www.airbnb.com/rooms/53874417"}
+              href={"https://airbnb.com/h/cs-homestay"}
               className="overflow-hidden transition bg-white rounded-2xl hover:-translate-y-1"
             >
               <div className="items-center justify-center px-10 py-20 lg:px-20">
